@@ -1,1 +1,4 @@
 data/
+evaluation_data/
+evaluation_results_backup/
+.env
