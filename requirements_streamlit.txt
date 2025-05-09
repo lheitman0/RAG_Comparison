@@ -9,7 +9,7 @@ transformers>=4.35.0
 torch>=2.0.0
 pandas>=2.0.0
 tiktoken>=0.5.0
-markdown>=3.4.0
+markdown==3.4.3
 beautifulsoup4>=4.11.0
 fastapi>=0.100.0
 python-dotenv>=1.0.0
