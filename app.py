@@ -645,11 +645,16 @@ def convert_md_to_html(md_text):
 def get_rag_approach():
     """Return a RetrievalRecipe instance for the selected approach."""
     approach_name = st.session_state.selected_approach
+    
+    # If OpenSource RAG is somehow still selected (from previous sessions), 
+    # reset to default OpenAI CLIP RAG
+    if approach_name == "OpenSource RAG":
+        approach_name = "OpenAI CLIP RAG"
+        st.session_state.selected_approach = approach_name
+        st.warning("OpenSource RAG is not available in the cloud deployment. Using OpenAI CLIP RAG instead.")
 
     if approach_name == "OpenAI CLIP RAG":
         return RetrievalRecipe.openai_clip()
-    elif approach_name == "OpenSource RAG":
-        return RetrievalRecipe.open_source()
     elif approach_name == "OpenAI Vision RAG":
         return RetrievalRecipe.openai_vision()
     elif approach_name == "Hybrid RAG":
@@ -707,8 +712,8 @@ def display_chat_interface():
     approach_options = [
         "OpenAI CLIP RAG",
         "OpenAI Vision RAG",
-        "Hybrid RAG",
-        "OpenSource RAG"
+        "Hybrid RAG"
+        # "OpenSource RAG" - Removed for cloud deployment
     ]
     
     st.session_state.selected_approach = st.sidebar.selectbox(
