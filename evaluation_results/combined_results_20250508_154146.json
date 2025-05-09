@@ -1,0 +1,217 @@
+{
+  "timestamp": "20250508_154146",
+  "approaches": {
+    "OpenSource RAG": {
+      "overall": {
+        "total_questions": 60,
+        "successful_questions": 60,
+        "success_rate": 1.0,
+        "avg_response_time": 13.41338389714559,
+        "avg_overall_score": 8.043333333333333,
+        "avg_relevance": 8.316666666666666,
+        "avg_correctness": 7.266666666666667,
+        "avg_completeness": 7.733333333333333,
+        "avg_clarity": 6.783333333333333
+      },
+      "token_usage": {
+        "total_tokens": 180183,
+        "embedding_tokens": 1800,
+        "generation_tokens": 176583,
+        "query_processing_tokens": 0
+      },
+      "models_used": {
+        "embedding": {
+          "name": "open_source",
+          "type": "open_source",
+          "billable": false,
+          "tokens": 1800
+        },
+        "generation": {
+          "name": "gpt-4o",
+          "type": "openai",
+          "billable": true,
+          "tokens": 176583
+        },
+        "image_embedding": {
+          "name": "CLIP",
+          "type": "open_source",
+          "billable": false,
+          "tokens": 150
+        }
+      },
+      "model_token_usage": {
+        "open_source": {
+          "tokens": 1800,
+          "type": "open_source",
+          "billable": false,
+          "purpose": "embedding"
+        },
+        "gpt-4o": {
+          "tokens": 176583,
+          "type": "openai",
+          "billable": true,
+          "purpose": "generation"
+        },
+        "CLIP": {
+          "tokens": 150,
+          "type": "open_source",
+          "billable": false,
+          "purpose": "image_embedding"
+        }
+      }
+    },
+    "OpenAI CLIP RAG": {
+      "overall": {
+        "total_questions": 60,
+        "successful_questions": 60,
+        "success_rate": 1.0,
+        "avg_response_time": 6.756842609246572,
+        "avg_overall_score": 8.374500000000001,
+        "avg_relevance": 8.683333333333334,
+        "avg_correctness": 7.766666666666667,
+        "avg_completeness": 8.266666666666667,
+        "avg_clarity": 7.1
+      },
+      "token_usage": {
+        "total_tokens": 273805,
+        "embedding_tokens": 35532,
+        "generation_tokens": 202709,
+        "query_processing_tokens": 0
+      },
+      "models_used": {
+        "embedding": {
+          "name": "openai_clip",
+          "type": "openai",
+          "billable": true,
+          "tokens": 35532
+        },
+        "generation": {
+          "name": "gpt-4o",
+          "type": "openai",
+          "billable": true,
+          "tokens": 202709
+        }
+      },
+      "model_token_usage": {
+        "openai_clip": {
+          "tokens": 35532,
+          "type": "openai",
+          "billable": true,
+          "purpose": "embedding"
+        },
+        "gpt-4o": {
+          "tokens": 202709,
+          "type": "openai",
+          "billable": true,
+          "purpose": "generation"
+        }
+      }
+    },
+    "OpenAI Vision RAG": {
+      "overall": {
+        "total_questions": 60,
+        "successful_questions": 60,
+        "success_rate": 1.0,
+        "avg_response_time": 24.149767891565958,
+        "avg_overall_score": 8.307833333333333,
+        "avg_relevance": 8.633333333333333,
+        "avg_correctness": 7.616666666666666,
+        "avg_completeness": 8.183333333333334,
+        "avg_clarity": 6.983333333333333
+      },
+      "token_usage": {
+        "total_tokens": 189398,
+        "embedding_tokens": 1620,
+        "generation_tokens": 186098,
+        "query_processing_tokens": 0
+      },
+      "models_used": {
+        "embedding": {
+          "name": "openai_vision",
+          "type": "openai",
+          "billable": true,
+          "tokens": 1620
+        },
+        "generation": {
+          "name": "gpt-4o",
+          "type": "openai",
+          "billable": true,
+          "tokens": 186098
+        }
+      },
+      "model_token_usage": {
+        "openai_vision": {
+          "tokens": 1620,
+          "type": "openai",
+          "billable": true,
+          "purpose": "embedding"
+        },
+        "gpt-4o": {
+          "tokens": 186098,
+          "type": "openai",
+          "billable": true,
+          "purpose": "generation"
+        }
+      }
+    },
+    "Hybrid RAG": {
+      "overall": {
+        "total_questions": 60,
+        "successful_questions": 60,
+        "success_rate": 1.0,
+        "avg_response_time": 14.212597421805064,
+        "avg_overall_score": 8.404,
+        "avg_relevance": 8.666666666666666,
+        "avg_correctness": 7.766666666666667,
+        "avg_completeness": 8.466666666666667,
+        "avg_clarity": 6.916666666666667
+      },
+      "token_usage": {
+        "total_tokens": 212061,
+        "embedding_tokens": 1800,
+        "generation_tokens": 208461,
+        "query_processing_tokens": 0
+      },
+      "models_used": {
+        "embedding": {
+          "name": "hybrid",
+          "type": "openai",
+          "billable": true,
+          "tokens": 1800
+        },
+        "generation": {
+          "name": "gpt-4o",
+          "type": "openai",
+          "billable": true,
+          "tokens": 208461
+        },
+        "image_embedding": {
+          "name": "CLIP",
+          "type": "open_source",
+          "billable": false,
+          "tokens": 400
+        }
+      },
+      "model_token_usage": {
+        "hybrid": {
+          "tokens": 1800,
+          "type": "openai",
+          "billable": true,
+          "purpose": "embedding"
+        },
+        "gpt-4o": {
+          "tokens": 208461,
+          "type": "openai",
+          "billable": true,
+          "purpose": "generation"
+        },
+        "CLIP": {
+          "tokens": 400,
+          "type": "open_source",
+          "billable": false,
+          "purpose": "image_embedding"
+        }
+      }
+    }
+  }
+}
