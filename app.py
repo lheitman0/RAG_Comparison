@@ -1084,66 +1084,20 @@ def display_chat_interface():
 
 
 def display_tradeoffs_document():
-    # Simple header
-    st.markdown("<h1 style='text-align: center;'>RAG Approaches Tradeoffs</h1>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center; margin-bottom: 30px;'>Technical analysis of different RAG approaches for documentation question-answering</p>", unsafe_allow_html=True)
-    
-    # Create columns for document layout
-    col1, col2 = st.columns([1, 3])
-    
-    # Load the markdown file
+    # Simple header (full width)
+    st.markdown("<h1 style='text-align: center;'>RAG Approaches Trade-Offs</h1>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; margin-bottom: 30px;'>Technical analysis of retrieval-augmented-generation options</p>", unsafe_allow_html=True)
+
+    # Load and render markdown—no sidebar navigation
     md_file_path = "RAG_Approaches_Tradeoffs.md"
-    md_text, headers = load_markdown_file(md_file_path)
-    
-    # Filter for main sections and subsections
-    main_sections = [h for h in headers if h[0] == 2]  # Level 2 headers (##)
-    
-    # Display sections in the sidebar
-    with col1:
-        st.markdown("### Document Sections")
-        
-        # Initialize current section if not in session state
-        if "active_section" not in st.session_state:
-            st.session_state.active_section = main_sections[0][1] if main_sections else ""
-        
-        # Display main sections
-        for i, (level, title) in enumerate(main_sections):
-            is_active = st.session_state.active_section == title
-            button_style = "primary" if is_active else "secondary"
-            
-            if st.button(f"{title}", key=f"section_{i}", type=button_style):
-                st.session_state.active_section = title
-                st.rerun()
-        
-        # Get subsections for active section
-        if st.session_state.active_section:
-            # Find index of current section
-            section_indices = [i for i, (_, title) in enumerate(headers) if title == st.session_state.active_section]
-            if section_indices:
-                current_idx = section_indices[0]
-                # Find next main section index
-                next_section_indices = [i for i, (level, _) in enumerate(headers) if level == 2 and i > current_idx]
-                end_idx = next_section_indices[0] if next_section_indices else len(headers)
-                
-                # Get subsections
-                subsections = headers[current_idx+1:end_idx]
-                
-                # Display subsections if any
-                if subsections:
-                    st.markdown(f"**{st.session_state.active_section} Subsections:**")
-                    for j, (sublevel, subtitle) in enumerate(subsections):
-                        if sublevel > 2:  # Only show level 3+ headers
-                            indent = "  " * (sublevel - 3)
-                            if st.button(f"{indent}• {subtitle}", key=f"sub_{j}"):
-                                st.session_state.scroll_to = subtitle
-                                st.rerun()
-    
-    # Convert markdown to HTML with better code block handling
+    try:
+        md_text, _ = load_markdown_file(md_file_path)
+    except FileNotFoundError:
+        st.error("Trade-offs document not found.")
+        return
+
     html_content = convert_md_to_html(md_text)
-    
-    # Display the document content
-    with col2:
-        st.markdown(f'<div class="document-container">{html_content}</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="document-container">{html_content}</div>', unsafe_allow_html=True)
 
 
 def format_code_content(content):

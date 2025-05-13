@@ -1,0 +1,122 @@
+{
+  "OpenSource RAG": {
+    "strengths": [
+      [
+        "optimization",
+        0.1750000000000007
+      ],
+      [
+        "configuration",
+        0.12222222222222356
+      ],
+      [
+        "technical",
+        0.08708333333333407
+      ]
+    ],
+    "weaknesses": [
+      [
+        "procedural",
+        -0.7833333333333368
+      ],
+      [
+        "security",
+        -1.0083333333333346
+      ],
+      [
+        "navigation",
+        -1.9333333333333345
+      ]
+    ]
+  },
+  "OpenAI CLIP RAG": {
+    "strengths": [
+      [
+        "navigation",
+        0.7999999999999998
+      ],
+      [
+        "security",
+        0.7583333333333337
+      ],
+      [
+        "comparative",
+        0.34750000000000014
+      ]
+    ],
+    "weaknesses": [
+      [
+        "configuration",
+        0.0777777777777775
+      ],
+      [
+        "conceptual",
+        0.017333333333331424
+      ],
+      [
+        "technical",
+        -0.7179166666666656
+      ]
+    ]
+  },
+  "OpenAI Vision RAG": {
+    "strengths": [
+      [
+        "navigation",
+        0.33333333333333304
+      ],
+      [
+        "conceptual",
+        0.27999999999999936
+      ],
+      [
+        "security",
+        0.25833333333333286
+      ]
+    ],
+    "weaknesses": [
+      [
+        "technical",
+        -0.11791666666666778
+      ],
+      [
+        "comparative",
+        -0.14250000000000007
+      ],
+      [
+        "factual",
+        -0.42166666666666686
+      ]
+    ]
+  },
+  "Hybrid RAG": {
+    "strengths": [
+      [
+        "navigation",
+        0.7999999999999998
+      ],
+      [
+        "technical",
+        0.7487499999999994
+      ],
+      [
+        "factual",
+        0.4883333333333333
+      ]
+    ],
+    "weaknesses": [
+      [
+        "troubleshooting",
+        -0.08333333333333304
+      ],
+      [
+        "configuration",
+        -0.29999999999999893
+      ],
+      [
+        "optimization",
+        -0.5583333333333327
+      ]
+    ]
+  }
+}
