@@ -1,8 +1,6 @@
 """
-Synthetic Data Generator for RAG Evaluation.
-
-This script generates synthetic questions and ground truth data for evaluating 
-RAG system performance using GPT-4 based on manual chunks and metadata.
+Synthetic Data Generator for RAG Evaluation
+This script generates synthetic questions and ground truth data for evaluating the 4 approaches
 """
 
 import os
@@ -13,47 +11,35 @@ from pathlib import Path
 from typing import List, Dict, Any, Optional
 import openai
 
-# Question categories
 QUESTION_CATEGORIES = [
-    "factual",         # Simple fact retrieval
-    "procedural",      # Step-by-step instructions
-    "conceptual",      # Understanding concepts
-    "comparative",     # Comparing different options/features
-    "troubleshooting", # Problem solving
-    "visual",          # Questions about visual elements
-    "technical",       # Specific technical details
-    "configuration",   # Configuration-related questions
-    "navigation",      # How to navigate interfaces
-    "security",        # Security-related questions
-    "integration",     # Integration with other systems
-    "optimization",    # Performance optimization
+    "factual",         
+    "procedural",     
+    "conceptual",      
+    "comparative",     
+    "troubleshooting", 
+    "visual",          
+    "technical",       
+    "configuration",   
+    "navigation",      
+    "security",        
+    "integration",     
+    "optimization",    
 ]
 
-# Query types
 QUERY_TYPES = [
-    "direct",          # Direct question
-    "conversational",  # Conversational style
-    "technical",       # Technical jargon
-    "simple",          # Simple language
-    "specific",        # Very specific
-    "broad",           # Broad/general
-    "detailed",        # Requesting details
-    "multilingual",    # Includes some words in other language
+    "direct",          
+    "conversational",  
+    "technical",       
+    "simple",          
+    "specific",        
+    "broad",           
+    "detailed",        
+    "multilingual",    
 ]
 
-# Complexity levels
 COMPLEXITY_LEVELS = ["simple", "medium", "complex"]
 
 def load_document_chunks(manual_type: str) -> List[Dict[str, Any]]:
-    """
-    Load document chunks for a specific manual.
-    
-    Args:
-        manual_type: Either 'VM_manual' or 'wifi_manual'
-        
-    Returns:
-        List of document chunks
-    """
     base_path = Path(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
     chunks_path = base_path / "data" / manual_type / f"cleaned_{manual_type.split('_')[0]}_chunks.json"
     
@@ -61,15 +47,6 @@ def load_document_chunks(manual_type: str) -> List[Dict[str, Any]]:
         return json.load(f)
 
 def load_figure_metadata(manual_type: str) -> Dict[str, Any]:
-    """
-    Load figure metadata for a specific manual.
-    
-    Args:
-        manual_type: Either 'VM_manual' or 'wifi_manual'
-        
-    Returns:
-        Dictionary of figure metadata
-    """
     base_path = Path(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
     metadata_path = base_path / "data" / manual_type / "figure_metadata.json"
     
@@ -77,7 +54,6 @@ def load_figure_metadata(manual_type: str) -> Dict[str, Any]:
         with open(metadata_path, 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
-        # If no dedicated metadata file, extract from chunks
         chunks = load_document_chunks(manual_type)
         figure_metadata = {}
         
@@ -96,18 +72,8 @@ def load_figure_metadata(manual_type: str) -> Dict[str, Any]:
         return figure_metadata
 
 def extract_toc(chunks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """
-    Extract table of contents from document chunks.
-    
-    Args:
-        chunks: List of document chunks
-        
-    Returns:
-        Hierarchical table of contents
-    """
     toc = []
     
-    # Sort chunks by section_id to maintain order
     sorted_chunks = sorted(chunks, key=lambda x: x.get("section_id", ""))
     
     for chunk in sorted_chunks:
@@ -125,40 +91,24 @@ def extract_toc(chunks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
     return toc
 
 def select_representative_chunks(chunks: List[Dict[str, Any]], count: int = 5) -> List[Dict[str, Any]]:
-    """
-    Select representative chunks covering different aspects of the manual.
-    
-    Args:
-        chunks: List of document chunks
-        count: Number of chunks to select
-        
-    Returns:
-        Selected chunks
-    """
-    # Prioritize chunks with more content and figures
     scored_chunks = []
     
     for chunk in chunks:
-        # Score based on content length and presence of figures
         content_length = len(chunk.get("content", ""))
         has_figures = 1 if chunk.get("figures") else 0
         
-        # Higher score for chunks with figures and more content
         score = content_length + has_figures * 1000
         
         scored_chunks.append((score, chunk))
     
-    # Sort by score (descending) and take top 'count' chunks
     sorted_chunks = [chunk for _, chunk in sorted(scored_chunks, key=lambda x: x[0], reverse=True)]
     
-    # Ensure diversity by not selecting adjacent sections
     selected = []
     section_ids = set()
     
     for chunk in sorted_chunks:
         section_id = chunk.get("section_id", "")
         
-        # Skip if we already have a similar section
         if any(section_id.startswith(s) or s.startswith(section_id) for s in section_ids):
             continue
         
@@ -171,25 +121,13 @@ def select_representative_chunks(chunks: List[Dict[str, Any]], count: int = 5) -
     return selected
 
 def format_chunk_for_prompt(chunk: Dict[str, Any]) -> str:
-    """
-    Format a chunk for inclusion in the GPT-4 prompt.
-    
-    Args:
-        chunk: Document chunk
-        
-    Returns:
-        Formatted chunk text
-    """
     section_id = chunk.get("section_id", "Unknown")
     section_title = chunk.get("section_title", "Unknown")
     page_range = chunk.get("page_range", "Unknown")
     content = chunk.get("content", "")
-    
-    # Format content with metadata
     formatted = f"CHUNK (Section {section_id}: {section_title}, Pages {page_range}):\n"
     formatted += content + "\n\n"
     
-    # Add figure information if present
     if "figures" in chunk and chunk["figures"]:
         formatted += "FIGURES IN THIS SECTION:\n"
         
@@ -205,44 +143,25 @@ def format_chunk_for_prompt(chunk: Dict[str, Any]) -> str:
 def generate_gpt4_prompt(manual_type: str, toc: List[Dict[str, Any]], 
                         figures: Dict[str, Any], chunks: List[Dict[str, Any]],
                         category: str) -> str:
-    """
-    Generate a prompt for GPT-4 to create synthetic questions.
-    
-    Args:
-        manual_type: Either 'VM_manual' or 'wifi_manual'
-        toc: Table of contents
-        figures: Figure metadata
-        chunks: Selected document chunks
-        category: Question category
-        
-    Returns:
-        Formatted prompt for GPT-4
-    """
-    # Determine the manual's subject
     subject = "Virtual Machine creation and management" if manual_type == "VM_manual" else "WiFi configuration"
     
-    # Format TOC for the prompt
     toc_formatted = "TABLE OF CONTENTS:\n"
-    for item in toc[:20]:  # Limit to first 20 items to save tokens
+    for item in toc[:20]: 
         toc_formatted += f"- Section {item['section_id']}: {item['section_title']} (Pages {item['page_range']})\n"
     
-    # Format figures for the prompt
     figures_formatted = "KEY FIGURES:\n"
-    figure_sample = list(figures.items())[:10]  # Limit to 10 figures
+    figure_sample = list(figures.items())[:10]  
     for figure_id, metadata in figure_sample:
         caption = metadata.get("caption", "Unknown")
         page = metadata.get("page", "Unknown")
         figures_formatted += f"- {figure_id} (Page {page}): {caption}\n"
     
-    # Format chunks
     chunks_formatted = "\nRELEVANT MANUAL CHUNKS:\n"
     for i, chunk in enumerate(chunks):
         chunks_formatted += f"\n{format_chunk_for_prompt(chunk)}"
         
-    # Generate final formatted content
     content_formatted = f"{toc_formatted}\n\n{figures_formatted}\n\n{chunks_formatted}"
     
-    # Create category-specific instructions
     category_instructions = {
         "factual": "Create questions asking for specific facts or information found in the manual.",
         "procedural": "Create step-by-step 'how-to' questions about completing specific tasks.",
@@ -258,7 +177,6 @@ def generate_gpt4_prompt(manual_type: str, toc: List[Dict[str, Any]],
         "optimization": "Create questions about optimizing performance or efficiency."
     }
     
-    # Select a query type
     query_type = random.choice(QUERY_TYPES)
     query_type_instructions = {
         "direct": "Format questions in a direct, straightforward style.",
@@ -271,7 +189,6 @@ def generate_gpt4_prompt(manual_type: str, toc: List[Dict[str, Any]],
         "multilingual": "Include some technical terms in both languages in the questions."
     }
     
-    # Build the full prompt
     prompt = f"""You are an expert in technical documentation and IT systems. I need you to create realistic test questions about {subject} based on a technical manual.
 
 I'll provide:
@@ -325,22 +242,11 @@ Do not include any explanations outside the JSON. ONLY return a valid, properly 
     return prompt
 
 def generate_questions_with_gpt4(prompt: str) -> List[Dict[str, Any]]:
-    """
-    Generate questions using GPT-4 API.
-    
-    Args:
-        prompt: Formatted prompt for GPT-4
-        
-    Returns:
-        List of generated questions with metadata
-    """
     client = openai.OpenAI()
     
-    # Add instruction to format as JSON in the prompt
     json_prompt = prompt + "\n\nIMPORTANT: Format your response as a valid JSON object with a 'questions' array."
     
     try:
-        # First try with JSON response format
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
@@ -351,7 +257,6 @@ def generate_questions_with_gpt4(prompt: str) -> List[Dict[str, Any]]:
             response_format={"type": "json_object"}
         )
     except Exception as e:
-        # Fall back to standard response format if response_format isn't supported
         print(f"Note: Using standard response format due to: {e}")
         response = client.chat.completions.create(
             model="o4-mini",
@@ -362,35 +267,28 @@ def generate_questions_with_gpt4(prompt: str) -> List[Dict[str, Any]]:
             temperature=0.7
         )
     
-    # Extract and parse the JSON response
     try:
         content = response.choices[0].message.content.strip()
         
-        # Look for JSON block in the content (in case model adds explanations)
         json_start = content.find('{')
         json_end = content.rfind('}')
         
         if json_start >= 0 and json_end > json_start:
-            # Extract JSON portion
             json_str = content[json_start:json_end+1]
             data = json.loads(json_str)
         else:
-            # Try to parse the whole content
             data = json.loads(content)
         
-        # Handle different response formats
         if "questions" in data:
             return data["questions"]
         elif isinstance(data, list):
             return data
         else:
-            # Try to extract questions from the response
             questions = []
             for key, value in data.items():
                 if isinstance(value, dict) and "question_en" in value:
                     questions.append(value)
             
-            # If no questions found but we have numbered keys
             if not questions:
                 for key, value in data.items():
                     if isinstance(value, dict) and any(field in value for field in ["question", "question_en", "query"]):
@@ -402,10 +300,8 @@ def generate_questions_with_gpt4(prompt: str) -> List[Dict[str, Any]]:
         print(f"Error parsing GPT-4 response: {e}")
         print(f"Raw response:\n{response.choices[0].message.content}")
         
-        # Try a more lenient approach - look for any JSON-like structures
         content = response.choices[0].message.content
         try:
-            # Try to find and extract JSON-like patterns
             import re
             json_pattern = r'\{(?:[^{}]|(?:\{(?:[^{}]|(?:\{[^{}]*\}))*\}))*\}'
             matches = re.findall(json_pattern, content)
@@ -431,34 +327,20 @@ def generate_questions_with_gpt4(prompt: str) -> List[Dict[str, Any]]:
 def generate_synthetic_data(manual_type: str, output_path: str, 
                           questions_per_category: int = 3,
                           chunk_count: int = 5):
-    """
-    Generate synthetic evaluation dataset for a manual.
-    
-    Args:
-        manual_type: Either 'VM_manual' or 'wifi_manual'
-        output_path: Where to save the generated data
-        questions_per_category: Number of questions per category
-        chunk_count: Number of chunks to include in each prompt
-    """
-    # Load document chunks and figure metadata
     print(f"Loading chunks and metadata for {manual_type}...")
     chunks = load_document_chunks(manual_type)
     figures = load_figure_metadata(manual_type)
     
-    # Extract TOC
     toc = extract_toc(chunks)
     
     all_questions = []
     
-    # Generate questions for each category
     for category in QUESTION_CATEGORIES:
         print(f"Generating {questions_per_category} {category} questions...")
         
         for i in range(questions_per_category):
-            # Select random representative chunks for each question set
             selected_chunks = select_representative_chunks(chunks, count=chunk_count)
             
-            # Generate prompt
             prompt = generate_gpt4_prompt(
                 manual_type=manual_type,
                 toc=toc,
@@ -467,22 +349,18 @@ def generate_synthetic_data(manual_type: str, output_path: str,
                 category=category
             )
             
-            # Generate questions with GPT-4
             questions = generate_questions_with_gpt4(prompt)
             
-            # Add metadata and category
             for j, question in enumerate(questions):
                 question["id"] = f"{manual_type}_{category}_{i}_{j}"
                 question["category"] = category
                 question["manual_type"] = manual_type
                 
-                # Make sure relevant sections and figures are valid
                 if "relevant_sections" not in question:
                     question["relevant_sections"] = []
                 if "relevant_figures" not in question:
                     question["relevant_figures"] = []
                     
-                # Make sure language versions are present
                 if "question_en" not in question:
                     question["question_en"] = question.get("question", "")
                 if "question_it" not in question:
@@ -494,7 +372,6 @@ def generate_synthetic_data(manual_type: str, output_path: str,
                     
                 all_questions.append(question)
     
-    # Save to file
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump({"questions": all_questions}, f, indent=2, ensure_ascii=False)
@@ -533,7 +410,6 @@ def parse_args():
 if __name__ == "__main__":
     args = parse_args()
     
-    # Create output directory
     os.makedirs(args.output_dir, exist_ok=True)
     
     if args.manual_type == "both" or args.manual_type == "VM_manual":

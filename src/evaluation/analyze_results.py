@@ -1,5 +1,5 @@
 """
-Script to analyze existing evaluation results and generate final report.
+Script to analyze existing evaluation results and generate final report
 """
 
 import os
@@ -13,7 +13,6 @@ from scipy import stats
 import numpy as np
 
 def load_results(output_dir: str) -> List[Dict[str, Any]]:
-    """Load all evaluation results from the output directory."""
     results = []
     for filename in os.listdir(output_dir):
         if filename.endswith(".json") and not filename.startswith("comparison_"):
@@ -22,8 +21,6 @@ def load_results(output_dir: str) -> List[Dict[str, Any]]:
     return results
 
 def perform_statistical_tests(results: List[Dict[str, Any]], metric: str) -> Dict[str, Any]:
-    """Perform statistical tests comparing approaches."""
-    # Extract metric values for each approach
     approach_values = {}
     for result in results:
         approach = result["approach"]
@@ -33,7 +30,6 @@ def perform_statistical_tests(results: List[Dict[str, Any]], metric: str) -> Dic
                 values.append(float(result[manual]["overall_metrics"][metric]))
         approach_values[approach] = values
     
-    # Perform ANOVA if we have more than 2 approaches
     if len(approach_values) > 2:
         f_stat, p_value = stats.f_oneway(*[values for values in approach_values.values()])
         anova_result = {
@@ -44,7 +40,6 @@ def perform_statistical_tests(results: List[Dict[str, Any]], metric: str) -> Dic
     else:
         anova_result = None
     
-    # Perform pairwise t-tests
     pairwise_comparisons = {}
     approaches = list(approach_values.keys())
     for i in range(len(approaches)):
@@ -66,7 +61,6 @@ def perform_statistical_tests(results: List[Dict[str, Any]], metric: str) -> Dic
     }
 
 def analyze_errors(results: List[Dict[str, Any]]) -> Dict[str, Any]:
-    """Analyze error patterns across approaches."""
     error_categories = {
         "retrieval_failure": 0,
         "generation_failure": 0,
@@ -85,7 +79,6 @@ def analyze_errors(results: List[Dict[str, Any]]) -> Dict[str, Any]:
     return error_categories
 
 def calculate_cost_analysis(results: List[Dict[str, Any]]) -> Dict[str, Any]:
-    """Calculate cost analysis for each approach."""
     cost_analysis = {}
     
     for result in results:
@@ -97,28 +90,23 @@ def calculate_cost_analysis(results: List[Dict[str, Any]]) -> Dict[str, Any]:
             if "token_usage" in result[manual]:
                 tokens = result[manual]["token_usage"]
                 total_tokens += tokens.get("total", 0)
-                # Calculate cost based on token usage and model pricing
-                cost_per_1k_tokens = 0.002  # Example cost
+                cost_per_1k_tokens = 0.002  
                 total_cost += (tokens.get("total", 0) / 1000) * cost_per_1k_tokens
         
-        # Calculate questions per manual from the report structure
-        questions_per_manual = 20  # We know this from our evaluation setup
+        questions_per_manual = 15  # We know this from our evaluation setup
         
         cost_analysis[approach] = {
             "total_tokens": total_tokens,
             "total_cost": total_cost,
-            "cost_per_query": total_cost / (questions_per_manual * 2)  # 2 manuals
+            "cost_per_query": total_cost / (questions_per_manual * 2)  
         }
     
     return cost_analysis
 
 def generate_visualizations(results: List[Dict[str, Any]], output_dir: str) -> None:
-    """Generate visualizations of evaluation results."""
-    # Create visualization directory
     viz_dir = os.path.join(output_dir, "visualizations")
     os.makedirs(viz_dir, exist_ok=True)
     
-    # Prepare data for visualization
     metrics = [
         "average_retrieval_time", 
         "average_text_accuracy", 
@@ -134,7 +122,6 @@ def generate_visualizations(results: List[Dict[str, Any]], output_dir: str) -> N
     for result in results:
         approach = result["approach"]
         for manual in ["wifi_manual", "vm_manual"]:
-            # Add performance metrics
             for metric in ["average_retrieval_time", "average_text_accuracy", "average_image_accuracy"]:
                 if metric in result[manual]["overall_metrics"]:
                     data.append({
@@ -144,7 +131,6 @@ def generate_visualizations(results: List[Dict[str, Any]], output_dir: str) -> N
                         "value": result[manual]["overall_metrics"][metric]
                     })
             
-            # Add answer quality metrics
             if "average_answer_quality" in result[manual]["overall_metrics"]:
                 for quality_metric in ["semantic_accuracy", "technical_correctness", 
                                      "completeness", "clarity", "relevance"]:
@@ -157,7 +143,6 @@ def generate_visualizations(results: List[Dict[str, Any]], output_dir: str) -> N
     
     df = pd.DataFrame(data)
     
-    # Generate plots for performance metrics
     performance_metrics = ["average_retrieval_time", "average_text_accuracy", "average_image_accuracy"]
     plt.figure(figsize=(15, 5))
     for i, metric in enumerate(performance_metrics, 1):
@@ -182,28 +167,21 @@ def generate_visualizations(results: List[Dict[str, Any]], output_dir: str) -> N
     plt.close()
 
 def main():
-    """Analyze existing evaluation results and generate final report."""
     output_dir = "./evaluation_results"
     
-    # Load results
     results = load_results(output_dir)
     
-    # Perform statistical analysis
     metrics_to_test = ["average_retrieval_time", "average_text_accuracy", "average_image_accuracy"]
     statistical_results = {}
     for metric in metrics_to_test:
         statistical_results[metric] = perform_statistical_tests(results, metric)
     
-    # Analyze errors
     error_analysis = analyze_errors(results)
     
-    # Calculate costs
     cost_analysis = calculate_cost_analysis(results)
     
-    # Generate visualizations
     generate_visualizations(results, output_dir)
     
-    # Generate final comparison report
     comparison = {
         "approaches": [],
         "statistical_analysis": statistical_results,
@@ -234,7 +212,6 @@ def main():
         }
         comparison["approaches"].append(approach_data)
     
-    # Save comparison
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     comparison_file = f"{output_dir}/comparison_{timestamp}.json"
     
