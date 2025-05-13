@@ -13,6 +13,17 @@ from src.retrieval.base import RetrievalRecipe, retrieve
 from src.utils.language_id import detect_language
 from openai import OpenAI
 
+# ----------------------------------------------------------------------
+# Patch: ensure modern SQLite for Chroma even on older base images
+# ----------------------------------------------------------------------
+try:
+    import pysqlite3  # modern SQLite embedded wheels
+    import sys as _sys
+    _sys.modules["sqlite3"] = _sys.modules.pop("pysqlite3")
+except ModuleNotFoundError:
+    # Host already has recent sqlite3 or pysqlite3 not installed
+    pass
+
 # Set page config
 st.set_page_config(
     page_title="RAG Comparison",
