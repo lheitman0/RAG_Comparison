@@ -1,0 +1,443 @@
+{
+  "1_diagramma_logico_infrastruttura_wi-fi": {
+    "filename": "wifi_manual_figure_1_diagramma_logico_infrastruttura_wi-fi.png",
+    "figure_id": "Figura 1_diagramma_logico_infrastruttura_wi-fi",
+    "caption": "diagramma logico infrastruttura wi-fi",
+    "page": 6,
+    "image_page": 6,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "2_accesso_al_mobility_conductor": {
+    "filename": "wifi_manual_figure_2_accesso_al_mobility_conductor.png",
+    "figure_id": "Figura 2_accesso_al_mobility_conductor",
+    "caption": "accesso al 'mobility conductor'",
+    "page": 7,
+    "image_page": 7,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "3_schermata_principale_del_mobility_conductor": {
+    "filename": "wifi_manual_figure_3_schermata_principale_del_mobility_conductor.png",
+    "figure_id": "Figura 3_schermata_principale_del_mobility_conductor",
+    "caption": "schermata principale del 'mobility conductor'",
+    "page": 7,
+    "image_page": 7,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "4_reti_gestite": {
+    "filename": "wifi_manual_figure_4_reti_gestite.png",
+    "figure_id": "Figura 4_reti_gestite",
+    "caption": "reti gestite",
+    "page": 8,
+    "image_page": 8,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "5_statistiche_infrastruttura": {
+    "filename": "wifi_manual_figure_5_statistiche_infrastruttura.png",
+    "figure_id": "Figura 5_statistiche_infrastruttura",
+    "caption": "statistiche infrastruttura",
+    "page": 9,
+    "image_page": 9,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "6_dati_statistici_relativi_ad_uno_specifico_sito": {
+    "filename": "wifi_manual_figure_6_dati_statistici_relativi_ad_uno_specifico_sito.png",
+    "figure_id": "Figura 6_dati_statistici_relativi_ad_uno_specifico_sito",
+    "caption": "dati statistici relativi ad uno specifico sito",
+    "page": 10,
+    "image_page": 10,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "7_configuration_-_dettaglio": {
+    "filename": "wifi_manual_figure_7_configuration_-_dettaglio.png",
+    "figure_id": "Figura 7_configuration_-_dettaglio",
+    "caption": "configuration - dettaglio",
+    "page": 11,
+    "image_page": 11,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "8_dettaglio_wlan": {
+    "filename": "wifi_manual_figure_8_dettaglio_wlan.png",
+    "figure_id": "Figura 8_dettaglio_wlan",
+    "caption": "dettaglio wlan",
+    "page": 12,
+    "image_page": 12,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "9_dettaglio_vlans": {
+    "filename": "wifi_manual_figure_9_dettaglio_vlans.png",
+    "figure_id": "Figura 9_dettaglio_vlans",
+    "caption": "dettaglio vlans",
+    "page": 13,
+    "image_page": 13,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "10_dettaglio_security": {
+    "filename": "wifi_manual_figure_10_dettaglio_security.png",
+    "figure_id": "Figura 10_dettaglio_security",
+    "caption": "dettaglio security",
+    "page": 14,
+    "image_page": 14,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "11_dettaglio_access": {
+    "filename": "wifi_manual_figure_11_dettaglio_access.png",
+    "figure_id": "Figura 11_dettaglio_access",
+    "caption": "dettaglio access",
+    "page": 15,
+    "image_page": 15,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "12_roles__policies": {
+    "filename": "wifi_manual_figure_12_roles__policies.png",
+    "figure_id": "Figura 12_roles__policies",
+    "caption": "roles & policies",
+    "page": 16,
+    "image_page": 16,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "13_dettaglio_roles": {
+    "filename": "wifi_manual_figure_13_dettaglio_roles.png",
+    "figure_id": "Figura 13_dettaglio_roles",
+    "caption": "dettaglio roles",
+    "page": 17,
+    "image_page": 17,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "14_dettaglio_policies": {
+    "filename": "wifi_manual_figure_14_dettaglio_policies.png",
+    "figure_id": "Figura 14_dettaglio_policies",
+    "caption": "dettaglio policies",
+    "page": 17,
+    "image_page": 17,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "15_dettaglio_applications": {
+    "filename": "wifi_manual_figure_15_dettaglio_applications.png",
+    "figure_id": "Figura 15_dettaglio_applications",
+    "caption": "dettaglio applications",
+    "page": 18,
+    "image_page": 18,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "16_dettaglio_aliases": {
+    "filename": "wifi_manual_figure_16_dettaglio_aliases.png",
+    "figure_id": "Figura 16_dettaglio_aliases",
+    "caption": "dettaglio aliases",
+    "page": 18,
+    "image_page": 18,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "17_elenco_access_point": {
+    "filename": "wifi_manual_figure_17_elenco_access_point.png",
+    "figure_id": "Figura 17_elenco_access_point",
+    "caption": "elenco access point",
+    "page": 19,
+    "image_page": 19,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "18_dettaglio_access_point": {
+    "filename": "wifi_manual_figure_18_dettaglio_access_point.png",
+    "figure_id": "Figura 18_dettaglio_access_point",
+    "caption": "dettaglio access point",
+    "page": 20,
+    "image_page": 20,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "19_elenco_ap_groups": {
+    "filename": "wifi_manual_figure_19_elenco_ap_groups.png",
+    "figure_id": "Figura 19_elenco_ap_groups",
+    "caption": "elenco ap groups",
+    "page": 22,
+    "image_page": 22,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "20_authentication": {
+    "filename": "wifi_manual_figure_20_authentication.png",
+    "figure_id": "Figura 20_authentication",
+    "caption": "authentication",
+    "page": 23,
+    "image_page": 23,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "21_dettaglio_auth_servers": {
+    "filename": "wifi_manual_figure_21_dettaglio_auth_servers.png",
+    "figure_id": "Figura 21_dettaglio_auth_servers",
+    "caption": "dettaglio auth servers",
+    "page": 24,
+    "image_page": 24,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "22_dettagli_server_group__tab_servers": {
+    "filename": "wifi_manual_figure_22_dettagli_server_group__tab_servers.png",
+    "figure_id": "Figura 22_dettagli_server_group__tab_servers",
+    "caption": "dettagli server group – tab servers",
+    "page": 25,
+    "image_page": 25,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "23_dettaglio_server_radius_-_1": {
+    "filename": "wifi_manual_figure_23_dettaglio_server_radius_-_1.png",
+    "figure_id": "Figura 23_dettaglio_server_radius_-_1",
+    "caption": "dettaglio server radius - 1",
+    "page": 25,
+    "image_page": 25,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "24_dettaglio_server_radius_-_2": {
+    "filename": "wifi_manual_figure_24_dettaglio_server_radius_-_2.png",
+    "figure_id": "Figura 24_dettaglio_server_radius_-_2",
+    "caption": "dettaglio server radius - 2",
+    "page": 26,
+    "image_page": 26,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "25_dettaglio_server_radius_-_3": {
+    "filename": "wifi_manual_figure_25_dettaglio_server_radius_-_3.png",
+    "figure_id": "Figura 25_dettaglio_server_radius_-_3",
+    "caption": "dettaglio server radius - 3",
+    "page": 26,
+    "image_page": 26,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "26_services": {
+    "filename": "wifi_manual_figure_26_services.png",
+    "figure_id": "Figura 26_services",
+    "caption": "services",
+    "page": 27,
+    "image_page": 27,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "27_interfaces": {
+    "filename": "wifi_manual_figure_27_interfaces.png",
+    "figure_id": "Figura 27_interfaces",
+    "caption": "interfaces",
+    "page": 28,
+    "image_page": 28,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "28_controllers": {
+    "filename": "wifi_manual_figure_28_controllers.png",
+    "figure_id": "Figura 28_controllers",
+    "caption": "controllers",
+    "page": 29,
+    "image_page": 29,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "29_system": {
+    "filename": "wifi_manual_figure_29_system.png",
+    "figure_id": "Figura 29_system",
+    "caption": "system",
+    "page": 29,
+    "image_page": 29,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "30_tasks": {
+    "filename": "wifi_manual_figure_30_tasks.png",
+    "figure_id": "Figura 30_tasks",
+    "caption": "tasks",
+    "page": 30,
+    "image_page": 30,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "31_redundancy": {
+    "filename": "wifi_manual_figure_31_redundancy.png",
+    "figure_id": "Figura 31_redundancy",
+    "caption": "redundancy",
+    "page": 31,
+    "image_page": 31,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "32_iot": {
+    "filename": "wifi_manual_figure_32_iot.png",
+    "figure_id": "Figura 32_iot",
+    "caption": "iot",
+    "page": 32,
+    "image_page": 32,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "33_aggiunta_nuovo_access_point": {
+    "filename": "wifi_manual_figure_33_aggiunta_nuovo_access_point.png",
+    "figure_id": "Figura 33_aggiunta_nuovo_access_point",
+    "caption": "aggiunta nuovo access point",
+    "page": 33,
+    "image_page": 33,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "34_pannello_di_controllo": {
+    "filename": "wifi_manual_figure_34_pannello_di_controllo.png",
+    "figure_id": "Figura 34_pannello_di_controllo",
+    "caption": "pannello di controllo",
+    "page": 34,
+    "image_page": 34,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "35_centro_connessioni_di_rete_e_condivisione": {
+    "filename": "wifi_manual_figure_35_centro_connessioni_di_rete_e_condivisione.png",
+    "figure_id": "Figura 35_centro_connessioni_di_rete_e_condivisione",
+    "caption": "centro connessioni di rete e condivisione",
+    "page": 34,
+    "image_page": 34,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "36_configura_connessione_o_rete": {
+    "filename": "wifi_manual_figure_36_configura_connessione_o_rete.png",
+    "figure_id": "Figura 36_configura_connessione_o_rete",
+    "caption": "configura connessione o rete",
+    "page": 36,
+    "image_page": 36,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "37_connetti_manualmente_a_una_rete_wireless": {
+    "filename": "wifi_manual_figure_37_connetti_manualmente_a_una_rete_wireless.png",
+    "figure_id": "Figura 37_connetti_manualmente_a_una_rete_wireless",
+    "caption": "connetti manualmente a una rete wireless",
+    "page": 37,
+    "image_page": 37,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "38_aggiunta_di_asugi_test4_completata": {
+    "filename": "wifi_manual_figure_38_aggiunta_di_asugi_test4_completata.png",
+    "figure_id": "Figura 38_aggiunta_di_asugi_test4_completata",
+    "caption": "aggiunta di asugi_test4 completata",
+    "page": 38,
+    "image_page": 38,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "39_proprietà_rete_wireless_-_connessione": {
+    "filename": "wifi_manual_figure_39_proprietà_rete_wireless_-_connessione.png",
+    "figure_id": "Figura 39_proprietà_rete_wireless_-_connessione",
+    "caption": "proprietà rete wireless - connessione",
+    "page": 39,
+    "image_page": 39,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "40_proprietà_rete_wireless_-_sicurezza": {
+    "filename": "wifi_manual_figure_40_proprietà_rete_wireless_-_sicurezza.png",
+    "figure_id": "Figura 40_proprietà_rete_wireless_-_sicurezza",
+    "caption": "proprietà rete wireless - sicurezza",
+    "page": 40,
+    "image_page": 40,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "41_proprietà_peap": {
+    "filename": "wifi_manual_figure_41_proprietà_peap.png",
+    "figure_id": "Figura 41_proprietà_peap",
+    "caption": "proprietà peap",
+    "page": 41,
+    "image_page": 41,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "42_proprietà_smart_card_o_altro_certificato": {
+    "filename": "wifi_manual_figure_42_proprietà_smart_card_o_altro_certificato.png",
+    "figure_id": "Figura 42_proprietà_smart_card_o_altro_certificato",
+    "caption": "proprietà smart card o altro certificato",
+    "page": 42,
+    "image_page": 42,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "43_configurazione_selezione_certificati": {
+    "filename": "wifi_manual_figure_43_configurazione_selezione_certificati.png",
+    "figure_id": "Figura 43_configurazione_selezione_certificati",
+    "caption": "configurazione selezione certificati",
+    "page": 43,
+    "image_page": 43,
+    "rendered": false,
+    "source": "embedded_image_fallback"
+  },
+  "44_impostazioni_avanzate__8021x": {
+    "filename": "wifi_manual_figure_44_impostazioni_avanzate__8021x.png",
+    "figure_id": "Figura 44_impostazioni_avanzate__8021x",
+    "caption": "impostazioni avanzate – 802.1x",
+    "page": 44,
+    "image_page": 44,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "45_impostazioni_avanzate__80211": {
+    "filename": "wifi_manual_figure_45_impostazioni_avanzate__80211.png",
+    "figure_id": "Figura 45_impostazioni_avanzate__80211",
+    "caption": "impostazioni avanzate – 802.11",
+    "page": 45,
+    "image_page": 45,
+    "rendered": false,
+    "source": "embedded_image_fallback"
+  },
+  "46_dashboard_-_overview": {
+    "filename": "wifi_manual_figure_46_dashboard_-_overview.png",
+    "figure_id": "Figura 46_dashboard_-_overview",
+    "caption": "dashboard - overview",
+    "page": 46,
+    "image_page": 46,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "47_dashboard_-_overview_-_client": {
+    "filename": "wifi_manual_figure_47_dashboard_-_overview_-_client.png",
+    "figure_id": "Figura 47_dashboard_-_overview_-_client",
+    "caption": "dashboard - overview - client",
+    "page": 46,
+    "image_page": 46,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "48_dashboard_-_overview_-_client_-_dettaglio": {
+    "filename": "wifi_manual_figure_48_dashboard_-_overview_-_client_-_dettaglio.png",
+    "figure_id": "Figura 48_dashboard_-_overview_-_client_-_dettaglio",
+    "caption": "dashboard - overview - client - dettaglio",
+    "page": 47,
+    "image_page": 47,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "49_dashboard_-_overview_-_wlans": {
+    "filename": "wifi_manual_figure_49_dashboard_-_overview_-_wlans.png",
+    "figure_id": "Figura 49_dashboard_-_overview_-_wlans",
+    "caption": "dashboard - overview - wlans",
+    "page": 48,
+    "image_page": 48,
+    "rendered": true,
+    "source": "vector_box_crop"
+  }
+}

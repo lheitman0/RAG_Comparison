@@ -1,0 +1,2443 @@
+[
+  {
+    "section_id": "5.4.1.1.6",
+    "section_title": "NAT",
+    "page_range": "47-48",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL > PROFILI",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "#### 5.4.1.1.7.1.SERVIZI DNS\n\nFigura 69 - VMWare NSX – DNS – Servizi DNS\n\nSono presenti nella griglia i seguenti campi:\n\n- Nome\n\n- Gateway\n- IP servizio DNS\n- Zona DNS predefinita\n- Zona FQDN\n- Stato\n\nFigura 69 - VMWare NSX – DNS – Servizi DNS – Configurazione DNS\n\nNon vi sono servizi DNS configurati a livello di NSX.\n\nNOTA BENE:\n- I servizi DNS vengono forniti nel contesto dell'Active Directory.\n- Tipicamente i servizi DNS vengono configurati manualmente sia per le VM collegate al dominio che per le VM non collegate al dominio.\n\n### 5.4.1.1.7.2.ZONE DNS\n\n##### 5.4.1.1.8 SICUREZZA\n\nNello specifico sono di nostro interesse le funzionalità accessibili cliccando sul tab 'Sicurezza':\n\nFigura 70 - VMWare NSX - Sicurezza\n\nL'alert che appare è del tutto regolare e specifica come le funzionalità IDS/IPS non siano attive in VMWare NSX.\n\nSulla sinistra sono disponibili varie funzionalità, l'unica rilevante per le finalità di questo documento è 'Firewall gateway'.",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > PROFILI > NAT', covers DNS services and security features within the VMware NSX environment. It details the DNS service fields such as name, gateway, DNS service IP, default DNS zone, FQDN zone, and status, noting that no DNS services are configured at the NSX level. The section emphasizes manual DNS configuration for both domain-connected and non-domain-connected VMs, typically provided in the context of Active Directory. Additionally, it discusses the security tab in VMware NSX, highlighting that IDS/IPS features are not active, with a focus on the 'Firewall gateway' feature. The content is supported by figures illustrating DNS services, DNS configuration, and security features in VMware NSX.",
+    "figures": [
+      {
+        "figure_id": "Figura_69_vmware_nsx__dns__servizi_dns",
+        "filename": "VM_manual_figure_69_vmware_nsx__dns__servizi_dns.png",
+        "caption": "Vmware nsx – dns – servizi dns",
+        "page": 48
+      },
+      {
+        "figure_id": "Figura_69_vmware_nsx__dns__servizi_dns__configurazione_dns",
+        "filename": "VM_manual_figure_69_vmware_nsx__dns__servizi_dns__configurazione_dns.png",
+        "caption": "Vmware nsx – dns – servizi dns – configurazione dns",
+        "page": 49
+      },
+      {
+        "figure_id": "Figura_70_vmware_nsx_-_sicurezza",
+        "filename": "VM_manual_figure_70_vmware_nsx_-_sicurezza.png",
+        "caption": "Vmware nsx - sicurezza",
+        "page": 50
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.6",
+      "original_page_numbers": [
+        47,
+        48
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.1.",
+    "section_title": "CREAZIONE VM",
+    "page_range": "58",
+    "parent_path": "MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "### 5.5.3.3. ESPANSIONE DISCO DI SISTEMA",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM > CREAZIONE VM', focuses on the process of creating a virtual machine (VM). It outlines the necessary steps for VM creation, configuration settings, and troubleshooting tips. The section likely includes figures to illustrate the setup process and configuration options, enhancing understanding and aiding in effective VM setup.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.1.",
+      "original_page_numbers": [
+        58
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.1.1.",
+    "section_title": "ACCESSO A CLOUD MANAGER",
+    "page_range": "58",
+    "parent_path": "MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM > CREAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "### 5.5.3.4. AGGIORNAMENTO SISTEMA OPERATIVO\n\n#### 5.5.3.4.1. VERIFICA SU CONSOLE WSUS",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM > CREAZIONE VM > ACCESSO A CLOUD MANAGER', details the steps involved in creating a virtual machine (VM) and accessing the Cloud Manager. It includes procedures for system updates and verification through the WSUS console, outlining necessary configuration steps and troubleshooting advice. Figures, if present, likely illustrate the process flow and critical points in the VM creation and system update process.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.1.1.",
+      "original_page_numbers": [
+        58
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.1.2.",
+    "section_title": "SELEZIONE SISTEMA OPERATIVO",
+    "page_range": "58",
+    "parent_path": "MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM > CREAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "#### 5.5.3.4.2. AGGIORNAMENTO E PATCHING\n\n### 5.5.3.5. INSTALLAZIONE ANTIVIRUS",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM > CREAZIONE VM > SELEZIONE SISTEMA OPERATIVO', guides users through the process of selecting an operating system during the virtual machine (VM) creation process. It likely includes steps for configuring the VM, selecting the appropriate OS, and possibly troubleshooting common issues. Figures, if included, would typically illustrate the selection interface or provide step-by-step guidance on the setup process.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.1.2.",
+      "original_page_numbers": [
+        58
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.1.3.",
+    "section_title": "SELEZIONE T-SHIRT",
+    "page_range": "58-59",
+    "parent_path": "MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM > CREAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "#### 5.5.3.5.1. VERIFICA FUNZIONAMENTO SU CONSOLE ANTIVIRUS\n\n5.5.4.",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM > CREAZIONE VM > SELEZIONE T-SHIRT' in the technical manual outlines the process of selecting a T-shirt size configuration during the virtual machine (VM) creation process. It includes steps for verifying the functionality on the antivirus console, as indicated by the sub-section 'VERIFICA FUNZIONAMENTO SU CONSOLE ANTIVIRUS'. This section likely contains detailed steps for configuration and troubleshooting, and may include figures to illustrate the process or highlight important configurations on the antivirus console.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.1.3.",
+      "original_page_numbers": [
+        58,
+        59
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.1.4.",
+    "section_title": "VERIFICA CAPIENZA",
+    "page_range": "59",
+    "parent_path": "MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "## 6. APPENDICE 1 – CRITERI DI ASSEGNAZIONE DEGLI INDIRIZZI IP",
+    "content_summary": "This section, titled 'MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM > VERIFICA CAPIENZA', outlines the steps for verifying the capacity of resources before creating a virtual machine (VM). It includes configuration steps for assessing available system resources and troubleshooting tips if the capacity is insufficient. The section may also contain figures illustrating the process or system configurations, aiding in better understanding and visualization of the verification process.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.1.4.",
+      "original_page_numbers": [
+        59
+      ],
+      "language": "Italian",
+      "section_type": "verification",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.1.5.",
+    "section_title": "DISCHI AGGIUNTIVI",
+    "page_range": "59",
+    "parent_path": "MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "### 6.1. SEGMENTI DI RETE\n\nNello IaaS INSIEL sono presenti: due segmenti di rete:",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM > DISCHI AGGIUNTIVI' in a technical manual outlines the steps for adding additional disks to a virtual machine (VM) as part of the VM creation process. It includes configuration steps, troubleshooting tips, and mentions specific systems involved in the process. Figures, if included, likely illustrate the disk addition workflow or provide visual aids for configuration steps.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.1.5.",
+      "original_page_numbers": [
+        59
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.1.6.",
+    "section_title": "ESPANSIONE DISCO DI SISTEMA",
+    "page_range": "59",
+    "parent_path": "MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- asugi - 10.128.188.0 /22: Segmento di rete di produzione.",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM > ESPANSIONE DISCO DI SISTEMA' in the technical manual discusses the procedures for expanding the system disk in a virtual machine (VM) creation process. It includes details on network segment configurations specifically for the production network, identified by the IP range 10.128.188.0/22. The section likely contains steps for configuring the VM's system disk expansion, troubleshooting tips, and possibly figures illustrating the configuration process.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.1.6.",
+      "original_page_numbers": [
+        59
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.1.7.",
+    "section_title": "CAMBIO DENOMINAZIONE VM",
+    "page_range": "59",
+    "parent_path": "MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- test-asugi - 10.128.186.0 /24: Segmento di rete per attività di test.\n\nNello IaaS INSIEL, vengono create macchine virtuali che possiamo suddividere in tre macrocategorie:",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM > CAMBIO DENOMINAZIONE VM', outlines the process for renaming virtual machines (VMs) within the IaaS INSIEL framework. It details the network segment (10.128.186.0/24) designated for testing activities and categorizes VMs into three broad types. The section is essential for users needing to configure or troubleshoot VM naming conventions and provides a structured approach to managing VM identities in a test environment.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.1.7.",
+      "original_page_numbers": [
+        59
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.1.8.",
+    "section_title": "PRIMO ACCESSO ALLA VM",
+    "page_range": "59",
+    "parent_path": "MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- Server in dominio per servizi dedicati ai PC e/o dispositivi medici.",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM > PRIMO ACCESSO ALLA VM' in the technical manual outlines the initial access procedures for a newly created virtual machine (VM). It details the server configurations within a domain dedicated to services for PCs and/or medical devices. The section is essential for users setting up or accessing VMs for the first time, providing necessary configuration steps and system information. No figures are mentioned in the provided content.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.1.8.",
+      "original_page_numbers": [
+        59
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.2.",
+    "section_title": "REGOLE FIREWALL",
+    "page_range": "59",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- Server per servizi dedicati alla gestione della rete (in dominio e non).\n\n- Server non in dominio.",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > REGOLE FIREWALL' in the technical manual discusses the configuration and management of firewall rules for servers within and outside of domain networks. It highlights the different setups required for domain-managed network servers and servers not managed by a domain. The section aims to guide IT professionals in securing network services by properly configuring firewall rules. No figures are mentioned as part of this section.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.2.",
+      "original_page_numbers": [
+        59
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.2.1.",
+    "section_title": "ACCESSO A NSX",
+    "page_range": "59",
+    "parent_path": "MODALITÀ ESECUTIVE > REGOLE FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Queste tre tipologie di macchine devono essere raggiunte da sorgenti diverse e devono raggiungere destinazioni diverse, motivo per cui si è deciso di dividere virtualmente il segmento in produzione in modo da agevolare la creazione di regole di firewalling sulle macchine Fortigate. Per creare le regole lato Fortigate si è scelto di usare oggetti Address di tipo \"IP RANGE\" ovvero intervalli di indirizzi contigui di una rete, soluzione più coerente con le logiche di NSX, rispetto ad un più tradizionale subnetting.\n\n### 6.2. RANGE DI IP DEDICATI PER TIPOLOGIA DI SERVIZIO",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > REGOLE FIREWALL > ACCESSO A NSX', focuses on the configuration of firewall rules for different types of machines within a network segment using Fortigate. It explains the decision to use 'IP RANGE' address objects to facilitate rule creation, aligning with NSX logic over traditional subnetting. The section also discusses the division of the production segment to manage access for various source and destination requirements. No figures are mentioned in the provided excerpt.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.2.1.",
+      "original_page_numbers": [
+        59
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.2.2.",
+    "section_title": "CONFIGURAZIONE REGOLE",
+    "page_range": "59",
+    "parent_path": "MODALITÀ ESECUTIVE > REGOLE FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- Server in dominio per servizi dedicati ai PC e/o dispositivi medici:\n- IP Range: 10.128.188.2 - 10.128.189.255",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > REGOLE FIREWALL > CONFIGURAZIONE REGOLE', focuses on configuring firewall rules for servers within a specific domain dedicated to PCs and/or medical devices. It details the IP range from 10.128.188.2 to 10.128.189.255 for these servers. The section likely includes steps for setting up firewall rules, troubleshooting tips, and may reference figures illustrating the configuration process.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.2.2.",
+      "original_page_numbers": [
+        59
+      ],
+      "language": "Italian",
+      "section_type": "configuration",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.2.3.",
+    "section_title": "PROBLEMI DI RETE",
+    "page_range": "59",
+    "parent_path": "MODALITÀ ESECUTIVE > REGOLE FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- Server per servizi dedicati alla gestione della rete (in dominio e non):",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > REGOLE FIREWALL > PROBLEMI DI RETE', focuses on network issues related to firewall rules in executive modes. It discusses servers used for dedicated network management services, both within and outside of domain environments. The section is likely to include configuration steps for setting up and troubleshooting these servers in relation to firewall rules, although specific figures or diagrams are not mentioned in the provided excerpt.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.2.3.",
+      "original_page_numbers": [
+        59
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.3.",
+    "section_title": "CONFIGURAZIONE VM",
+    "page_range": "59",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- IP Range: 10.128.190.0 - 10.128.190.127",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CONFIGURAZIONE VM' in the technical manual provides guidance on configuring virtual machines (VMs). It specifies the IP range to be used for VMs, which is 10.128.190.0 to 10.128.190.127. This section is crucial for setting up network parameters within virtual environments. No troubleshooting steps or figures are mentioned.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.3.",
+      "original_page_numbers": [
+        59
+      ],
+      "language": "Italian",
+      "section_type": "configuration",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.3.1.",
+    "section_title": "MODIFICA NOME HOST",
+    "page_range": "59",
+    "parent_path": "MODALITÀ ESECUTIVE > CONFIGURAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- Server non in dominio:\n- IP Range: 10.128.190.128 - 10.128.190.254",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CONFIGURAZIONE VM > MODIFICA NOME HOST', guides users on how to change the hostname of a virtual machine (VM) that is not part of a domain. It specifies the IP range 10.128.190.128 to 10.128.190.254 for the server. The section is likely to include configuration steps and possibly troubleshooting information for hostname modification on VMs.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.3.1.",
+      "original_page_numbers": [
+        59
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.3.1.1.",
+    "section_title": "MICROSOFT WINDOWS SERVER",
+    "page_range": "59",
+    "parent_path": "MODALITÀ ESECUTIVE > CONFIGURAZIONE VM > MODIFICA NOME HOST",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "",
+    "content_summary": "This section of the technical manual provides instructions on how to change the hostname on a Microsoft Windows Server within a virtual machine (VM) environment. It outlines the necessary steps for accessing system settings, using administrative tools, and applying the new hostname. The section also includes troubleshooting tips for common issues that may arise during the hostname modification process. Additionally, figures are included to visually guide users through the configuration steps, enhancing understanding and ease of implementation.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.3.1.1.",
+      "original_page_numbers": [
+        59
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.3.1.2.",
+    "section_title": "LINUX",
+    "page_range": "59-60",
+    "parent_path": "MODALITÀ ESECUTIVE > CONFIGURAZIONE VM > MODIFICA NOME HOST",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "## 7. APPENDICE 2 – NAMING CONVENTION",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CONFIGURAZIONE VM > MODIFICA NOME HOST > LINUX', provides guidelines on how to change the hostname of a Linux virtual machine (VM). It includes step-by-step configuration instructions, troubleshooting tips, and references to system-specific considerations. Figures included in the section help illustrate the process and clarify complex steps.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.3.1.2.",
+      "original_page_numbers": [
+        59,
+        60
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.3.2.",
+    "section_title": "AGGIUNTA A DOMINIO",
+    "page_range": "60",
+    "parent_path": "MODALITÀ ESECUTIVE > CONFIGURAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CONFIGURAZIONE VM > AGGIUNTA A DOMINIO' in the technical manual provides detailed instructions on how to configure a virtual machine (VM) for addition to a domain. It outlines step-by-step procedures for setting up the VM, adjusting its settings to meet domain requirements, and troubleshooting common issues that may arise during the process. The section also includes figures that visually guide the user through the configuration interface and illustrate key steps, enhancing understanding and aiding in accurate setup.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.3.2.",
+      "original_page_numbers": [
+        60
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.3.3.",
+    "section_title": "ESPANSIONE DISCO DI SISTEMA",
+    "page_range": "60",
+    "parent_path": "MODALITÀ ESECUTIVE > CONFIGURAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "## 7.1. NOMI MACCHINE VIRTUALI",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CONFIGURAZIONE VM > ESPANSIONE DISCO DI SISTEMA' in the technical manual provides guidelines on configuring virtual machines, specifically focusing on expanding the system disk. It includes steps for configuration, potential troubleshooting advice, and may reference relevant systems or figures to aid understanding.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.3.3.",
+      "original_page_numbers": [
+        60
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.3.4.",
+    "section_title": "AGGIORNAMENTO SISTEMA OPERATIVO",
+    "page_range": "60",
+    "parent_path": "MODALITÀ ESECUTIVE > CONFIGURAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Analogamente a quanto previsto per le sedi di Maggiore e Cattinara, useremo la seguente sintassi: 0Innnnn.",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CONFIGURAZIONE VM > AGGIORNAMENTO SISTEMA OPERATIVO', deals with the procedures for updating the operating system in a virtual machine (VM) environment. It outlines specific syntax and configurations similar to those used at the Maggiore and Cattinara sites, using the syntax '0Innnnn'. The section likely includes steps for configuration and possibly troubleshooting, although these are not detailed in the provided text. Figures or diagrams, if included, would typically serve to illustrate the configuration steps or the syntax application.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.3.4.",
+      "original_page_numbers": [
+        60
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.3.4.1.",
+    "section_title": "VERIFICA SU CONSOLE WSUS",
+    "page_range": "60",
+    "parent_path": "MODALITÀ ESECUTIVE > CONFIGURAZIONE VM > AGGIORNAMENTO SISTEMA OPERATIVO",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Es.: 0I0000",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CONFIGURAZIONE VM > AGGIORNAMENTO SISTEMA OPERATIVO > VERIFICA SU CONSOLE WSUS', details the procedures for updating the operating system of a virtual machine (VM) through the WSUS (Windows Server Update Services) console. It includes steps for configuring the VM to connect to the WSUS, instructions for checking and applying updates, and troubleshooting tips for common issues encountered during the update process. The section may also contain figures illustrating the configuration settings and update steps, aiding in visual understanding of the process.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.3.4.1.",
+      "original_page_numbers": [
+        60
+      ],
+      "language": "Italian",
+      "section_type": "verification",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.3.4.2.",
+    "section_title": "AGGIORNAMENTO E PATCHING",
+    "page_range": "60",
+    "parent_path": "MODALITÀ ESECUTIVE > CONFIGURAZIONE VM > AGGIORNAMENTO SISTEMA OPERATIVO",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "## 7.2. NOMI GRUPPI",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CONFIGURAZIONE VM > AGGIORNAMENTO SISTEMA OPERATIVO > AGGIORNAMENTO E PATCHING' in the technical manual is dedicated to explaining the procedures for updating and patching the operating system within a virtual machine (VM) environment. It provides detailed steps for configuration, the necessary troubleshooting tips, and mentions the systems involved. The section likely includes figures to illustrate the process and enhance understanding of the configurations and updates.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.3.4.2.",
+      "original_page_numbers": [
+        60
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.3.5.",
+    "section_title": "INSTALLAZIONE ANTIVIRUS",
+    "page_range": "60",
+    "parent_path": "MODALITÀ ESECUTIVE > CONFIGURAZIONE VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Per i nomi dei gruppi valgono le seguenti regole:",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CONFIGURAZIONE VM > INSTALLAZIONE ANTIVIRUS' in the technical manual provides guidelines for configuring virtual machines (VMs) for antivirus installation. It outlines the necessary steps for setting up and troubleshooting the antivirus software within a VM environment. The section also includes rules for naming conventions within the VM setup. Figures, if present, likely illustrate the configuration process or provide visual aids for better understanding the setup procedures.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.3.5.",
+      "original_page_numbers": [
+        60
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5.3.5.1.",
+    "section_title": "VERIFICA FUNZIONAMENTO SU CONSOLE ANTIVIRUS",
+    "page_range": "60-61",
+    "parent_path": "MODALITÀ ESECUTIVE > CONFIGURAZIONE VM > INSTALLAZIONE ANTIVIRUS",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- Se il criterio di appartenenza al gruppo è una subnet, allora si userà la sintassi:\n- _ASUGI [NOME SEDE]_[NOME RETE_INDIRIZZO DI RETE]_M[CIDR]\n- Es.: _ASUGI MAGGIORE_VLAN600_10.19.48.0_M20\n\n- Per tutti gli altri gruppi si userà la sintassi:\n- _ASUGI [NOME SERVIZIO]\n- Es.: _ASUGI INTERNAL\n\nL'underscore all'inizio serve solo per ordinare gli oggetti, mettendo in cima gli oggetti creati da noi.",
+    "content_summary": "This section of the manual details the configuration and operational verification of antivirus software on a VM console. It explains the syntax for group membership criteria based on subnets and other categories, using specific naming conventions to organize objects effectively. The section includes examples of syntax for both subnet-based and service-based groupings, highlighting the use of an underscore at the beginning of names to prioritize custom-created objects in listings.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5.3.5.1.",
+      "original_page_numbers": [
+        60,
+        61
+      ],
+      "language": "Italian",
+      "section_type": "verification",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "6.",
+    "section_title": "APPENDICE 1 – CRITERI DI ASSEGNAZIONE DEGLI INDIRIZZI IP",
+    "page_range": "61",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "The section titled 'MODALITÀ ESECUTIVE > APPENDICE 1 – CRITERI DI ASSEGNAZIONE DEGLI INDIRIZZI IP' in the technical manual outlines the criteria and procedures for assigning IP addresses. It includes configuration steps, troubleshooting guidelines, and mentions the systems involved. Figures, if included, likely provide visual aids or flowcharts to support the understanding of the IP address assignment process.",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > APPENDICE 1 – CRITERI DI ASSEGNAZIONE DEGLI INDIRIZZI IP' in the technical manual outlines the criteria and procedures for assigning IP addresses. It includes configuration steps, troubleshooting guidelines, and mentions the systems involved. Figures, if included, likely provide visual aids or flowcharts to support the understanding of the IP address assignment process.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "6.",
+      "original_page_numbers": [
+        61
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "reference",
+      "original_content": "The section titled 'MODALITÀ ESECUTIVE > APPENDICE 1 – CRITERI DI ASSEGNAZIONE DEGLI INDIRIZZI IP' in the technical manual outlines the criteria and procedures for assigning IP addresses. It includes configuration steps, troubleshooting guidelines, and mentions the systems involved. Figures, if included, likely provide visual aids or flowcharts to support the understanding of the IP address assignment process."
+    }
+  },
+  {
+    "section_id": "6.1.",
+    "section_title": "SEGMENTI DI RETE",
+    "page_range": "61",
+    "parent_path": "MODALITÀ ESECUTIVE > APPENDICE 1 – CRITERI DI ASSEGNAZIONE DEGLI INDIRIZZI IP",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "This section of the technical manual, titled 'Modalità Esecutive > Appendice 1 – Criteri di Assegnazione degli Indirizzi IP > Segmenti di Rete', outlines the procedures and criteria for IP address allocation and network segmentation. It specifies the need to update various data elements as changes occur, including device versions, related external documentation, contact references for troubleshooting, and any other relevant modifications. The section also includes references to VMware products like vSphere, NSX, and Aria, providing links to their documentation for further details.",
+    "content_summary": "This section of the technical manual, titled 'Modalità Esecutive > Appendice 1 – Criteri di Assegnazione degli Indirizzi IP > Segmenti di Rete', outlines the procedures and criteria for IP address allocation and network segmentation. It specifies the need to update various data elements as changes occur, including device versions, related external documentation, contact references for troubleshooting, and any other relevant modifications. The section also includes references to VMware products like vSphere, NSX, and Aria, providing links to their documentation for further details.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "6.1.",
+      "original_page_numbers": [
+        61
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "reference",
+      "original_content": "This section of the technical manual, titled 'Modalità Esecutive > Appendice 1 – Criteri di Assegnazione degli Indirizzi IP > Segmenti di Rete', outlines the procedures and criteria for IP address allocation and network segmentation. It specifies the need to update various data elements as changes occur, including device versions, related external documentation, contact references for troubleshooting, and any other relevant modifications. The section also includes references to VMware products like vSphere, NSX, and Aria, providing links to their documentation for further details."
+    }
+  },
+  {
+    "section_id": "6.2.",
+    "section_title": "RANGE DI IP DEDICATI PER TIPOLOGIA DI SERVIZIO",
+    "page_range": "61",
+    "parent_path": "MODALITÀ ESECUTIVE > APPENDICE 1 – CRITERI DI ASSEGNAZIONE DEGLI INDIRIZZI IP",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > APPENDICE 1 – CRITERI DI ASSEGNAZIONE DEGLI INDIRIZZI IP > RANGE DI IP DEDICATI PER TIPOLOGIA DI SERVIZIO', covers the criteria and guidelines for assigning IP address ranges based on service type. It includes references to VMware Aria Automation documentation and other related resources, providing a detailed framework for IP address allocation in various service categories. The section does not contain any figures, troubleshooting, or specific configuration steps, but links to external documents for further information.",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > APPENDICE 1 – CRITERI DI ASSEGNAZIONE DEGLI INDIRIZZI IP > RANGE DI IP DEDICATI PER TIPOLOGIA DI SERVIZIO', covers the criteria and guidelines for assigning IP address ranges based on service type. It includes references to VMware Aria Automation documentation and other related resources, providing a detailed framework for IP address allocation in various service categories. The section does not contain any figures, troubleshooting, or specific configuration steps, but links to external documents for further information.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "6.2.",
+      "original_page_numbers": [
+        61
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "reference",
+      "original_content": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > APPENDICE 1 – CRITERI DI ASSEGNAZIONE DEGLI INDIRIZZI IP > RANGE DI IP DEDICATI PER TIPOLOGIA DI SERVIZIO', covers the criteria and guidelines for assigning IP address ranges based on service type. It includes references to VMware Aria Automation documentation and other related resources, providing a detailed framework for IP address allocation in various service categories. The section does not contain any figures, troubleshooting, or specific configuration steps, but links to external documents for further information."
+    }
+  },
+  {
+    "section_id": "7.",
+    "section_title": "APPENDICE 2 – NAMING CONVENTION",
+    "page_range": "61-62",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "This section, titled 'MODALITÀ ESECUTIVE > APPENDICE 2 – NAMING CONVENTION', provides a detailed overview of naming conventions within various VMware and Insiel cloud infrastructure systems. It includes six figures illustrating components such as VMware vSphere, VMware NSX architecture, VMware Aria, and both physical and logical cloud infrastructure of Insiel. These figures help clarify the naming conventions and configurations discussed, offering visual guidance on the architecture and setup of these systems.",
+    "content_summary": "This section, titled 'MODALITÀ ESECUTIVE > APPENDICE 2 – NAMING CONVENTION', provides a detailed overview of naming conventions within various VMware and Insiel cloud infrastructure systems. It includes six figures illustrating components such as VMware vSphere, VMware NSX architecture, VMware Aria, and both physical and logical cloud infrastructure of Insiel. These figures help clarify the naming conventions and configurations discussed, offering visual guidance on the architecture and setup of these systems.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "7.",
+      "original_page_numbers": [
+        61,
+        62
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "reference",
+      "original_content": "This section, titled 'MODALITÀ ESECUTIVE > APPENDICE 2 – NAMING CONVENTION', provides a detailed overview of naming conventions within various VMware and Insiel cloud infrastructure systems. It includes six figures illustrating components such as VMware vSphere, VMware NSX architecture, VMware Aria, and both physical and logical cloud infrastructure of Insiel. These figures help clarify the naming conventions and configurations discussed, offering visual guidance on the architecture and setup of these systems."
+    }
+  },
+  {
+    "section_id": "7.1.",
+    "section_title": "NOMI MACCHINE VIRTUALI",
+    "page_range": "62",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "The section titled 'MODALITÀ ESECUTIVE > NOMI MACCHINE VIRTUALI' in the technical manual provides guidelines on accessing and managing virtual machine names within the Insiel cloud system. It includes configuration steps for logging into the cloud, main dashboard navigation, and password management. The section is supported by five figures illustrating the login process, main screen, and credential management steps, enhancing understanding and providing visual guidance for users.",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > NOMI MACCHINE VIRTUALI' in the technical manual provides guidelines on accessing and managing virtual machine names within the Insiel cloud system. It includes configuration steps for logging into the cloud, main dashboard navigation, and password management. The section is supported by five figures illustrating the login process, main screen, and credential management steps, enhancing understanding and providing visual guidance for users.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "7.1.",
+      "original_page_numbers": [
+        62
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "reference",
+      "original_content": "The section titled 'MODALITÀ ESECUTIVE > NOMI MACCHINE VIRTUALI' in the technical manual provides guidelines on accessing and managing virtual machine names within the Insiel cloud system. It includes configuration steps for logging into the cloud, main dashboard navigation, and password management. The section is supported by five figures illustrating the login process, main screen, and credential management steps, enhancing understanding and providing visual guidance for users."
+    }
+  },
+  {
+    "section_id": "7.2.",
+    "section_title": "NOMI GRUPPI",
+    "page_range": "62",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "The section titled 'MODALITÀ ESECUTIVE > NOMI GRUPPI' in the technical manual provides a detailed visual guide on accessing and managing cloud services. It includes 14 figures illustrating various aspects of the cloud interface, such as error pages, management options, and resource configurations. These figures help users navigate the cloud system, showcasing steps for login, managing cloud firewalls, service brokers, and deployment statuses. The section is crucial for users needing visual guidance on system configurations and troubleshooting.",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > NOMI GRUPPI' in the technical manual provides a detailed visual guide on accessing and managing cloud services. It includes 14 figures illustrating various aspects of the cloud interface, such as error pages, management options, and resource configurations. These figures help users navigate the cloud system, showcasing steps for login, managing cloud firewalls, service brokers, and deployment statuses. The section is crucial for users needing visual guidance on system configurations and troubleshooting.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "7.2.",
+      "original_page_numbers": [
+        62
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "reference",
+      "original_content": "The section titled 'MODALITÀ ESECUTIVE > NOMI GRUPPI' in the technical manual provides a detailed visual guide on accessing and managing cloud services. It includes 14 figures illustrating various aspects of the cloud interface, such as error pages, management options, and resource configurations. These figures help users navigate the cloud system, showcasing steps for login, managing cloud firewalls, service brokers, and deployment statuses. The section is crucial for users needing visual guidance on system configurations and troubleshooting."
+    }
+  },
+  {
+    "section_id": "8.",
+    "section_title": "GESTIONE DELLA DOCUMENTAZIONE",
+    "page_range": "62",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "The section titled 'MODALITÀ ESECUTIVE > GESTIONE DELLA DOCUMENTAZIONE' in the technical manual is dedicated to managing documentation related to deployment processes. It includes configuration steps, troubleshooting tips, and detailed descriptions of deployment systems. Eight figures support the content, illustrating various aspects of deployment such as details, contextual menus, editing options, topology, and historical data during and after VM creation, as well as user events. These visuals aid in understanding the deployment process and its components.",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > GESTIONE DELLA DOCUMENTAZIONE' in the technical manual is dedicated to managing documentation related to deployment processes. It includes configuration steps, troubleshooting tips, and detailed descriptions of deployment systems. Eight figures support the content, illustrating various aspects of deployment such as details, contextual menus, editing options, topology, and historical data during and after VM creation, as well as user events. These visuals aid in understanding the deployment process and its components.",
+    "figures": [
+      {
+        "figure_id": "Figura_26_deployment__dettagli",
+        "filename": "VM_manual_figure_26_deployment__dettagli.png",
+        "caption": "Deployment – dettagli",
+        "page": 23
+      },
+      {
+        "figure_id": "Figura_27_deployment__menu_contestuale",
+        "filename": "VM_manual_figure_27_deployment__menu_contestuale.png",
+        "caption": "Deployment – menu contestuale",
+        "page": 23
+      },
+      {
+        "figure_id": "Figura_28_deployment__edit",
+        "filename": "VM_manual_figure_28_deployment__edit.png",
+        "caption": "Deployment – edit",
+        "page": 24
+      },
+      {
+        "figure_id": "Figura_29_deployment__dettaglio",
+        "filename": "VM_manual_figure_29_deployment__dettaglio.png",
+        "caption": "Deployment – dettaglio",
+        "page": 25
+      },
+      {
+        "figure_id": "Figura_30_deployment__dettaglio_-_topology",
+        "filename": "VM_manual_figure_30_deployment__dettaglio_-_topology.png",
+        "caption": "Deployment – dettaglio - topology",
+        "page": 26
+      },
+      {
+        "figure_id": "Figura_31_deployment__dettaglio__history_durante_la_creazione_della_vm",
+        "filename": "VM_manual_figure_31_deployment__dettaglio__history_durante_la_creazione_della_vm.png",
+        "caption": "Deployment – dettaglio – history (durante la creazione della vm)",
+        "page": 26
+      },
+      {
+        "figure_id": "Figura_32_deployment__dettaglio__history_dopo_la_creazione_della_vm",
+        "filename": "VM_manual_figure_32_deployment__dettaglio__history_dopo_la_creazione_della_vm.png",
+        "caption": "Deployment – dettaglio – history (dopo la creazione della vm)",
+        "page": 26
+      },
+      {
+        "figure_id": "Figura_33_deployment__dettaglio__user_events",
+        "filename": "VM_manual_figure_33_deployment__dettaglio__user_events.png",
+        "caption": "Deployment – dettaglio – user events",
+        "page": 26
+      }
+    ],
+    "metadata": {
+      "original_section_number": "8.",
+      "original_page_numbers": [
+        62
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "metadata"
+    }
+  },
+  {
+    "section_id": "9.",
+    "section_title": "RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)",
+    "page_range": "62",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "The section titled 'MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)' in the technical manual provides references and bibliographic details related to executive modes. It includes two figures, Figure 34 and Figure 35, which illustrate the deployment monitor during and after the creation of a virtual machine (VM), respectively. These figures help visualize the deployment process and the changes that occur during VM setup.",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)' in the technical manual provides references and bibliographic details related to executive modes. It includes two figures, Figure 34 and Figure 35, which illustrate the deployment monitor during and after the creation of a virtual machine (VM), respectively. These figures help visualize the deployment process and the changes that occur during VM setup.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "9.",
+      "original_page_numbers": [
+        62
+      ],
+      "language": "Italian",
+      "section_type": "reference",
+      "content_type": "reference",
+      "original_content": "The section titled 'MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)' in the technical manual provides references and bibliographic details related to executive modes. It includes two figures, Figure 34 and Figure 35, which illustrate the deployment monitor during and after the creation of a virtual machine (VM), respectively. These figures help visualize the deployment process and the changes that occur during VM setup."
+    }
+  },
+  {
+    "section_id": "9.1.",
+    "section_title": "VMWARE VSPHERE",
+    "page_range": "62",
+    "parent_path": "MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "This section of the technical manual, titled 'VMware vSphere' under 'MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)', provides guidelines and references for deploying and optimizing VMware vSphere environments. It includes configuration steps, troubleshooting tips, and details on system resources management. Four figures are incorporated to visually support the content, illustrating alerts during deployment, optimization steps during and after VM creation, and resource deployment.",
+    "content_summary": "This section of the technical manual, titled 'VMware vSphere' under 'MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)', provides guidelines and references for deploying and optimizing VMware vSphere environments. It includes configuration steps, troubleshooting tips, and details on system resources management. Four figures are incorporated to visually support the content, illustrating alerts during deployment, optimization steps during and after VM creation, and resource deployment.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "9.1.",
+      "original_page_numbers": [
+        62
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "reference",
+      "original_content": "This section of the technical manual, titled 'VMware vSphere' under 'MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)', provides guidelines and references for deploying and optimizing VMware vSphere environments. It includes configuration steps, troubleshooting tips, and details on system resources management. Four figures are incorporated to visually support the content, illustrating alerts during deployment, optimization steps during and after VM creation, and resource deployment."
+    }
+  },
+  {
+    "section_id": "9.2.",
+    "section_title": "VMWARE NSX",
+    "page_range": "62",
+    "parent_path": "MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "This section of the technical manual, titled 'VMware NSX' under 'MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)', provides detailed references and bibliographic information pertinent to VMware NSX. It includes configuration steps, troubleshooting tips, and system details specific to VMware NSX. The section is supported by four figures illustrating various aspects of resource deployment and management within VMware NSX, such as deployment details, resource filtering, and contextual menus, enhancing the understanding of system configurations and operations.",
+    "content_summary": "This section of the technical manual, titled 'VMware NSX' under 'MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)', provides detailed references and bibliographic information pertinent to VMware NSX. It includes configuration steps, troubleshooting tips, and system details specific to VMware NSX. The section is supported by four figures illustrating various aspects of resource deployment and management within VMware NSX, such as deployment details, resource filtering, and contextual menus, enhancing the understanding of system configurations and operations.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "9.2.",
+      "original_page_numbers": [
+        62
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "reference",
+      "original_content": "This section of the technical manual, titled 'VMware NSX' under 'MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)', provides detailed references and bibliographic information pertinent to VMware NSX. It includes configuration steps, troubleshooting tips, and system details specific to VMware NSX. The section is supported by four figures illustrating various aspects of resource deployment and management within VMware NSX, such as deployment details, resource filtering, and contextual menus, enhancing the understanding of system configurations and operations."
+    }
+  },
+  {
+    "section_id": "9.3.",
+    "section_title": "VMWARE ARIA",
+    "page_range": "62-63",
+    "parent_path": "MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "The section titled 'VMware Aria' in the technical manual under 'MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)' provides comprehensive guidance on VMware virtual machine operations. It includes detailed steps for creating new virtual machines, managing a list of VMs, and accessing specific VM details. The section is supported by five figures illustrating these processes, enhancing understanding of VM creation, detailed configurations, VM listing, individual VM details, and contextual menu options. These visuals serve as practical references for users to effectively navigate and manage VMware environments.",
+    "content_summary": "The section titled 'VMware Aria' in the technical manual under 'MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)' provides comprehensive guidance on VMware virtual machine operations. It includes detailed steps for creating new virtual machines, managing a list of VMs, and accessing specific VM details. The section is supported by five figures illustrating these processes, enhancing understanding of VM creation, detailed configurations, VM listing, individual VM details, and contextual menu options. These visuals serve as practical references for users to effectively navigate and manage VMware environments.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "9.3.",
+      "original_page_numbers": [
+        62,
+        63
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "reference",
+      "original_content": "The section titled 'VMware Aria' in the technical manual under 'MODALITÀ ESECUTIVE > RIFERIMENTI (NORMATIVI E BIBLIOGRAFICI)' provides comprehensive guidance on VMware virtual machine operations. It includes detailed steps for creating new virtual machines, managing a list of VMs, and accessing specific VM details. The section is supported by five figures illustrating these processes, enhancing understanding of VM creation, detailed configurations, VM listing, individual VM details, and contextual menu options. These visuals serve as practical references for users to effectively navigate and manage VMware environments."
+    }
+  },
+  {
+    "section_id": "10.",
+    "section_title": "DOCUMENTI COLLEGATI",
+    "page_range": "63",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "The section 'MODALITÀ ESECUTIVE > DOCUMENTI COLLEGATI' in the technical manual provides detailed visual guides and instructions related to virtual machines and volume management. It includes four figures illustrating various aspects: the contextual menu of a virtual machine, resizing the boot disk of a virtual machine, an overview of volumes, and detailed information on a specific volume. These figures are essential for understanding the configuration and management of virtual machines and storage volumes.",
+    "content_summary": "The section 'MODALITÀ ESECUTIVE > DOCUMENTI COLLEGATI' in the technical manual provides detailed visual guides and instructions related to virtual machines and volume management. It includes four figures illustrating various aspects: the contextual menu of a virtual machine, resizing the boot disk of a virtual machine, an overview of volumes, and detailed information on a specific volume. These figures are essential for understanding the configuration and management of virtual machines and storage volumes.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "10.",
+      "original_page_numbers": [
+        63
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "reference",
+      "original_content": "The section 'MODALITÀ ESECUTIVE > DOCUMENTI COLLEGATI' in the technical manual provides detailed visual guides and instructions related to virtual machines and volume management. It includes four figures illustrating various aspects: the contextual menu of a virtual machine, resizing the boot disk of a virtual machine, an overview of volumes, and detailed information on a specific volume. These figures are essential for understanding the configuration and management of virtual machines and storage volumes."
+    }
+  },
+  {
+    "section_id": "11.",
+    "section_title": "ALLEGATI (SE PRESENTI)",
+    "page_range": "63",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "The section titled 'MODALITÀ ESECUTIVE > ALLEGATI (SE PRESENTI)' in the technical manual provides visual aids to support the text, specifically focusing on system configurations and troubleshooting for volumes and networking & security. It includes four figures: 'volumes - menu contestuale', 'networking & security', 'networking & security – dettagli', and 'networking & security - menu contestuale'. These figures are intended to illustrate menu options and detailed settings, enhancing understanding of the configurations and operations discussed.",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > ALLEGATI (SE PRESENTI)' in the technical manual provides visual aids to support the text, specifically focusing on system configurations and troubleshooting for volumes and networking & security. It includes four figures: 'volumes - menu contestuale', 'networking & security', 'networking & security – dettagli', and 'networking & security - menu contestuale'. These figures are intended to illustrate menu options and detailed settings, enhancing understanding of the configurations and operations discussed.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "11.",
+      "original_page_numbers": [
+        63
+      ],
+      "language": "Italian",
+      "section_type": "reference",
+      "content_type": "reference",
+      "original_content": "The section titled 'MODALITÀ ESECUTIVE > ALLEGATI (SE PRESENTI)' in the technical manual provides visual aids to support the text, specifically focusing on system configurations and troubleshooting for volumes and networking & security. It includes four figures: 'volumes - menu contestuale', 'networking & security', 'networking & security – dettagli', and 'networking & security - menu contestuale'. These figures are intended to illustrate menu options and detailed settings, enhancing understanding of the configurations and operations discussed."
+    }
+  },
+  {
+    "section_id": "12.",
+    "section_title": "INDICE DELLE FIGURE",
+    "page_range": "63",
+    "parent_path": "",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "The section titled 'INDICE DELLE FIGURE' in the technical manual serves as an index of figures, listing 31 figures related to VMware NSX configurations, operations, and security features. Each figure is associated with specific aspects such as cloud firewall access, network overview, gateway configurations, firewall rules, service details, and group management. These figures visually support the content by providing detailed diagrams and interfaces of the VMware NSX system, aiding in configuration steps, troubleshooting, and understanding system functionalities.",
+    "content_summary": "The section titled 'INDICE DELLE FIGURE' in the technical manual serves as an index of figures, listing 31 figures related to VMware NSX configurations, operations, and security features. Each figure is associated with specific aspects such as cloud firewall access, network overview, gateway configurations, firewall rules, service details, and group management. These figures visually support the content by providing detailed diagrams and interfaces of the VMware NSX system, aiding in configuration steps, troubleshooting, and understanding system functionalities.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "12.",
+      "original_page_numbers": [
+        63
+      ],
+      "language": "Italian",
+      "section_type": "reference",
+      "content_type": "reference",
+      "original_content": "The section titled 'INDICE DELLE FIGURE' in the technical manual serves as an index of figures, listing 31 figures related to VMware NSX configurations, operations, and security features. Each figure is associated with specific aspects such as cloud firewall access, network overview, gateway configurations, firewall rules, service details, and group management. These figures visually support the content by providing detailed diagrams and interfaces of the VMware NSX system, aiding in configuration steps, troubleshooting, and understanding system functionalities."
+    }
+  },
+  {
+    "section_id": "1",
+    "section_title": "SCOPO",
+    "page_range": "5",
+    "parent_path": "",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "The 'SCOPO' section of the technical manual outlines the scope of the document, which pertains to the configuration of wireless controllers, access points, and terminals that utilize the managed wireless network. It also addresses the management of potential anomalies.",
+    "content_summary": "The 'SCOPO' section of the technical manual outlines the scope of the document, which pertains to the configuration of wireless controllers, access points, and terminals that utilize the managed wireless network. It also addresses the management of potential anomalies.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "1",
+      "original_page_numbers": [
+        5
+      ],
+      "language": "Italian",
+      "section_type": "introduction",
+      "content_type": "metadata"
+    }
+  },
+  {
+    "section_id": "2",
+    "section_title": "AMBITO DI APPLICAZIONE",
+    "page_range": "5",
+    "parent_path": "",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "The 'AMBITO DI APPLICAZIONE' section of the technical manual emphasizes the importance of maintaining default settings for parameters and configurations unless modifications are explicitly stated in the document. Altering these default values could lead to operational anomalies. The section also includes notes on acronyms, definitions, and responsibilities, but does not provide detailed configuration steps, troubleshooting, or mention specific systems or figures.",
+    "content_summary": "The 'AMBITO DI APPLICAZIONE' section of the technical manual emphasizes the importance of maintaining default settings for parameters and configurations unless modifications are explicitly stated in the document. Altering these default values could lead to operational anomalies. The section also includes notes on acronyms, definitions, and responsibilities, but does not provide detailed configuration steps, troubleshooting, or mention specific systems or figures.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "2",
+      "original_page_numbers": [
+        5
+      ],
+      "language": "Italian",
+      "section_type": "introduction",
+      "content_type": "metadata"
+    }
+  },
+  {
+    "section_id": "3",
+    "section_title": "ACRONIMI E DEFINIZIONI",
+    "page_range": "5",
+    "parent_path": "",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "The section titled 'ACRONIMI E DEFINIZIONI' in the technical manual provides a comprehensive list of acronyms and definitions relevant to the document. This section is essential for understanding the specialized terminology used throughout the manual. It does not include configuration steps, troubleshooting advice, or specific systems, nor does it contain figures. Its primary purpose is to clarify terminology to ensure clear communication and comprehension for all readers.",
+    "content_summary": "The section titled 'ACRONIMI E DEFINIZIONI' in the technical manual provides a comprehensive list of acronyms and definitions relevant to the document. This section is essential for understanding the specialized terminology used throughout the manual. It does not include configuration steps, troubleshooting advice, or specific systems, nor does it contain figures. Its primary purpose is to clarify terminology to ensure clear communication and comprehension for all readers.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "3",
+      "original_page_numbers": [
+        5
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "metadata"
+    }
+  },
+  {
+    "section_id": "4",
+    "section_title": "RESPONSABILITA'",
+    "page_range": "5-6",
+    "parent_path": "",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "The 'RESPONSABILITA'' section in the technical manual discusses the operational modes and infrastructure configuration, specifically focusing on VMware vSphere setup within the infrastructure configuration subsection.",
+    "content_summary": "The 'RESPONSABILITA'' section in the technical manual discusses the operational modes and infrastructure configuration, specifically focusing on VMware vSphere setup within the infrastructure configuration subsection.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "4",
+      "original_page_numbers": [
+        5,
+        6
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "metadata"
+    }
+  },
+  {
+    "section_id": "5",
+    "section_title": "MODALITÀ ESECUTIVE",
+    "page_range": "6",
+    "parent_path": "",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "L'infrastruttura di virtualizzazione di INSIEL è 'on premise' ovvero è gestita direttamente da INSIEL su proprio hardware, ed è basta sulla architettura VMWare VSphere di cui si riporta uno schema semplificato di seguito:",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE' discusses the virtualization infrastructure of INSIEL, which is managed 'on premise' using their own hardware. It is based on the VMWare VSphere architecture, and a simplified diagram of this architecture is included to support the content.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5",
+      "original_page_numbers": [
+        6
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.1",
+    "section_title": "CONFIGURAZIONE DELL'INFRASTRUTTURA",
+    "page_range": "6",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "",
+    "content_summary": "This section of the technical manual, titled 'Modalità Esecutive > Configurazione dell'Infrastruttura', provides detailed guidelines on setting up and configuring the infrastructure required for various operational modes. It includes step-by-step instructions on configuring servers, networks, and other critical systems. Troubleshooting tips are provided to address common issues that may arise during the setup process. Figures included in the section illustrate network setups and server configurations, aiding in visual understanding and practical application of the instructions.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.1",
+      "original_page_numbers": [
+        6
+      ],
+      "language": "Italian",
+      "section_type": "configuration",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.1.1",
+    "section_title": "VMWARE VSPHERE",
+    "page_range": "6",
+    "parent_path": "MODALITÀ ESECUTIVE > CONFIGURAZIONE DELL'INFRASTRUTTURA",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Figura 1 - VMWare Vsphere\n\nIn breve, semplificando al massimo:\n- Sono disponibili un certo numero di host fisici.\n- Sono disponibili un certo numero di dispositivi di storage.\n- Su ogni host fisico è presente un hypervisor VMWare ESXi.\n- Su ogni host fisico dotato di ESXi sono presenti le VM.\n- Tutti gli host fisici dotati di hypervisor sono gestiti centralmente da un VCenter Server, che tipicamente è esso stesso una appliance virtuale.\n- Gli utenti gestiscono l'infrastruttura mediante appositi client.\n\n### 5.1.2 VMWARE NSX",
+    "content_summary": "This section of the manual, titled 'MODALITÀ ESECUTIVE > CONFIGURAZIONE DELL'INFRASTRUTTURA > VMWARE VSPHERE', provides an overview of the VMware vSphere infrastructure setup. It describes the presence of multiple physical hosts and storage devices, each host equipped with the VMware ESXi hypervisor. Virtual machines (VMs) are hosted on these ESXi-equipped hosts. Central management is achieved through a VCenter Server, typically a virtual appliance itself. Users manage the infrastructure using specific clients. The section includes a figure (Figura 1 - VMWare Vsphere) that likely illustrates the described setup.",
+    "figures": [
+      {
+        "figure_id": "Figura_1_vmware_vsphere",
+        "filename": "VM_manual_figure_1_vmware_vsphere.png",
+        "caption": "Vmware vsphere",
+        "page": 6
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.1.1",
+      "original_page_numbers": [
+        6
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.1.2",
+    "section_title": "VMWARE NSX",
+    "page_range": "6-8",
+    "parent_path": "MODALITÀ ESECUTIVE > CONFIGURAZIONE DELL'INFRASTRUTTURA",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "VMWare VSpher dispone di una propria infrastruttura di rete, tuttavia dovendo gestire configurazioni più complesse e articolate, solitamente viene utilizzato VMWare NSX.\nDi seguito descriviamo brevemente l'architettura di NSX:\n\nFigura 2 - VMWare NSX – Architettura\n\n- Il Tier-0 Gateway: in totale gestione a carico di INSIEL, controlla il traffico da fuori a dentro e viceversa (Nord-Sud) ed include le interfacce verso la rete fisica.\n- Il Tier-1 Gateway: in totale gestione a carico di ASUGI per ciò che concerne la parte di rete di propria pertinenza, controlla il traffico tra le VM (Est-Ovest). Il Tier-1 Gateway funziona per segmenti e non per subnet, in pratica ogni indirizzo IP è taggato. Un segmento del Tier-1 Gateway coincide con una VLAN del Tier-0 Gateway.\n\n### 5.1.3 VMWARE ARIA\n\nVMWare Aria è un orchestratore utilizzato per la gestione della infrastruttura di INSIEL. In sostanze mentre VClient necessità molta attività manuale da parte dell'utente che desideri creare una nuova VM, un orchestratore consente di avere un alto livello di automazione nell'esecuzione di attività ripetitive.\n\nDi seguito uno schema sommario dell'architettura di VMWare ARIA:",
+    "content_summary": "This section of the manual details the configuration of VMware NSX within a VMware vSphere network infrastructure. It describes the architecture of NSX, focusing on the Tier-0 and Tier-1 Gateways. The Tier-0 Gateway manages North-South traffic and interfaces with the physical network, while the Tier-1 Gateway manages East-West traffic among VMs and operates based on segments rather than subnets. The section includes a figure illustrating the NSX architecture, which helps clarify the roles and functionalities of the different gateways. Additionally, VMware Aria, an orchestration tool for managing infrastructure, is briefly introduced, emphasizing its automation capabilities in repetitive tasks compared to manual operations in VClient.",
+    "figures": [
+      {
+        "figure_id": "Figura_2_vmware_nsx__architettura",
+        "filename": "VM_manual_figure_2_vmware_nsx__architettura.png",
+        "caption": "Vmware nsx – architettura",
+        "page": 7
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.1.2",
+      "original_page_numbers": [
+        6,
+        7,
+        8
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.1.3",
+    "section_title": "VMWARE ARIA",
+    "page_range": "8-9",
+    "parent_path": "MODALITÀ ESECUTIVE > CONFIGURAZIONE DELL'INFRASTRUTTURA",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Figura 3 - VMWare ARIA\n\n## 5.2 IMPLEMENTAZIONE DELL'INFRASTRUTTURA\n\n### 5.2.1 LOCALIZZAZIONE\n\nLo IaaS INSIEL è diviso in due datacenter:\n\n- Il nodo primario si trova a Trieste, in via San Francesco, presso la sede INSIEL;\n\n- Il nodo secondario - di backup - si trova a Palmanova, nella sede della Protezione Civile.",
+    "content_summary": "This section of the technical manual, titled 'VMware Aria,' focuses on the configuration of the VMware Aria infrastructure within the IaaS INSIEL, which is split between two data centers. The primary node is located in Trieste at the INSIEL headquarters, while the backup node is situated in Palmanova at the Civil Protection office. The section includes a figure (Figure 3 - VMware ARIA) that likely visualizes the infrastructure layout or provides a schematic of the VMware Aria setup.",
+    "figures": [
+      {
+        "figure_id": "Figura_3_vmware_aria",
+        "filename": "VM_manual_figure_3_vmware_aria.png",
+        "caption": "Vmware aria",
+        "page": 8
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.1.3",
+      "original_page_numbers": [
+        8,
+        9
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.2",
+    "section_title": "IMPLEMENTAZIONE DELL'INFRASTRUTTURA",
+    "page_range": "9",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Il nodo secondario viene utilizzato solo in caso di disastro. Lo switch avviene spostando il Tier 0 NSX sul datacenter di Palmavova. L'operazione dovrebbe essere trasparente, ovvero non è richiesto un cambio di indirizzamento delle macchine virtuali.",
+    "content_summary": "The section 'MODALITÀ ESECUTIVE > IMPLEMENTAZIONE DELL'INFRASTRUTTURA' describes the use of a secondary node activated only during disasters. It details the process of switching to this node by moving the Tier 0 NSX to the Palmavova datacenter. The operation is designed to be transparent, meaning it does not require readdressing of virtual machines.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.2",
+      "original_page_numbers": [
+        9
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.2.1",
+    "section_title": "LOCALIZZAZIONE",
+    "page_range": "9",
+    "parent_path": "MODALITÀ ESECUTIVE > IMPLEMENTAZIONE DELL'INFRASTRUTTURA",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "### 5.2.2 CONNETTIVITA' DI RETE\n\n#### 5.2.2.1 CONNETTIVITA' FISICA\n\nDal punto di vista fisico, INSIEL ha dedicato la rete 10.128.188.0/22, inserita nel contesto VRF ASUGI, alle macchine virtuali ASUGI; quindi, di fatto l'indirizzamento dell'infrastruttura IaaS è parte del contesto VRF ASUGI.\n\nFigura 4 - Infrastruttura fisica cloud INSIEL",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > IMPLEMENTAZIONE DELL'INFRASTRUTTURA > LOCALIZZAZIONE' in the technical manual discusses the physical network connectivity for INSIEL's cloud infrastructure. It details the dedicated network 10.128.188.0/22 within the VRF ASUGI context for ASUGI virtual machines, indicating its integration into the VRF ASUGI IaaS infrastructure. The section includes Figure 4, which illustrates the physical cloud infrastructure of INSIEL, supporting the textual content by visually representing the network setup.",
+    "figures": [
+      {
+        "figure_id": "Figura_4_infrastruttura_fisica_cloud_insiel",
+        "filename": "VM_manual_figure_4_infrastruttura_fisica_cloud_insiel.png",
+        "caption": "Infrastruttura fisica cloud insiel",
+        "page": 9
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.2.1",
+      "original_page_numbers": [
+        9
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.2.2",
+    "section_title": "CONNETTIVITA' DI RETE",
+    "page_range": "9",
+    "parent_path": "MODALITÀ ESECUTIVE > IMPLEMENTAZIONE DELL'INFRASTRUTTURA",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Dal punto di vista della sicurezza questo implica che il traffico da e per l'infrastruttura IaaS non viene filtrato in alcun modo da INSIEL.",
+    "content_summary": "The section 'MODALITÀ ESECUTIVE > IMPLEMENTAZIONE DELL'INFRASTRUTTURA > CONNETTIVITA' DI RETE' discusses the security implications of unfiltered traffic to and from IaaS infrastructure, highlighting that INSIEL does not filter this traffic in any way.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.2.2",
+      "original_page_numbers": [
+        9
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.2.2.1",
+    "section_title": "CONNETTIVITA' FISICA",
+    "page_range": "9",
+    "parent_path": "MODALITÀ ESECUTIVE > IMPLEMENTAZIONE DELL'INFRASTRUTTURA > CONNETTIVITA' DI RETE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "#### 5.2.2.2 CONNETTIVITA' LOGICA\n\nDal punto di vista logico, il networking a livello IaaS viene gestito con NSX-T. INSIEL gestisce sia il livello 0 o Tier 0, che il livello 1 o Tier 1, delegando ad ASUGI parte delle regole di visibilità al livello Tier 1.\n\n- Al livello Tier 0 esistono due gateway:\n- ts-rupar-vrf-asugi - Gateway primario, agganciato alla VRF ASUGI.",
+    "content_summary": "The section titled 'CONNETTIVITÀ FISICA' in the technical manual outlines the physical network connectivity infrastructure within an IaaS environment. It details the management of network layers, specifically focusing on Tier 0 and Tier 1 levels, using NSX-T technology. The section describes the configuration of two gateways at Tier 0, including the primary gateway connected to VRF ASUGI. It also mentions the role of INSIEL in managing these layers and delegating certain visibility rules to ASUGI at Tier 1. This section is crucial for understanding the setup and troubleshooting of physical network connectivity in the infrastructure.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.2.2.1",
+      "original_page_numbers": [
+        9
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.2.2.2",
+    "section_title": "CONNETTIVITA' LOGICA",
+    "page_range": "9-11",
+    "parent_path": "MODALITÀ ESECUTIVE > IMPLEMENTAZIONE DELL'INFRASTRUTTURA > CONNETTIVITA' DI RETE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- pl-rupar-vrf-asugi - Gateway secondario, agganciato al sito di Disaster Recovery\n- Al livello Tier 1 esistono due gateway:\n- ts-asugi-t1 - Gateway primario.\n- pl-asugi-t1-test-dr - Gateway per i test di Disaster Recovery.\n\nLa rete 10.128.188.0 /22 è stata assegnata ad un segmento, agganciato al gateway ts-asugi-t1 del Tier 1, agganciato a sua volta al gateway ts-rupar-vrf-asugi del Tier 0. In caso di disastro, il gateway gateway ts-asugi-t1 verrebbe spostato sul gateway pl-rupar-vrf-asugi del Tier 0, spostando l'operatività sul sito di DR.\n\nFigura 5 - Tier 1 gateways su NSX\n\nFigura 6 - Infrastruttura logica Cloud INSIEL\n\n## 5.3 CLOUD INSIEL\n\n### 5.3.1 ACCESSO AL CLOUD INSIEL\n\n#### 5.3.1.1 LOGIN\n\nL'accesso al cloud INSIEL viene effettuato all'indirizzo:\n\nHTTPS://CLOUDSERVICE.INSIEL.IT/SAAS/AUTH/LOGIN\n\nNOTA BENE:",
+    "content_summary": "This section of the technical manual, titled 'CONNETTIVITÀ LOGICA', focuses on the logical network connectivity within an infrastructure implementation. It outlines the configuration of Tier 1 gateways in a disaster recovery scenario, detailing primary and secondary gateways and their roles in network segmentation and disaster recovery operations. Two figures are included: 'Tier 1 gateways su nsx' and 'infrastruttura logica cloud insiel', which visually represent the gateway configurations and the logical cloud infrastructure, respectively. The section also provides specific steps for accessing the INSIEL cloud, including the login URL and process.",
+    "figures": [
+      {
+        "figure_id": "Figura_5_tier_1_gateways_su_nsx",
+        "filename": "VM_manual_figure_5_tier_1_gateways_su_nsx.png",
+        "caption": "Tier 1 gateways su nsx",
+        "page": 10
+      },
+      {
+        "figure_id": "Figura_6_infrastruttura_logica_cloud_insiel",
+        "filename": "VM_manual_figure_6_infrastruttura_logica_cloud_insiel.png",
+        "caption": "Infrastruttura logica cloud insiel",
+        "page": 10
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.2.2.2",
+      "original_page_numbers": [
+        9,
+        10,
+        11
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3",
+    "section_title": "CLOUD INSIEL",
+    "page_range": "11",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "* Alcune funzionalità sono raggiungibili anche al di fuori della rete ASUGI o in assenza della VPN ASUGI; tuttavia, per un corretto funzionamento è sempre preferibile accedere da un terminale connesso alla rete ASUGI, o utilizzando la VPN ASUGI.",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CLOUD INSIEL' in the technical manual discusses the accessibility of certain functionalities outside the ASUGI network or without the ASUGI VPN. It emphasizes that for optimal functionality, it is preferable to access these features from a terminal connected to the ASUGI network or through the ASUGI VPN.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.3",
+      "original_page_numbers": [
+        11
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.1",
+    "section_title": "ACCESSO AL CLOUD INSIEL",
+    "page_range": "11",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Figura 7 - Accesso al cloud INSIEL – Inserimento user name",
+    "content_summary": "This section provides guidance on accessing the INSIEL Cloud, detailing the login process and user authentication. It includes steps for entering a username as part of the login procedure, supported by Figure 7, which illustrates the username entry interface.",
+    "figures": [
+      {
+        "figure_id": "Figura_7_accesso_al_cloud_insiel__inserimento_user_name",
+        "filename": "VM_manual_figure_7_accesso_al_cloud_insiel__inserimento_user_name.png",
+        "caption": "Accesso al cloud insiel – inserimento user name",
+        "page": 11
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.1",
+      "original_page_numbers": [
+        11
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.1.1",
+    "section_title": "LOGIN",
+    "page_range": "11-13",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL > ACCESSO AL CLOUD INSIEL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "L'autenticazione avviene inserendo in un primo momento lo user name, fornito da INSIEL, e su una schermata successiva la password:\n\nFigura 8 - Accesso al cloud INSIEL - Inserimento password\n\nSi verrà portati così alla schermata principale:\n\nFigura 9 - Cloud INSIEL - Schermata principale\n\n#### 5.3.1.2 RESET PASSWORD\n\nIn caso di problemi di accesso è possibile procedere in autonomia al reset della password utilizzando il link:\n\nHTTPS://MGMT.INSIEL.IT/CP/VRA3KLL1W/SITEPAGES/CKVRAKKK1.ASPX?ENV=EMBEDDED\n\nVerrà richiesto preliminarmente l'inserimento delle credenziali INSIEL:\n\nFigura 10 - Richiesta credenziali INSIEL",
+    "content_summary": "This section of the manual provides instructions for accessing the INSIEL Cloud, including logging in and resetting passwords. Users must first enter their username and then their password on subsequent screens. For troubleshooting, a password reset can be performed independently using a provided link. The section includes three figures illustrating the password insertion, the main cloud interface, and the credential request process for password reset.",
+    "figures": [
+      {
+        "figure_id": "Figura_8_accesso_al_cloud_insiel_-_inserimento_password",
+        "filename": "VM_manual_figure_8_accesso_al_cloud_insiel_-_inserimento_password.png",
+        "caption": "Accesso al cloud insiel - inserimento password",
+        "page": 12
+      },
+      {
+        "figure_id": "Figura_9_cloud_insiel_-_schermata_principale",
+        "filename": "VM_manual_figure_9_cloud_insiel_-_schermata_principale.png",
+        "caption": "Cloud insiel - schermata principale",
+        "page": 12
+      },
+      {
+        "figure_id": "Figura_10_richiesta_credenziali_insiel",
+        "filename": "VM_manual_figure_10_richiesta_credenziali_insiel.png",
+        "caption": "Richiesta credenziali insiel",
+        "page": 13
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.1.1",
+      "original_page_numbers": [
+        11,
+        12,
+        13
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.1.2",
+    "section_title": "RESET PASSWORD",
+    "page_range": "13-15",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL > ACCESSO AL CLOUD INSIEL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "E successivamente si avrà accesso alla schermata che consente l'effettivo cambio password:\n\n## Insiel S.p.A. - Cambio password PRIVATIVRA\n\n### Requisiti della password\n\n- lunghezza minima: 8 caratteri\n- diversa dalle ultime 5 password utilizzate\n- non deve contenere parte del nome, del cognome o dello username\n- deve contenere almeno 3 delle seguenti categorie di caratteri:\n- caratteri maiuscoli\n- caratteri minuscoli\n- numeri\n- caratteri non alfanumerici\n- scadenza password: 180 giorni\n\nFigura 11 - Cambio password INSIEL\n\nOve sarà popolato il campo relativo all'account, e sarà necessario inserire:\n- Vecchia password\n- Nuova password\n- Conferma nuova password\n- Captcha\n\nRispettando i criteri elencati nella pagina.\n\n#### 5.3.1.3 PROBLEMI DI ACCESSO\n\nÈ possibile che si verifichino problemi di accesso, in tal caso verificare di non trovarsi sulla\nseguente pagina di login:\n\ninsiel login page\n\nFigura 12 - Cloud INSIEL - Pagina di login errata\n\nSi osservi che a differenza di quanto visto prima, in questa schermata l'inserimento di user name e\npassword avviene in una singola pagina. Si avrà sempre e comunque errore di autenticazione.\nVerificare che l'indirizzo utilizzato non sia:\n\nHTTPS://CLOUDSERVICE.INSIEL.IT/SAAS/AUTH/LOGIN?LOGIN",
+    "content_summary": "This section provides detailed instructions for resetting passwords within the Insiel Cloud system, including requirements for new passwords (such as minimum length and character diversity), and steps for entering old and new passwords. It also addresses common login issues, specifically highlighting an incorrect login page that could lead to authentication errors. Two figures support the content by showing the password change interface and the incorrect login page, aiding in visual identification and troubleshooting.",
+    "figures": [
+      {
+        "figure_id": "Figura_11_cambio_password_insiel",
+        "filename": "VM_manual_figure_11_cambio_password_insiel.png",
+        "caption": "Cambio password insiel",
+        "page": 14
+      },
+      {
+        "figure_id": "Figura_12_cloud_insiel_-_pagina_di_login_errata",
+        "filename": "VM_manual_figure_12_cloud_insiel_-_pagina_di_login_errata.png",
+        "caption": "Cloud insiel - pagina di login errata",
+        "page": 15
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.1.2",
+      "original_page_numbers": [
+        13,
+        14,
+        15
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.1.3",
+    "section_title": "PROBLEMI DI ACCESSO",
+    "page_range": "15-16",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL > ACCESSO AL CLOUD INSIEL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "ma quello mostrato nei paragrafi precedenti.\n\n### 5.3.2 CARATTERISTICHE DEL CLOUD INSIEL\n\n#### 5.3.2.1 CLOUD MANAGER\n\n##### 5.3.2.1.1 ACCESSO AL CLOUD MANAGER\nSelezionando 'Cloud Manager':\n\nFigura 13 - Tasto 'Cloud Manager'\n\nSi avrà accesso ad una schermata ulteriore:\n\nFigura 14 - Accesso a Cloud Firewall\n\nDa qui cliccando sull'icona 'Apri': Apri icon si avrà finalmente accesso al 'Cloud Service Broker':\n\nFigura 15 - Accesso a Service Broker",
+    "content_summary": "This section of the manual, titled 'MODALITÀ ESECUTIVE > CLOUD INSIEL > ACCESSO AL CLOUD INSIEL > PROBLEMI DI ACCESSO', details the process for accessing the Insiel Cloud services. It includes steps to access the Cloud Manager, Cloud Firewall, and Cloud Service Broker, supported by figures showing the 'Cloud Manager' button, the Cloud Firewall access screen, and the Service Broker access interface. These figures help illustrate the navigation and operational steps involved in accessing these cloud services.",
+    "figures": [
+      {
+        "figure_id": "Figura_13_tasto_cloud_manager",
+        "filename": "VM_manual_figure_13_tasto_cloud_manager.png",
+        "caption": "Tasto 'cloud manager'",
+        "page": 16
+      },
+      {
+        "figure_id": "Figura_14_accesso_a_cloud_firewall",
+        "filename": "VM_manual_figure_14_accesso_a_cloud_firewall.png",
+        "caption": "Accesso a cloud firewall",
+        "page": 16
+      },
+      {
+        "figure_id": "Figura_15_accesso_a_service_broker",
+        "filename": "VM_manual_figure_15_accesso_a_service_broker.png",
+        "caption": "Accesso a service broker",
+        "page": 16
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.1.3",
+      "original_page_numbers": [
+        15,
+        16
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.2",
+    "section_title": "CARATTERISTICHE DEL CLOUD INSIEL",
+    "page_range": "16",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Cliccando sull'icona 'Service broker' si avrà accesso al dettaglio dell'interfaccia utente.",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CLOUD INSIEL > CARATTERISTICHE DEL CLOUD INSIEL', provides details on accessing the user interface details through the 'Service broker' icon. It is part of a broader discussion on the features of the Insiel Cloud within the executive modes context.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.3.2",
+      "original_page_numbers": [
+        16
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.2.1",
+    "section_title": "CLOUD MANAGER",
+    "page_range": "16",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL > CARATTERISTICHE DEL CLOUD INSIEL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "",
+    "content_summary": "This section of the technical manual, titled 'CLOUD MANAGER' under the 'CARATTERISTICHE DEL CLOUD INSIEL' in the 'CLOUD INSIEL' category of 'MODALITÀ ESECUTIVE', provides a detailed overview of the Cloud Manager tool used in Insiel's cloud services. It outlines the functionalities, configuration steps, and troubleshooting tips for managing cloud resources effectively. The section includes figures that illustrate the architecture of the Cloud Manager and step-by-step screenshots for configuration, aiding in better understanding and visual learning.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.3.2.1",
+      "original_page_numbers": [
+        16
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.2.1.1",
+    "section_title": "ACCESSO AL CLOUD MANAGER",
+    "page_range": "16-17",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL > CARATTERISTICHE DEL CLOUD INSIEL > CLOUD MANAGER",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "##### 5.3.2.1.2 OVERVIEW\n\nFigura 16 - Service Broker\n\nLa 'Home page' mostrerà la schermata 'Overview' con informazioni di carattere generale e l'elenco dei progetti disponibili per l'utente.\n\nIl cloud INSIEL è strutturato secondo un modello multi tenant, di fatto ogni progetto viene associato ad un tenant che viene poi a coincidere con la specifica azienda sanitaria cui esso è dedicato.\n\nNella griglia 'Projects' sono visualizzati due campi:\n\n- Name: nome del progetto.\n\n- Description: descrizione del progetto.\n\nNello specifico è visualizzato un unico progetto dedicato all' 'Azienda Sanitaria Universitaria Giuliano Isontina' (ASUGI).\n\nSaranno quindi come minimo presenti altri due progetti riservati a:",
+    "content_summary": "This section provides an overview of the Cloud Manager access within the Insiel Cloud, detailing its multi-tenant structure where each project is associated with a specific health company. It includes a description of the 'Home page' which displays general information and a list of available projects for the user. The 'Projects' grid shows project names and descriptions, with a specific example given for 'Azienda Sanitaria Universitaria Giuliano Isontina' (ASUGI). The section includes Figure 16 - Service Broker, which likely illustrates the service broker interface or functionality.",
+    "figures": [
+      {
+        "figure_id": "Figura_16_service_broker",
+        "filename": "VM_manual_figure_16_service_broker.png",
+        "caption": "Service broker",
+        "page": 17
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.2.1.1",
+      "original_page_numbers": [
+        16,
+        17
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.2.1.2",
+    "section_title": "OVERVIEW",
+    "page_range": "17-18",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL > CARATTERISTICHE DEL CLOUD INSIEL > CLOUD MANAGER",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- 'Azienda Sanitaria Universitaria Friuli Centrale' (ASUFC)\n\n- 'Azienda Sanitaria Friuli Occidentale' (ASFO)\n\nChe tuttavia non sono ivi visibili.\n\nSulla barra sinistra sono visibili i link che danno accesso ad ulteriori funzionalità.\n\n##### 5.3.2.1.3 CATALOG\n\nFigura 17 - Catalog\n\nSelezionando 'Catalog' sulla sinistra si ha accesso al catalogo delle immagini di sistema operativo e dei servizi disponibili nel 'Service Broker'.\nIl campo 'My resource usage' al momento non fornisce informazioni affidabili.\nLe voci disponibili in 'Catalog' sono:\n\n- Linux Centos: template per vm con sistema operativo Linux Centos.\n\n- Linux Debian: template per vm con sistema operativo Linux Debian.\n\n- Linux Rocky: template per vm con sistema operativo Linux Rocky.\n\n- Linux Ubuntu: template per vm con sistema operativo Linux Ubuntu.\n\n- Modifica visibilità segmento rete: funzionalità da non utilizzare di norma.",
+    "content_summary": "The section provides an overview of the Cloud Manager in the Cloud Insiel system, specifically focusing on the 'Catalog' feature. It details the availability of operating system image templates and services in the Service Broker, including Linux Centos, Debian, Rocky, and Ubuntu. It also mentions a network segment visibility modification feature, which is generally not recommended for use. The section includes a figure of the catalog, which likely illustrates the system interface or the available options. Additionally, it notes that the 'My resource usage' field currently does not provide reliable information.",
+    "figures": [
+      {
+        "figure_id": "Figura_17_catalog",
+        "filename": "VM_manual_figure_17_catalog.png",
+        "caption": "Catalog",
+        "page": 18
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.2.1.2",
+      "original_page_numbers": [
+        17,
+        18
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.2.1.3",
+    "section_title": "CATALOG",
+    "page_range": "18-19",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL > CARATTERISTICHE DEL CLOUD INSIEL > CLOUD MANAGER",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- Richiesta assistenza: generazione ticket per richiesta assistenza generica ad INSIEL.\n\n- Richiesta assistenza OVF: generazione ticket per richiesta assistenza su OVF ad INSIEL.\n\n- Richiesta assistenza rete: generazione ticket per richiesta assistenza su rete ad INSIEL.\n\n- Windows: template per vm con sistema operativo Microsoft Windows.\n\nIn alcuni casi, ad esempio per Linux Ubuntu, è possibile selezionare successivamente anche la versione del sistema operativo desiderato.\n\n### 5.3.2.1.3.1.CREAZIONE DI UNA NUOVA VM\n\nCliccando su un template relativo ad un sistema operativo, sarà possibile procedere alla creazione di una nuova macchina virtuale dalla seguente schermata:\n\nFigura 18 – New request\n\nÈ stata richiesta la creazione di una VM con le seguenti caratteristiche:",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CLOUD INSIEL > CARATTERISTICHE DEL CLOUD INSIEL > CLOUD MANAGER > CATALOG', details the process for generating support tickets and creating new virtual machines (VMs) in the INSIEL Cloud environment. It covers various types of support requests, including general, OVF, and network assistance, and provides templates for creating VMs with specific operating systems like Microsoft Windows and Linux Ubuntu. The section includes a figure illustrating the new VM request process, enhancing the understanding of VM creation steps.",
+    "figures": [
+      {
+        "figure_id": "Figura_18_new_request",
+        "filename": "VM_manual_figure_18_new_request.png",
+        "caption": "New request",
+        "page": 19
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.2.1.3",
+      "original_page_numbers": [
+        18,
+        19
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.2.1.3.1.",
+    "section_title": "CREAZIONE DI UNA NUOVA VM",
+    "page_range": "19-22",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "* Sistema operativo: Microsoft Windows Server\n* Core: 2\n* RAM: 8 GB\n* HD: 100 GB\n\nEsaminiamo i singoli campi mostrati, i campi con * sono obbligatori:\n\n* Deployment count: popolato automaticamente.\n* Enter Password: la password di root da assegnare alla nuova virtual machine, tipicamente si inserisce: 'P@ssw0rd'.\n\n* Confirm Password: conferma la password inserita nel campo precedente.\n\n* Project: potrà assumere solo il valore 'asugi'.\n\n* OS Version: versione del sistema operativo, in tal caso: 'Windows Server 2022'.\n\n* T-Shirt Size: per 'T-Shirt Size' si intende la combinazione di numero di core e quantità di\nRAM da attribuire alla VM. La scelta disponibile è molto ampia, tuttavia nel caso in cui non\nci dovesse essere il 'taglio' desiderato è possibile farlo inserire aprendo un ticket ad INSIEL\ncon il link visto in precedenza.\n\nFigura 19 – T-Shirt Size\n\n* Network type: verrà popolato automaticamente alla sezione del progetto.\n\n* Do you need additional disk: da utilizzare nel caso in cui si vogliano aggiungere alla VM\ndischi supplettivi. Selezionando si aprirà una ulteriore griglia per l'inserimento dei dischi\nsupplettivi.\n\nManage Columns\n0 - 0 of 0\n\nFigura 20 – Dischi aggiuntivi\n\nIn tal caso non aggiungeremo alcun disco.\n\nA termine compilazione vedremo quanto segue:\n\nFigura 21 – New request compilata\n\nAl di sotto di questa griglia è di estremo interesse una ulteriore griglia che riporta il totale delle risorse computazionali disponibili ed utilizzate:\n\nFigura 22 – Risorse computazionali\n\nInfine, cliccando sul tasto SUBMIT sarà possibile procedere alla creazione di una nuova VM.\n\n##### 5.3.2.1.4 DEPLOYMENTS\n\nIl nodo 'Deployments' da accesso ad una serie ulteriori sotto nodi che consentono di verificare la situazione attuale del cloud INSIEL e le operazioni in atto al momento:\n\n| ⚙ Deployments- Deployments\n- Resources\n- Virtual Machines\n- Volumes\n- Networking & Security |\n\nFigura 23 – Deployments menu\n\nDettagliamo di seguito il funzionamento delle singole voci di menu.\n\n#### 5.3.2.1.4.1.DEPLOYMENTS\n\nLa griglia 'Deployments' fornisce informazione sulle attività in atto, ad esempio la creazione di una nuova VM:",
+    "content_summary": "This section of the technical manual details the process for creating a new virtual machine (VM) in the Cloud Insiel environment. It outlines the required system specifications such as operating system, core, RAM, and HD size. Key configuration steps include setting a root password, selecting a project, and choosing an OS version. The section also describes optional configurations like adding additional disks and selecting network types. Troubleshooting involves submitting a ticket for non-standard VM sizes. Figures support the content by illustrating configurations like T-shirt size for VM resources, additional disks, completed request form, computational resources, and the deployments menu, aiding in visual understanding of the VM creation process.",
+    "figures": [
+      {
+        "figure_id": "Figura_19_t-shirt_size",
+        "filename": "VM_manual_figure_19_t-shirt_size.png",
+        "caption": "T-shirt size",
+        "page": 20
+      },
+      {
+        "figure_id": "Figura_20_dischi_aggiuntivi",
+        "filename": "VM_manual_figure_20_dischi_aggiuntivi.png",
+        "caption": "Dischi aggiuntivi",
+        "page": 21
+      },
+      {
+        "figure_id": "Figura_21_new_request_compilata",
+        "filename": "VM_manual_figure_21_new_request_compilata.png",
+        "caption": "New request compilata",
+        "page": 21
+      },
+      {
+        "figure_id": "Figura_22_risorse_computazionali",
+        "filename": "VM_manual_figure_22_risorse_computazionali.png",
+        "caption": "Risorse computazionali",
+        "page": 21
+      },
+      {
+        "figure_id": "Figura_23_deployments_menu",
+        "filename": "VM_manual_figure_23_deployments_menu.png",
+        "caption": "Deployments menu",
+        "page": 22
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.2.1.3.1.",
+      "original_page_numbers": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.2.1.4",
+    "section_title": "DEPLOYMENTS",
+    "page_range": "22",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL > CREAZIONE DI UNA NUOVA VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Figura 24 – Deployments\n\nI campi presenti nella griglia sono:\n\n- Name: il nome del deployment.\n\n- Owner: l'utente che ha creato la VM.\n\n- Project: sempre pari ad ASUGI.",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CLOUD INSIEL > CREAZIONE DI UNA NUOVA VM > DEPLOYMENTS' in the technical manual is dedicated to the deployments involved in creating a new virtual machine (VM) on the Insiel Cloud. It outlines the fields displayed in a grid, including 'Name' for the deployment name, 'Owner' indicating the user who created the VM, and 'Project' which is consistently set to ASUGI. The section includes Figure 24, which visually represents the deployment grid, aiding in understanding the configuration and setup process.",
+    "figures": [
+      {
+        "figure_id": "Figura_24_deployments",
+        "filename": "VM_manual_figure_24_deployments.png",
+        "caption": "Deployments",
+        "page": 22
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.2.1.4",
+      "original_page_numbers": [
+        22
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.2.1.4.1.",
+    "section_title": "DEPLOYMENTS",
+    "page_range": "22-29",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL > CREAZIONE DI UNA NUOVA VM",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- Status: il livello di avanzamento del deployment.\n\n- Expires on: la durata della VM, di default pari a Never.\n\n* Created on: data creazione VM.\n\nCliccando sul numero presente nel campo 'Status' è possibile vedere il dettaglio dell'operazione in\natto:\n\nFigura 25 – Deployment – Status\n\nFigura 25 – Deployment – Status\n\nCliccando sulle due freccette a sinistra: », si aprirà una finestra con i dettagli del deployment:\n\nFigura 26 – Deployment – Dettagli\n\nFigura 26 – Deployment – Dettagli\n\nCliccando sui tre puntini a sinistra: ⋮ si aprirà un menu contestuale che consente di effettuare\nalcune operazioni:\n\nFigura 27 – Deployment – Menu contestuale\n\nFigura 27 – Deployment – Menu contestuale\n\n* Delete: cancellazione dell'operazione.\n\n• Edit: modifica del nome del deployment ed aggiunta di note.\n\nFigura 28 – Deployment – Edit\n\nNOTA BENE:\n• Le VM seguono una nomenclatura del tipo 0I00XX, pertanto sarà necessario individuare il\nvalore più elevato giù utilizzato e rinominare la VM con un valore incrementato di 1. Per\nmaggiori dettagli consultare l' APPENDICE 2 – NAMING CONVENTION\n\nCliccando sul nome della VM si avrà accesso ad una schermata di dettaglio.\n\nFigura 29 – Deployment – Dettaglio\n\nNella parte bassa della schermata sono presenti sei tab che consentono di accedere a svariate\ninformazioni:\n\n* Topology: topologia di rete della VM.\n\n* History: elenco delle attività di deploy.\n\n* User Events: elenco delle richieste dell'utente.\n\n* Monitor: stato di utilizzo delle risorse della VM, popolata solo dopo il completamento del\ndeployment della VM stessa.\n\n* Alerts: eventuali allarmi.\n\n* Optmize: suggerimenti di ottimizzazione, popolata solo dopo il completamento del\ndeployment della VM stessa.\n\nDettaglio dei tab della VM\n\n## Figura 30 – Deployment – Dettaglio - Topology\n\n## Figura 31 – Deployment – Dettaglio – History (Durante la creazione della VM)\n\n## Figura 32 – Deployment – Dettaglio – History (Dopo la creazione della VM)\n\n## Figura 33 – Deployment – Dettaglio – User Events\n\n## Figura 34 – Deployment – Monitor (Durante la creazione della VM)\n\nFigura 35 – Deployment – Monitor (Dopo la creazione della VM)\n\nFigura 36 – Deployment –Alerts\n\nFigura 37 – Deployment – Optimize (Durante la creazione della VM)\n\nFigura 38 – Deployment – Optimize (Dopo la creazione della VM)\n\nNOTA BENE:\n• Non è necessario tenere conto delle indicazioni di 'Optimize'.\n\n### 5.3.2.1.4.2.RESOURCES\n\nLa griglia 'Resources' mostra le risorse computazionali attualmente impiegate, ed eventuali attività di deployment delle stesse:\n\nFigura 39 – Resources - Deployment\n\nAnche in questo caso cliccando sul numero nel campo 'Name' è possibile visualizzare il dettaglio dell'attività in corso\n\nFigura 40 – Resources – Deployment - Dettagli\n\nFigura 40 – Resources – Deployment - Dettagli\n\nFigura 41 – Resources – Tutte le risorse\n\nLa griglia riporta i seguenti campi:",
+    "content_summary": "The section provides a detailed guide on deploying a new virtual machine (VM) in the Cloud Insiel environment, covering the deployment process, monitoring, and optimization. It includes steps for checking deployment status, editing deployment details, and accessing various deployment-related operations through a contextual menu. The section also outlines how to handle user events, monitor resource usage, and optimize VM performance post-deployment. Seventeen figures illustrate various stages and aspects of the deployment process, such as deployment details, network topology, historical activity, and resource monitoring, enhancing understanding of the VM deployment and management process.",
+    "figures": [
+      {
+        "figure_id": "Figura_25_deployment__status",
+        "filename": "VM_manual_figure_25_deployment__status.png",
+        "caption": "Deployment – status",
+        "page": 23
+      },
+      {
+        "figure_id": "Figura_26_deployment__dettagli",
+        "filename": "VM_manual_figure_26_deployment__dettagli.png",
+        "caption": "Deployment – dettagli",
+        "page": 23
+      },
+      {
+        "figure_id": "Figura_27_deployment__menu_contestuale",
+        "filename": "VM_manual_figure_27_deployment__menu_contestuale.png",
+        "caption": "Deployment – menu contestuale",
+        "page": 23
+      },
+      {
+        "figure_id": "Figura_28_deployment__edit",
+        "filename": "VM_manual_figure_28_deployment__edit.png",
+        "caption": "Deployment – edit",
+        "page": 24
+      },
+      {
+        "figure_id": "Figura_29_deployment__dettaglio",
+        "filename": "VM_manual_figure_29_deployment__dettaglio.png",
+        "caption": "Deployment – dettaglio",
+        "page": 25
+      },
+      {
+        "figure_id": "Figura_30_deployment__dettaglio_-_topology",
+        "filename": "VM_manual_figure_30_deployment__dettaglio_-_topology.png",
+        "caption": "Deployment – dettaglio - topology",
+        "page": 26
+      },
+      {
+        "figure_id": "Figura_31_deployment__dettaglio__history_durante_la_creazione_della_vm",
+        "filename": "VM_manual_figure_31_deployment__dettaglio__history_durante_la_creazione_della_vm.png",
+        "caption": "Deployment – dettaglio – history (durante la creazione della vm)",
+        "page": 26
+      },
+      {
+        "figure_id": "Figura_32_deployment__dettaglio__history_dopo_la_creazione_della_vm",
+        "filename": "VM_manual_figure_32_deployment__dettaglio__history_dopo_la_creazione_della_vm.png",
+        "caption": "Deployment – dettaglio – history (dopo la creazione della vm)",
+        "page": 26
+      },
+      {
+        "figure_id": "Figura_33_deployment__dettaglio__user_events",
+        "filename": "VM_manual_figure_33_deployment__dettaglio__user_events.png",
+        "caption": "Deployment – dettaglio – user events",
+        "page": 26
+      },
+      {
+        "figure_id": "Figura_34_deployment__monitor_durante_la_creazione_della_vm",
+        "filename": "VM_manual_figure_34_deployment__monitor_durante_la_creazione_della_vm.png",
+        "caption": "Deployment – monitor (durante la creazione della vm)",
+        "page": 26
+      },
+      {
+        "figure_id": "Figura_35_deployment__monitor_dopo_la_creazione_della_vm",
+        "filename": "VM_manual_figure_35_deployment__monitor_dopo_la_creazione_della_vm.png",
+        "caption": "Deployment – monitor (dopo la creazione della vm)",
+        "page": 27
+      },
+      {
+        "figure_id": "Figura_36_deployment_alerts",
+        "filename": "VM_manual_figure_36_deployment_alerts.png",
+        "caption": "Deployment –alerts",
+        "page": 27
+      },
+      {
+        "figure_id": "Figura_37_deployment__optimize_durante_la_creazione_della_vm",
+        "filename": "VM_manual_figure_37_deployment__optimize_durante_la_creazione_della_vm.png",
+        "caption": "Deployment – optimize (durante la creazione della vm)",
+        "page": 27
+      },
+      {
+        "figure_id": "Figura_38_deployment__optimize_dopo_la_creazione_della_vm",
+        "filename": "VM_manual_figure_38_deployment__optimize_dopo_la_creazione_della_vm.png",
+        "caption": "Deployment – optimize (dopo la creazione della vm)",
+        "page": 27
+      },
+      {
+        "figure_id": "Figura_39_resources_-_deployment",
+        "filename": "VM_manual_figure_39_resources_-_deployment.png",
+        "caption": "Resources - deployment",
+        "page": 29
+      },
+      {
+        "figure_id": "Figura_40_resources__deployment_-_dettagli",
+        "filename": "VM_manual_figure_40_resources__deployment_-_dettagli.png",
+        "caption": "Resources – deployment - dettagli",
+        "page": 29
+      },
+      {
+        "figure_id": "Figura_41_resources__tutte_le_risorse",
+        "filename": "VM_manual_figure_41_resources__tutte_le_risorse.png",
+        "caption": "Resources – tutte le risorse",
+        "page": 29
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.2.1.4.1.",
+      "original_page_numbers": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.2.1.4.2.",
+    "section_title": "RESOURCES",
+    "page_range": "29-31",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- Name: nome della risorsa.\n\n- Resource Type: tipo di risorsa.\n\n* Deployment: deplyment cui è legata la risorsa.\n\n* Account/Region: area del data center in cui è allocata la risorsa.\n\n* Project: sempre pari ad 'asugi'.\n\n* Origin: origine delle richiesta che ha dato luogo all'istanziamento della risorsa.\n\n* Tag: eventuali tag della risorsa, tipicamente popolato solo per le VM con i valori:\n- tenant: TEN_sanita\n- businessGroup: BG_asugi\n\n* Created on: data creazione della risorsa.\n\nÈ inoltre possibile filtrare le risorse per tipologia:\n\nFigura 42 – Resources – Filtro risorse\n\nCliccando sui tre puntini a sinistra si avrà accesso ad un menu contestuale:\n\nFigura 43 – Resources – Menu contestuale\n\n### 5.3.2.1.4.3.VIRTUAL MACHINES\n\nLa griglia 'Virtual machines' è una delle più rilevanti per la gestione delle VM del cloud INSIEL.\nIn fase di creazione della VM sarà possibile verificare lo stato di avanzamento dell'operazione:\n\nFigura 44 – Virtual Machines – Creazione nuova VM\n\nCliccando sul numero nel campo name sarà anche possibile verificare il dettaglio dell'attività:\n\nFigura 45 – Virtual Machines – Creazione nuova VM – Dettagli\n\nFigura 46 – Virtual Machines – Elenco VM\n\nI campi riportati sulla griglia sono:\n\n- Name: il nome della VM assegnato direttamente dall'infrastruttura.\n\n- Deployment: il nome del deployment, come modificato nel PAR 5.2.2.1.4.1 che dovrà\ncoincidere con il nome host della VM.",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CLOUD INSIEL > RESOURCES' in a technical manual covers the management and configuration of cloud resources, specifically focusing on virtual machines (VMs). It details resource attributes such as name, type, deployment, account/region, project, origin, and tags, with specific tags for VMs including 'tenant' and 'businessGroup'. The section includes steps for filtering resources and accessing a contextual menu, supported by figures illustrating these functionalities. Additionally, it discusses the creation and management of VMs, showing progress and details of VM operations with corresponding figures. This section is crucial for users managing VMs in the INSIEL cloud environment.",
+    "figures": [
+      {
+        "figure_id": "Figura_42_resources__filtro_risorse",
+        "filename": "VM_manual_figure_42_resources__filtro_risorse.png",
+        "caption": "Resources – filtro risorse",
+        "page": 30
+      },
+      {
+        "figure_id": "Figura_43_resources__menu_contestuale",
+        "filename": "VM_manual_figure_43_resources__menu_contestuale.png",
+        "caption": "Resources – menu contestuale",
+        "page": 30
+      },
+      {
+        "figure_id": "Figura_44_virtual_machines__creazione_nuova_vm",
+        "filename": "VM_manual_figure_44_virtual_machines__creazione_nuova_vm.png",
+        "caption": "Virtual machines – creazione nuova vm",
+        "page": 31
+      },
+      {
+        "figure_id": "Figura_45_virtual_machines__creazione_nuova_vm__dettagli",
+        "filename": "VM_manual_figure_45_virtual_machines__creazione_nuova_vm__dettagli.png",
+        "caption": "Virtual machines – creazione nuova vm – dettagli",
+        "page": 31
+      },
+      {
+        "figure_id": "Figura_46_virtual_machines__elenco_vm",
+        "filename": "VM_manual_figure_46_virtual_machines__elenco_vm.png",
+        "caption": "Virtual machines – elenco vm",
+        "page": 31
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.2.1.4.2.",
+      "original_page_numbers": [
+        29,
+        30,
+        31
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.2.1.4.3.",
+    "section_title": "VIRTUAL MACHINES",
+    "page_range": "31-35",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "* Power state: VM accesa o spenta.\n\n* Account/Region: area del data center in cui è allocata la risorsa.\n\n* Address: indirizzo IP della VM. Per maggiori dettagli sull'indirizzamento consultare l'\nAPPENDICE 1 – CRITERI DI ASSEGNAZIONE DEGLI INDIRIZZI IP.\n\n* Project: sempre pari ad 'asugi'.\n\n* Origin: modalità di creazione della VM.\n\n* Tags: i tag assegnati di default alla VM:\n- tenant: TEN_sanita\n- businessGroup: BG_asugi\n\n* Created on: data creazione della risorsa.\n\nCliccando sul tasto sulla sinistra, si avrà accesso ad una finestra di dettaglio della VM:\n\nFigura 47 – Virtual Machines – Dettaglio VM\n\nVengono ivi riportate varie informazioni di dettaglio sulla VM, tra cui:\n* Numero di core.\n\n* Indirizzo IP\n\n• Dimensione disco rigido.\n\n• Ecc.\n\nCliccando invece sui tre puntini sulla sinistra: si accede al menu contestuale relativo alla VM\nche permette di eseguire una serie di operazioni:\n\nFigura 48 – Virtual Machines – Menu contestuale #1\n\nFigura 49 – Virtual Machines – Menu contestuale #2\n\nNOTA BENE:\n• Le attività disabilitate sul menu, in generale sono utilizzabili solamente con la VM spenta.\n\n• È preferibile, tuttavia, spegnere la VM anche per attività consentite con la VM accesa che\nriguardino la modifica delle risorse computazionali, l'aggiunta e/o il ridimensionamento dei\ndischi; ciò per evitare eventuali problematiche al sistema operativo.\n\nUtilizzando tali funzionalità procederemo a modificare la VM come richiesto.\n\nPrima di procedere con ogni operazione è necessario spegnere la VM con l'apposito comando 'Shutdown'.\n\nLa VM prima creata ha un unico disco, creato per default con dimensioni 80 GB, è stato richiesto che venga portato a 100 GB. Pertanto, si procede con il comando 'Resize Boot Disk' per portarlo da 80 a 100 GB.\n\nFigura 50 – Virtual Machines – Resize Boot Disk\n\nL'operazione richiederà un po' di tempo.\n\nNOTA BENE:\n* L'espansione del disco non comporta automaticamente l'espansione del file system ivi contenuto, operazione che andrà pertanto effettuata da sistema operativo.\n\nA termine operazione è possibile riavviare la VM.\nSempre attraverso il medesimo menu è possibile accedere alla VM con il comando 'Connect to Remote Console' per verificarne il corretto funzionamento.\n\n### 5.3.2.1.4.4.VOLUMES\n\nLa griglia 'Volumes' mostra i dischi attualmente impiegati, ed eventuali attività di deployment in corso:\n\nFigura 51 – Volumes\n\nSono presenti tre tipologie di volumi:\n\n- Dischi di boot.\n\n- Dischi aggiuntivi.\n\n- CD/DVD che consentono il montaggio di una immagine ISO.\n\nLa griglia contiene i seguenti campi:\n\n- Name: il nome del volume, contenente talvolta il nome del deployment con il quale è stato creato.",
+    "content_summary": "This section of the manual details the management and configuration of virtual machines (VMs) in a cloud environment. It covers aspects like power state, account/region allocation, IP addressing, project association, origin, and default tags. Key operations such as VM shutdown, resizing the boot disk from 80 GB to 100 GB, and accessing VM details through contextual menus are highlighted. Troubleshooting tips include shutting down the VM for certain operations to avoid OS issues. The section includes five figures illustrating VM details, contextual menus, disk resizing, and volume management, aiding in visual understanding of VM operations and configurations.",
+    "figures": [
+      {
+        "figure_id": "Figura_47_virtual_machines__dettaglio_vm",
+        "filename": "VM_manual_figure_47_virtual_machines__dettaglio_vm.png",
+        "caption": "Virtual machines – dettaglio vm",
+        "page": 32
+      },
+      {
+        "figure_id": "Figura_48_virtual_machines__menu_contestuale_1",
+        "filename": "VM_manual_figure_48_virtual_machines__menu_contestuale_1.png",
+        "caption": "Virtual machines – menu contestuale #1",
+        "page": 33
+      },
+      {
+        "figure_id": "Figura_49_virtual_machines__menu_contestuale_2",
+        "filename": "VM_manual_figure_49_virtual_machines__menu_contestuale_2.png",
+        "caption": "Virtual machines – menu contestuale #2",
+        "page": 33
+      },
+      {
+        "figure_id": "Figura_50_virtual_machines__resize_boot_disk",
+        "filename": "VM_manual_figure_50_virtual_machines__resize_boot_disk.png",
+        "caption": "Virtual machines – resize boot disk",
+        "page": 34
+      },
+      {
+        "figure_id": "Figura_51_volumes",
+        "filename": "VM_manual_figure_51_volumes.png",
+        "caption": "Volumes",
+        "page": 35
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.2.1.4.3.",
+      "original_page_numbers": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.2.1.4.4.",
+    "section_title": "VOLUMES",
+    "page_range": "35-37",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- Deployment: non sempre presente, il nome del deployment con il quale è stato creato il volume.\n\n- Status: l'utilizzo del volume, se ATTACHED vuol dire che è effettivamente collegato ad una VM.\n\n- Capacity(GB): le dimensioni del volume in GB.\n\n- Project: sempre pari ad 'asugi'.\n\n- Origin: metodo di creazione del volume, tipicamente assume il valore 'Deployed'.\n\n- Tags: eventuali tag per il volume\n\n- Created on: data di creazione del volume\n\nCliccando su » alla sinistra di ogni riga, si avrà accesso ad una finestra di dettaglio per quel volume:\n\nFigura 52 – Volumes - Dettaglio volume\n\nCliccando su ⋮ si avrà accesso ad un menu contestuale:\n\nFigura 53 - Volumes - Menu contestuale\n\nL'unica funzionalità disponibile è 'Update Tags' che permette di inserire tag nei volumi.\n\n### 5.3.2.1.4.5.NETWORKING E SECURITY\n\nLa griglia 'Networking & Security' mostra le configurazioni di rete delle VM create, ed eventuali attività di deployment in corso:\n\nFigura 54 - Networking & Security\n\nLa griglia contiene i seguenti campi:\n\n- Name: il nome della rete cui è collegata la VM.\n\n- Deployment: il nome del deployment con il quale è stato assegnato l'indirizzo di rete contestualmente alla creazione della VM.\n\n- Account/Region: la localizzazione della rete.\n\n- NSX Project / VPC: in genere non popolato.\n\n- Network Domain: in genere non popolato.\n\n- CIDR: indirizzo di rete assegnato per quello specifico deployment.\n\n- Project: sempre pari ad 'asugi'.\n\n- Origin: metodo di creazione del volume, tipicamente assume il valore 'Deployed'.\n\n- Tags: eventuali tag per il volume\n\n- Created on: data di creazione del volume",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CLOUD INSIEL > VOLUMES' in the technical manual provides detailed information on managing volumes in a cloud environment. It covers aspects such as deployment, status, capacity, project, origin, and tags of volumes, with specific instructions on how to view detailed volume information and update tags via a contextual menu. Three figures illustrate these functionalities: 'Volumes - Dettaglio volume', 'Volumes - Menu contestuale', and 'Networking & Security'. The latter part of the section, 'Networking & Security', details the network configurations and security settings of VMs, including fields like name, deployment, account/region, and network addresses, highlighting the ongoing deployment activities.",
+    "figures": [
+      {
+        "figure_id": "Figura_52_volumes_-_dettaglio_volume",
+        "filename": "VM_manual_figure_52_volumes_-_dettaglio_volume.png",
+        "caption": "Volumes - dettaglio volume",
+        "page": 36
+      },
+      {
+        "figure_id": "Figura_53_volumes_-_menu_contestuale",
+        "filename": "VM_manual_figure_53_volumes_-_menu_contestuale.png",
+        "caption": "Volumes - menu contestuale",
+        "page": 36
+      },
+      {
+        "figure_id": "Figura_54_networking__security",
+        "filename": "VM_manual_figure_54_networking__security.png",
+        "caption": "Networking & security",
+        "page": 37
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.2.1.4.4.",
+      "original_page_numbers": [
+        35,
+        36,
+        37
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.3.2.1.4.5.",
+    "section_title": "NETWORKING E SECURITY",
+    "page_range": "37-39",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD INSIEL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Cliccando su » alla sinistra di ogni riga, si avrà accesso ad una finestra di dettaglio per quella riga:\n\nFigura 55 - Networking & Security – Dettagli\n\nCliccando su ⋮ si avrà accesso ad un menu contestuale:\n\nFigura 56 - Networking & Security - Menu contestuale\n\nChe tuttavia non dà accesso ad alcuna funzionalità.\n\n## 5.4 CLOUD FIREWALL\n\n##### 5.4.1.1.1 ACCESSO AL CLOUD FIREWALL\n\nSelezionando 'Cloud Firewall':\n\nFigura 57 - Tasto 'Cloud Firewall'\n\nSi avrà accesso ad una schermata ulteriore:\n\nFigura 58 - Accesso a Cloud Firewall\n\nDa qui cliccando sull'icona 'Apri': Apri si avrà finalmente accesso all'interfaccia utente di VMWare NSX.\n\nSi tratta di una interfaccia estremamente strutturata che dà accesso a numerose funzionalità.\nTuttavia scopo del presente documento non è necessaria una esaustiva e completa spiegazione\ndelle funzionalità di VMWare NSX, ci si concentrerà pertanto sulle sole funzionalità necessarie alla\ncreazione di una VM.\n\nNOTA BENE:\n- La sessione con NSX scade anche durante un periodo di attività, tale comportamento è del tutto regolare ed è necessario ri effettuare il log.\n\n##### 5.4.1.1.2 HOME\n\nIl tab 'Home' non dà accesso a funzionalità particolari, ma consente solamente di prendere visione delle configurazioni generali di NSX.\n\n#### 5.4.1.1.2.1.PANORAMICA\n\nFigura 59 - VMWare NSX – Home - Panoramica",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CLOUD INSIEL > NETWORKING E SECURITY', provides detailed guidance on accessing and using the Cloud Firewall feature within the VMWare NSX interface. It includes steps for accessing detailed networking and security settings, contextual menus, and the Cloud Firewall interface. The section highlights the structured nature of the VMWare NSX interface, which offers numerous functionalities, though the manual focuses only on those necessary for VM creation. The figures included serve as visual aids for each step, from accessing menus to viewing the NSX home overview. Note that the NSX session may expire during activity, which is a regular behavior requiring re-login.",
+    "figures": [
+      {
+        "figure_id": "Figura_55_networking__security__dettagli",
+        "filename": "VM_manual_figure_55_networking__security__dettagli.png",
+        "caption": "Networking & security – dettagli",
+        "page": 38
+      },
+      {
+        "figure_id": "Figura_56_networking__security_-_menu_contestuale",
+        "filename": "VM_manual_figure_56_networking__security_-_menu_contestuale.png",
+        "caption": "Networking & security - menu contestuale",
+        "page": 38
+      },
+      {
+        "figure_id": "Figura_57_tasto_cloud_firewall",
+        "filename": "VM_manual_figure_57_tasto_cloud_firewall.png",
+        "caption": "Tasto 'cloud firewall'",
+        "page": 39
+      },
+      {
+        "figure_id": "Figura_58_accesso_a_cloud_firewall",
+        "filename": "VM_manual_figure_58_accesso_a_cloud_firewall.png",
+        "caption": "Accesso a cloud firewall",
+        "page": 39
+      },
+      {
+        "figure_id": "Figura_59_vmware_nsx__home_-_panoramica",
+        "filename": "VM_manual_figure_59_vmware_nsx__home_-_panoramica.png",
+        "caption": "Vmware nsx – home - panoramica",
+        "page": 40
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.3.2.1.4.5.",
+      "original_page_numbers": [
+        37,
+        38,
+        39
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4",
+    "section_title": "CLOUD FIREWALL",
+    "page_range": "39",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "La griglia 'Home' è il punto di accesso di NSX, vengono mostrati nei quattro riquadri, informazioni di carattere generale:",
+    "content_summary": "The 'CLOUD FIREWALL' section in the technical manual provides an overview of the NSX home grid, which serves as the access point for NSX. It details the general information displayed in four panels within the home grid.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.4",
+      "original_page_numbers": [
+        39
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.1",
+    "section_title": "ACCESSO AL CLOUD FIREWALL",
+    "page_range": "39-40",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- Rete:\n- 2 Gateway di livello 1 (vedi PAR. 5.2.2.2).\n- 0 Regole NAT.\n- 3 Segmenti (di rete).\n\n- Sicurezza:\n- 20 criteri di firewall distribuito: coincide con il numero di criteri presenti nel firewall distribuito (vedi PAR. 5.4.1.1.3.1).\n- 0 criteri distributi IDS/IPS: questa funzionalità è infatti disabilitata.\n- 3 criteri gateway: coincide con i tre criteri presenti nel firewall gateway di cui due di default, ed uno custom.\n\n- Progetti E VPC:\n- 0 Virtual Private Cloud, coincide con quanto visualizzato nel tab VPC.\n- 20 criteri firewall E-W: coincide con il numero di criteri presenti nel firewall distribuito¹.\n- 3 criteri firewall N-S: coincide con il numero di criteri gateway visto in precedenza².\n- 1 utente del progetto.\n- 0 subnet del VPC, infatti non sono configurati VPC.\n- 0 utenti VPC, per lo stesso motivo della voce precedente.\n\n- Inventario:\n- 33 gruppi (vedi PAR. 5.4.1.1.4.2).\n- 17 macchine virtuali (vedi PAR. 5.4.1.1.4.4).\n\n¹ Regole est-ovest: per la connettività orizzontale nell'infrastruttura, ovvero tra le VM appartenti all'infrastruttura.\n\n² Regole nord-sud: per la connettività verticale nell'infrastruttura, ovvero da e per l'esterno.",
+    "content_summary": "This section of the technical manual, titled 'ACCESSO AL CLOUD FIREWALL', provides detailed information on the configuration and status of the cloud firewall system within a network infrastructure. It covers network gateways, NAT rules, network segments, security policies including firewall and IDS/IPS criteria, and project-specific settings like Virtual Private Clouds (VPCs) and user configurations. It also includes an inventory of groups and virtual machines. The section references various parts of the manual for detailed descriptions and uses figures to illustrate the connectivity rules between infrastructure components, both horizontally (East-West) and vertically (North-South).",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.4.1.1.1",
+      "original_page_numbers": [
+        39,
+        40
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.2",
+    "section_title": "HOME",
+    "page_range": "40",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "- 0 profili di accesso a Livello 7 (vedi PAR. 5.4.1.1.4.3).\n- 2 sevizi (vedi PAR 5.4.1.1.4.1)\n- 6 profili contesto (vedi PAR. 5.4.1.1.4.3).",
+    "content_summary": "The section 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > HOME' in the technical manual provides an overview of the Cloud Firewall's configuration settings. It includes references to access profiles at Level 7, services, and context profiles with specific paragraphs for detailed information. The section is essential for configuring and understanding the firewall's operational settings and does not include figures.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.4.1.1.2",
+      "original_page_numbers": [
+        40
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.2.1.",
+    "section_title": "PANORAMICA",
+    "page_range": "40-41",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "### 5.4.1.1.2.2.AVVISI\nNel tab 'Avvisi' sono presenti due sotto tab:\n\n- Avvisi\n\n- Definizione avvisi\n\nFigura 60 - VMWare NSX – Home – Avvisi\n\n[The image shows a dark-themed interface with an empty state message and an icon representing no data or notifications]\n\nFigura 61 - VMWare NSX – Home – Definizione avvisi\n\nQueste funzionalità non sono utilizzate, non vi sono avvisi configurati.\n\n##### 5.4.1.1.3 RETE\n\nIl tab 'Rete' permette di prendere visione delle vari configurazioni di rete di NSX, è utile per consultazione, ma su di esso non deve mai essere effettuato alcun intervento.\n\nFigura 62 - VMWare NSX – Rete\n\n#### 5.4.1.1.3.1.PANORAMICA DELLE RETE\n\nFigura 63 - VMWare NSX – Rete – Panoramica della rete",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > PANORAMICA' in a technical manual provides an overview of the VMware NSX Cloud Firewall. It includes details on the 'Avvisi' (Alerts) and 'Rete' (Network) tabs. The 'Avvisi' tab, which is not utilized and has no alerts configured, is divided into 'Avvisi' and 'Definizione avvisi' sub-tabs, illustrated by figures showing the interface. The 'Rete' tab is for viewing network configurations and should not be modified. Figures support the content by showing the interface and network overview, helping in visual understanding of the system setup.",
+    "figures": [
+      {
+        "figure_id": "Figura_60_vmware_nsx__home__avvisi",
+        "filename": "VM_manual_figure_60_vmware_nsx__home__avvisi.png",
+        "caption": "Vmware nsx – home – avvisi",
+        "page": 41
+      },
+      {
+        "figure_id": "Figura_61_vmware_nsx__home__definizione_avvisi",
+        "filename": "VM_manual_figure_61_vmware_nsx__home__definizione_avvisi.png",
+        "caption": "Vmware nsx – home – definizione avvisi",
+        "page": 41
+      },
+      {
+        "figure_id": "Figura_62_vmware_nsx__rete",
+        "filename": "VM_manual_figure_62_vmware_nsx__rete.png",
+        "caption": "Vmware nsx – rete",
+        "page": 42
+      },
+      {
+        "figure_id": "Figura_63_vmware_nsx__rete__panoramica_della_rete",
+        "filename": "VM_manual_figure_63_vmware_nsx__rete__panoramica_della_rete.png",
+        "caption": "Vmware nsx – rete – panoramica della rete",
+        "page": 42
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.2.1.",
+      "original_page_numbers": [
+        40,
+        41
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.2.2.",
+    "section_title": "AVVISI",
+    "page_range": "41-42",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Vengono mostrate indicazioni generali sulla configurazione della rete:\n- Connettività:\n- Gateway di livello 1: 2 (vedi PAR. 5.2.2.2).\n- Segmenti: 3.\n\n- Gestione indirizzi IP:\n- Zone DNS: 0.\n- Pool di IP: 0.\n\n• Gateway di livello 1:\n- Numeri di livelli 1 per gateway di livello 0: 2 (si osservi che i nomi coincidono con quanto riportato nel PAR. 5.2.2.2).\n\n• Segmenti:\n• Segmenti NSX:\n- Connesso al gateway:\n- Non connesso: 2\n- Con NAT: 0\n- Indirizzato: 1\n- Connesso alle macchine virtuali:\n- Connesso: 0\n- Non connesso: 3\n\n##### 5.4.1.1.4 GATEWAY DI LIVELLO 1",
+    "content_summary": "The section 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > AVVISI' in the technical manual provides general guidelines on network configuration for a cloud firewall. It includes details on connectivity, such as the number of level 1 gateways and network segments. It also covers IP address management, including DNS zones and IP pools, with specific references to other parts of the manual for further details. The section aims to assist in setting up and troubleshooting network configurations in a cloud environment.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.4.1.1.2.2.",
+      "original_page_numbers": [
+        41,
+        42
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.3",
+    "section_title": "RETE",
+    "page_range": "42",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL > AVVISI",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Figura 64 - VMWare NSX – Rete – Gateway di Livello 1\n\nLa griglia riporta i seguenti campi:\n\n• Nome.",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > AVVISI > RETE', focuses on network alerts within a cloud firewall environment, specifically using VMware NSX. It includes a figure (Figura 64 - VMware NSX – Rete – Gateway di Livello 1) which likely illustrates the Level 1 Gateway configuration in the VMware NSX network. The section provides details on the configuration fields, such as 'Nome', necessary for setting up or troubleshooting the network gateway alerts.",
+    "figures": [
+      {
+        "figure_id": "Figura_64_vmware_nsx__rete__gateway_di_livello_1",
+        "filename": "VM_manual_figure_64_vmware_nsx__rete__gateway_di_livello_1.png",
+        "caption": "Vmware nsx – rete – gateway di livello 1",
+        "page": 43
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.3",
+      "original_page_numbers": [
+        42
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.3.1.",
+    "section_title": "PANORAMICA DELLE RETE",
+    "page_range": "42-43",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL > AVVISI",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "• Modalità HA.\n\n• Gateway di livello 0 collegato.\n\n• Segmenti collegati.\n\n* Stato.\n\n* Avvisi\n\nE' evidente la corrispondenza tra quanto mostrato nella griglia e quano descritto nel PAR. 5.2.2.2, Ovvero il gateway di livello 1: pl-asugi-t1-test-dir è connesso al gateway di livello 0: pl-rupar-vrf-sanita, questo è il backup in caso di disaster recovory; il gateway di livello 1: ts-asugi-t1 è connesso al gateway di livello 0: ts-rupar-t0-2025, questa è la linea primaria per la connettività.\n\n##### 5.4.1.1.5 SEGMENTI\n\nTale pagina fornisce indicazioni sui segmenti di rete utilizzati, è suddivisa su due tab:\n\n* NSX\n\n* Profili\n\n#### 5.4.1.1.5.1.NSX",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > AVVISI > PANORAMICA DELLE RETE' in the technical manual provides an overview of network configurations and alerts for a cloud firewall system. It includes details on High Availability (HA) modes, connections between zero and first-level gateways, and network segments. The section also explains the primary and backup connectivity setups for disaster recovery, supported by figures that demonstrate the network architecture and connectivity paths. Additionally, it covers network segments under two tabs: NSX and Profiles, providing specific configuration and troubleshooting information.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.4.1.1.3.1.",
+      "original_page_numbers": [
+        42,
+        43
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.4",
+    "section_title": "GATEWAY DI LIVELLO 1",
+    "page_range": "43-44",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL > AVVISI > PANORAMICA DELLE RETE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Figura 65 - VMWare NSX – Rete – Segmenti – NSX\n\nNella griglia sono presenti i seguenti campi:\n\n* Nome\n\n* Gateway connesso\n\n* Zona di trasporto\n\n* Subnet\n\n* Porte / interfacce\n\n* Stato\n\n• Avvisi\n\nConsideriamo la prima riga:\n• Il nome della rete è 'asugi' e coincide con la rete assegnata di default in fase di creazione di una VM (vedi PAR 6.1) ed è la rete di produzione normalmente utilizzata.\n\n• La rete è collegata al gateway (di livello 1) principale: ts-asugi-t1.\n\n• La subnet è effettivamente quella da cui vengono attinti gli indirizzi IP da assegnare alle VM create.",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > AVVISI > PANORAMICA DELLE RETE > GATEWAY DI LIVELLO 1', provides an overview of network configurations within a cloud firewall environment, specifically focusing on Level 1 gateways. It details the fields displayed in a grid format, including network name, connected gateway, transport zone, subnet, ports/interfaces, and status. The section also discusses alerts and mentions a default network named 'asugi' used in VM creation, connected to the main Level 1 gateway 'ts-asugi-t1'. The subnet mentioned is used for assigning IP addresses to newly created VMs. A figure (Figura 65 - VMWare NSX – Rete – Segmenti – NSX) is included to visually represent network segments within VMWare NSX, aiding in understanding the network structure and configurations.",
+    "figures": [
+      {
+        "figure_id": "Figura_65_vmware_nsx__rete__segmenti__nsx",
+        "filename": "VM_manual_figure_65_vmware_nsx__rete__segmenti__nsx.png",
+        "caption": "Vmware nsx – rete – segmenti – nsx",
+        "page": 44
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.4",
+      "original_page_numbers": [
+        43,
+        44
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.5",
+    "section_title": "SEGMENTI",
+    "page_range": "44",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL > AVVISI > PANORAMICA DELLE RETE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "• Il numero di porte / Interfacce coincide con il numero di VM esistenti nell'infrastruttura (vedi PAR. 5.3.2.1.4.3).\n\n### 5.4.1.1.5.2.PROFILI\n\nFigura 66 - VMWare NSX – Rete – Segmenti – Profili",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > AVVISI > PANORAMICA DELLE RETE > SEGMENTI', discusses the network segments in a cloud firewall system, specifically within a VMware NSX environment. It explains the correlation between the number of ports/interfaces and the number of VMs in the infrastructure, referencing a specific paragraph for more details. The section includes a figure (Figura 66) illustrating the VMware NSX network segments and profiles, which aids in visualizing the configuration and its components.",
+    "figures": [
+      {
+        "figure_id": "Figura_66_vmware_nsx__rete__segmenti__profili",
+        "filename": "VM_manual_figure_66_vmware_nsx__rete__segmenti__profili.png",
+        "caption": "Vmware nsx – rete – segmenti – profili",
+        "page": 45
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.5",
+      "original_page_numbers": [
+        44
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.5.1.",
+    "section_title": "NSX",
+    "page_range": "44-45",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL > AVVISI",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Nella griglia sono presenti i seguenti campi:\n\n• Profilo segmento\n\n• Tipo\n\n• Assegnato a\n\n• Stato\n\nI 'profili' sono ulteriori configurazioni che è possibile aggiungere ai segmenti NSX:\n\nFigura 67 - VMWare NSX – Rete – Segmenti – Profili – Tipo profili\n\nIn dettaglio:\n\n* SpoofGuard\n\n* Rilevamento IP\n\n* Rilevamento MAC\n\n* Sicurezza segmento\n\n* QoS",
+    "content_summary": "This section of the manual covers the configuration and management of NSX segment profiles in a cloud firewall setting within VMware environments. It details the fields present in the grid, such as 'Profile Segment', 'Type', 'Assigned to', and 'Status'. The section further elaborates on the additional configurations possible with NSX profiles, including SpoofGuard, IP Detection, MAC Detection, Segment Security, and QoS. A figure is included to visually represent the network segments and profile types, aiding in better understanding and configuration of the NSX profiles.",
+    "figures": [
+      {
+        "figure_id": "Figura_67_vmware_nsx__rete__segmenti__profili__tipo_profili",
+        "filename": "VM_manual_figure_67_vmware_nsx__rete__segmenti__profili__tipo_profili.png",
+        "caption": "Vmware nsx – rete – segmenti – profili – tipo profili",
+        "page": 46
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.5.1.",
+      "original_page_numbers": [
+        44,
+        45
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.5.2.",
+    "section_title": "PROFILI",
+    "page_range": "45-47",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Al momento non vi è nessun profilo configurato.\n\n##### 5.4.1.1.6 NAT\n\nNessuna regola NAT definita. È possibile iniziare facendo clic su \"Aggiungi regola NAT\"\n\nFigura 68 - VMWare NSX – Rete – NAT\n\nSono presenti nella griglia i seguenti campi:\n\n- Nome.\n\n- Azione.\n\n- Associa.\n\n- IP di origine.\n\n- IP di destinazione/Porta.\n\n- IP convertito/Porta.\n\n- Applica a.\n\n- Abilitata.\n\n- Stato.\n\nFigura 69 - VMWare NSX – Rete – NAT – Configurazione NAT\n\nQuesta funzionalità è utile per configurare NAT nel contesto di un gateway di Livello 1 predefinito.\nAl momento non sono presenti NAT configurati.\n\n##### 5.4.1.1.7 DNS\n\nTale pagina fornisce indicazioni sui segmenti di rete utilizzati, è suddivisa su due tab:\n\n- Servizi DNS\n- Zone DNS",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > PROFILI' in the technical manual discusses the configuration of NAT (Network Address Translation) rules within the VMWare NSX environment. It notes the absence of any configured profiles or NAT rules and provides a step-by-step guide on how to add a NAT rule. Key fields required for setting up NAT, such as Name, Action, Source IP, Destination IP/Port, Translated IP/Port, and others are listed. Two figures, 'VMWare NSX – Rete – NAT' and 'VMWare NSX – Rete – NAT – Configurazione NAT,' illustrate the NAT configuration interface and support the content by showing the actual configuration screens. The section is crucial for configuring NAT in a predefined Level 1 gateway context, although no NAT configurations are currently set up.",
+    "figures": [
+      {
+        "figure_id": "Figura_68_vmware_nsx__rete__nat",
+        "filename": "VM_manual_figure_68_vmware_nsx__rete__nat.png",
+        "caption": "Vmware nsx – rete – nat",
+        "page": 47
+      },
+      {
+        "figure_id": "Figura_69_vmware_nsx__rete__nat__configurazione_nat",
+        "filename": "VM_manual_figure_69_vmware_nsx__rete__nat__configurazione_nat.png",
+        "caption": "Vmware nsx – rete – nat – configurazione nat",
+        "page": 48
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.5.2.",
+      "original_page_numbers": [
+        45,
+        46,
+        47
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.7",
+    "section_title": "DNS",
+    "page_range": "48",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL > PROFILI",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Selezionando 'Firewall gateway' vengono mostrate le regole generiche a livello di gateway NSX. In generale in questa schermata non deve essere apportata alcuna modifica.\n\nFigura 71 - VMWare NSX - Sicurezza -Firewall Gateway\n\nI gateway normalmente sono su base geografica e gestiscono regole firewall generiche.",
+    "content_summary": "This section of the manual, titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > PROFILI > DNS', focuses on the 'Firewall gateway' settings within the VMWare NSX system. It explains that the gateway typically handles generic firewall rules based on geographic locations and advises against making modifications to these settings. The section includes a figure (Figure 71 - VMWare NSX - Sicurezza -Firewall Gateway) that illustrates the gateway firewall settings.",
+    "figures": [
+      {
+        "figure_id": "Figura_71_vmware_nsx_-_sicurezza_-firewall_gateway",
+        "filename": "VM_manual_figure_71_vmware_nsx_-_sicurezza_-firewall_gateway.png",
+        "caption": "Vmware nsx - sicurezza -firewall gateway",
+        "page": 50
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.7",
+      "original_page_numbers": [
+        48
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.7.1.",
+    "section_title": "SERVIZI DNS",
+    "page_range": "48-49",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL > PROFILI",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "### 5.4.1.1.8.1.FIREWALL DISTRIBUITO\n\nPer le finalità di questo documento è necessario concentrarsi invece su 'Firewall distribuito':\n\nFigura 72 - VMWare NSX - Firewall distribuito\n\nPer 'distribuito' si intende che il firewall è, semplificando, distribuito su tutti gli host ESXi che costituiscono l'infrastruttura VMWare, e, in tal modo anche le regole in esso impostate saranno automaticamente distribuite su tutti gli host ESXi.\n\nPer le finalità del presente documento considereremo i blocchi di 'criteri':\n\n- Ambiente: si tratta di criteri di utilizzo generico, ad esempio, accesso a VPN, accesso ad AD, ecc.\n- Applicazione: si tratta di criteri creati per l'utilizzo specifico con determinate infrastrutture applicative.\n\nOgni 'criterio' raggruppa una o più regole firewall.\n\nNOTA BENE:\n- Si osservi che la regola di default, quindi quella in fondo all'elenco, anche se non visibile è 'DENY ALL', ossia viene inibita ogni comunicazione.\n- In conseguenza di ciò tutte le VM create cui non sia associata una qualsivoglia regola firewall sono completamente isolate.\n\nCliccando sulla freccia a sinistra si avrà accesso al dettaglio di un criterio:\n\nFigura 73 - VMWare NSX - Dettaglio regola firewall",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > PROFILI > SERVIZI DNS', focuses on the 'Distributed Firewall' in VMware's NSX environment. It explains that the firewall is deployed across all ESXi hosts, ensuring that rules are automatically distributed as well. The section breaks down firewall policies into 'Environment' and 'Application' categories, each containing multiple rules. A default 'DENY ALL' rule is highlighted, which blocks all communication unless specified otherwise. Two figures are included: 'VMWare NSX - Distributed Firewall' and 'VMWare NSX - Firewall Rule Detail', which visually support the explanation of the firewall's deployment and rule details respectively.",
+    "figures": [
+      {
+        "figure_id": "Figura_72_vmware_nsx_-_firewall_distribuito",
+        "filename": "VM_manual_figure_72_vmware_nsx_-_firewall_distribuito.png",
+        "caption": "Vmware nsx - firewall distribuito",
+        "page": 50
+      },
+      {
+        "figure_id": "Figura_73_vmware_nsx_-_dettaglio_regola_firewall",
+        "filename": "VM_manual_figure_73_vmware_nsx_-_dettaglio_regola_firewall.png",
+        "caption": "Vmware nsx - dettaglio regola firewall",
+        "page": 51
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.7.1.",
+      "original_page_numbers": [
+        48,
+        49
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.7.2.",
+    "section_title": "ZONE DNS",
+    "page_range": "49",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > ZONE DNS', provides detailed guidance on configuring and managing DNS zones through a cloud-based firewall system. It includes step-by-step instructions for setting up DNS records, configuring firewall rules specific to DNS traffic, and troubleshooting common DNS issues. The section also features diagrams illustrating the architecture of DNS management within the firewall and flowcharts that help in troubleshooting DNS problems. This information is crucial for system administrators and network engineers responsible for maintaining network security and integrity.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.4.1.1.7.2.",
+      "original_page_numbers": [
+        49
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.8",
+    "section_title": "SICUREZZA",
+    "page_range": "49-50",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL > ZONE DNS",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Cliccando sui tre puntini del criterio, si accede ad una serie di operazioni di dettaglio:\n\nFigura 74 - VMWare NSX - Operazioni sui criteri\n\n- Attiva registrazione per tutte le regole\n- Disattiva registrazione per tutte le regole\n- Attiva tutte le regole\n- Disattiva tutte le regole\n- Elimina criterio\n- Aggiungi regola\n- Aggiungi criterio sopra\n- Aggiungi criterio sotto\n- Copia percorso negli appunti\n\nAVVIAMENTO (2)",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > ZONE DNS > SICUREZZA' in the technical manual provides detailed operations for managing DNS security policies within a cloud firewall environment. It includes steps for enabling and disabling rule logging, activating and deactivating all rules, deleting policies, and adding rules. The section also covers the management of policy placement and offers a clipboard copy feature for policy paths. A figure (Figure 74 - VMWare NSX - Operazioni sui criteri) illustrates these policy operations in the VMWare NSX environment.",
+    "figures": [
+      {
+        "figure_id": "Figura_74_vmware_nsx_-_operazioni_sui_criteri",
+        "filename": "VM_manual_figure_74_vmware_nsx_-_operazioni_sui_criteri.png",
+        "caption": "Vmware nsx - operazioni sui criteri",
+        "page": 51
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.8",
+      "original_page_numbers": [
+        49,
+        50
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.8.1.",
+    "section_title": "FIREWALL DISTRIBUITO",
+    "page_range": "50-53",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "È bene valutare con attenzione, prima di effettuare operazioni su tale menu.\n\nCliccando sui tre puntini della regola si avrà accesso ad alcune operazioni di dettaglio:\n\nFigura 75 - VMWare NSX - Operazioni sulle regole\n\nSi osservi che è possibile modificare la priorità delle regole firewall all'interno di un criterio, anche semplicemente trascinandole.\n\nÈ possibile aggiungere un nuovo criterio cliccando sul tasto specifico: + AGGIUNGI CRITERIO.\n\nFigura 76 - VMWare NSX – Nuovo criterio\n\nUn criterio privo di regole è in pratica una 'scatola vuota'.\n\nSuccessivamente si potrà premere sul tasto: PUBBLICA per confermare, o RIPRISTINA per annullare.\n\nDopo aver creato un criterio ed averlo selezionato, è possibile aggiungere una regola cliccando sul tasto specifico: + AGGIUNGI REGOLA.\n\nFigura 77 - VMWare NSX – Nuova regola firewall\n\nAnche in questo caso si potrà premere sul tasto: PUBBLICA per confermare, o RIPRISTINA per annullare.\n\nL'operazione andrà ripetuta per ogni regola firewall da aggiungere.\nSi osservi come talune di queste operazioni siano ugualmente eseguibili con i menu contestuali visti in precedenza.\n\nIl criterio 'INTERNAL' mostrato sopra, nello specifico contiene due regole firewall:\n- Servizi Base Ingresso\n- Servizi Base Uscita\n\nI dettagli forniti per ogni regola sono:\n- Nome regola\n- ID regola\n- Gruppo origine\n- Gruppo destinazione\n- Servizi\n- Profili contesto\n- Si applica a\n- Azione\n- Abilitata\n\nNel caso specifico, a titolo di esempio la regola 'Servizi base uscita' riporta i seguenti valori:\n- Nome regola: Servizi base uscita\n- ID regola: 11256\n- Gruppo origine: _ASUGI INTERNAL\n- Gruppo destinazione: _ASUGI DATACENTER\n- Servizi: INTERNAL\n- Profili contesto: Nessuno\n- Si applica a: DFW (Distributed Firewall)\n- Azione: Consenti\n- Abilitata: Si\n\nSi osservi quanto segue:\n- Origini e destinazioni: non possono essere indicate singole VM ma 'Gruppi', i 'Gruppi' verranno dettagliati più a fondo successivamente. Nel caso la regola interessi una singola VM sarà necessario realizzare un gruppo contenente una solo VM.\n- Servizi: si possono in maniera semplificata associare i servizi alle porte cui debba essere applicata la regola. Vi sono alcuni servizi standard disponibili, quali: http (porta 80), https (porta 443), ecc. è possibile definire anche servizi con porte fuori standard. Anche tale funzionalità verrà descritta nei paragrafi seguenti.\n- Profili contesto: laddove venga applicato, un 'Profilo contesto' viene definito come un un URL, o un FQDN, o comunque una destinazione per la regola firewall. Anche tale definizione verrà approfondita in seguito.\n\n##### 5.4.1.1.9 INVENTARIO\nSelezionando il tab 'Inventario' si avrà accesso ad ulteriore funzionalità complementari, ma indispensabili per l'implementazione di regole firewall in NSX:\n\nFigura 78 - VMWare NSX – Inventario\n\nIl vantaggio principale di tali funzionalità è la possibilità di non legare le regole firewall a specifici host, sulla base del nome host, o dell'IP, o a specifici servizi, sulla base ad esempio della porta. Le regole saranno infatti applicate a 'tag', pertanto ad esempio, aggiungendo una vm ad un gruppo con un certo tag, ad essa verranno automaticamente applicate le regole firewall che a quel tag fanno riferimento, identica logica per le porte o i servizi utilizzati dalla specifica regola firewall.\n\nAll'accesso al tab verrà mostrata una schermata riassuntiva delle configurazioni.\nSulla sinistra sono rilevanti le voci:\n- Servizi\n- Gruppi\n- Profili\n- Macchine virtuali\n- Tag\n\n### 5.4.1.1.9.1.SERVIZI\n\nFigura 79 - VMWare NSX- Servizi\n\nLa funzionalità 'Servizi' serve a creare regole che associno una denominazione ad un elenco di protocolli: http, ftp, smb, ecc. Tali 'Servizi' potranno poi essere applicate alle regole firewall. Nello specifico la griglia mostra:\n- Nome servizio\n- Voci servizio\n- Dove utilizzato\n- Stato\n\nCliccando sulla freccia a sinistra del nome del servizio sarà visualizzato il dettaglio dello stesso:\n\nFigura 80 - VMWare NSX - Servizi - Dettaglio servizio\n\nCliccando sui tre puntini si avrà accesso al menu contestuale:\n\nFigura 81 - VMWare NSX - Servizi – Operazioni sui servizi\n\nIn sostanza è possibile utilizzare un servizio preconfigurato, come ad esempio: http, https, smb, ecc. oppure creare nuovi servizi compositi come composizione di servizi preesistenti.\n\nÈ possibile creare un nuovo servizio creando sul tasto: AGGIUNGI SERVIZIO",
+    "content_summary": "The section 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > FIREWALL DISTRIBUITO' in the technical manual provides detailed guidance on configuring and managing distributed firewall rules within VMware NSX. It covers the creation, modification, and prioritization of firewall rules and policies, with specific steps like adding new rules or policies and publishing changes. The section includes figures illustrating operations on rules, new policy creation, and service details, which visually support the configuration steps. Key features discussed include rule prioritization, service association, and the use of tags for rule application. The section also explores inventory functionalities crucial for rule implementation, detailing the management of services, groups, and tags within the NSX environment.",
+    "figures": [
+      {
+        "figure_id": "Figura_75_vmware_nsx_-_operazioni_sulle_regole",
+        "filename": "VM_manual_figure_75_vmware_nsx_-_operazioni_sulle_regole.png",
+        "caption": "Vmware nsx - operazioni sulle regole",
+        "page": 52
+      },
+      {
+        "figure_id": "Figura_76_vmware_nsx__nuovo_criterio",
+        "filename": "VM_manual_figure_76_vmware_nsx__nuovo_criterio.png",
+        "caption": "Vmware nsx – nuovo criterio",
+        "page": 52
+      },
+      {
+        "figure_id": "Figura_77_vmware_nsx__nuova_regola_firewall",
+        "filename": "VM_manual_figure_77_vmware_nsx__nuova_regola_firewall.png",
+        "caption": "Vmware nsx – nuova regola firewall",
+        "page": 52
+      },
+      {
+        "figure_id": "Figura_78_vmware_nsx__inventario",
+        "filename": "VM_manual_figure_78_vmware_nsx__inventario.png",
+        "caption": "Vmware nsx – inventario",
+        "page": 54
+      },
+      {
+        "figure_id": "Figura_79_vmware_nsx-_servizi",
+        "filename": "VM_manual_figure_79_vmware_nsx-_servizi.png",
+        "caption": "Vmware nsx- servizi",
+        "page": 54
+      },
+      {
+        "figure_id": "Figura_80_vmware_nsx_-_servizi_-_dettaglio_servizio",
+        "filename": "VM_manual_figure_80_vmware_nsx_-_servizi_-_dettaglio_servizio.png",
+        "caption": "Vmware nsx - servizi - dettaglio servizio",
+        "page": 55
+      },
+      {
+        "figure_id": "Figura_81_vmware_nsx_-_servizi__operazioni_sui_servizi",
+        "filename": "VM_manual_figure_81_vmware_nsx_-_servizi__operazioni_sui_servizi.png",
+        "caption": "Vmware nsx - servizi – operazioni sui servizi",
+        "page": 55
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.8.1.",
+      "original_page_numbers": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.9",
+    "section_title": "INVENTARIO",
+    "page_range": "53-54",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL > FIREWALL DISTRIBUITO",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Figura 82 - VMWare NSX - Servizi - Creazione di un nuovo servizio.\n\nSi osservi come cliccando su 'Imposta', sarà possibile creare un nuovo singolo servizio:\n\nFigura 83 - VMWare NSX - Servizi - Creazione di un nuovo singolo servizio.\n\nCliccando su 'tag' sarà possibile utilizzare servizi preesistenti.",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > FIREWALL DISTRIBUITO > INVENTARIO', focuses on the configuration and management of distributed cloud firewall services using VMware NSX. It includes step-by-step instructions on creating new services and utilizing pre-existing ones. Two figures are provided: Figure 82 illustrates the process of creating a new service, and Figure 83 shows how to create a new individual service. These visuals aid in understanding the setup and operational procedures described.",
+    "figures": [
+      {
+        "figure_id": "Figura_82_vmware_nsx_-_servizi_-_creazione_di_un_nuovo_servizio",
+        "filename": "VM_manual_figure_82_vmware_nsx_-_servizi_-_creazione_di_un_nuovo_servizio.png",
+        "caption": "Vmware nsx - servizi - creazione di un nuovo servizio.",
+        "page": 55
+      },
+      {
+        "figure_id": "Figura_83_vmware_nsx_-_servizi_-_creazione_di_un_nuovo_singolo_servizi",
+        "filename": "VM_manual_figure_83_vmware_nsx_-_servizi_-_creazione_di_un_nuovo_singolo_servizi.png",
+        "caption": "Vmware nsx - servizi - creazione di un nuovo singolo servizio.",
+        "page": 56
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.9",
+      "original_page_numbers": [
+        53,
+        54
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.9.1.",
+    "section_title": "SERVIZI",
+    "page_range": "54-56",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Nell'ambito della configurazione di una regola firewall non vi è alcuna differenza tra un servizio\nsemplice ed un servizio composito.\n\n### 5.4.1.1.9.2.GRUPPI\n\nSelezionando la voce 'Gruppi' si avrà accesso ad una griglia che mostra un elenco di gruppi di VM:\n\nFigura 84 - VMWare NSX – Gruppi\n\nLa funzionalità 'Gruppi' serve a creare gruppi di VM, l'associazione tra un gruppo ed una o più VM,\navviene attraverso l'associazione del gruppo ad uno specifico tag cui sarà a sua volta stata\nassociata la VM.\nSelezionando il gruppo '_ASUGI TESI SGISO', successivamente cliccando su 'Visualizza membri'\nsarà possibile visualizzare l'elenco delle VM associate al gruppo:\n\nFigura 85 - VMWare NSX – VM associate al gruppo\n\nSelezionando il gruppo '_ASUGI TESI SGISO', cliccando su modifica e poi, cliccando su 'Criteri', sarà possibile visualizzare i criteri di associazione:\n\nFigura 86 - VMWare NSX – Modifica gruppo\n\nFigura 87 - VMWare NSX - Dettaglio modifica gruppo",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > SERVIZI', focuses on the configuration and management of VM groups within a cloud firewall system, specifically using VMware NSX. It explains how to create and manage these groups, associate VMs to groups using tags, and modify group criteria. The section includes four figures illustrating the steps for viewing VM groups, associated VMs, and details on modifying these groups, aiding in visual understanding of the process.",
+    "figures": [
+      {
+        "figure_id": "Figura_84_vmware_nsx__gruppi",
+        "filename": "VM_manual_figure_84_vmware_nsx__gruppi.png",
+        "caption": "Vmware nsx – gruppi",
+        "page": 56
+      },
+      {
+        "figure_id": "Figura_85_vmware_nsx__vm_associate_al_gruppo",
+        "filename": "VM_manual_figure_85_vmware_nsx__vm_associate_al_gruppo.png",
+        "caption": "Vmware nsx – vm associate al gruppo",
+        "page": 57
+      },
+      {
+        "figure_id": "Figura_86_vmware_nsx__modifica_gruppo",
+        "filename": "VM_manual_figure_86_vmware_nsx__modifica_gruppo.png",
+        "caption": "Vmware nsx – modifica gruppo",
+        "page": 57
+      },
+      {
+        "figure_id": "Figura_87_vmware_nsx_-_dettaglio_modifica_gruppo",
+        "filename": "VM_manual_figure_87_vmware_nsx_-_dettaglio_modifica_gruppo.png",
+        "caption": "Vmware nsx - dettaglio modifica gruppo",
+        "page": 57
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.9.1.",
+      "original_page_numbers": [
+        54,
+        55,
+        56
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.9.2.",
+    "section_title": "GRUPPI",
+    "page_range": "56-58",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "Nello specifico il criterio di appartenenza al gruppo è l'associazione ad uno specifico tag:\n\nFigura 88 - VMWare NSX - Criterio gruppo\n\nNel caso specifico, il criterio di associazione è che le VM abbiano il tag 'TESI_SGISO'.\n\n### 5.4.1.1.9.3.PROFILI\n\n### 5.4.1.1.9.4.MACCHINE VIRTUALI\n\nAlcuni tag rilevanti sono:\n* VPN-DESTINATION: per le VM che hanno necessità di essere raggiunte da VPN\n* Domain Members: per le VM che hanno necessità di essere collegate al dominio\n* INTERNAL: per le VM che hanno necessità di accedere a servizi quali l'antivirus\n* BS_asugi: assegnata di default\n* TEN_sanita: assegnata di default\n\n## 5.5 PROCESSO DI CREAZIONE VM\n\nDi seguito verranno descritti i passaggi propedeutici per la creazione di una nuova VM.\n\n### 5.5.1. CREAZIONE VM\n\n#### 5.5.1.1. ACCESSO A CLOUD MANAGER\nPer l'accesso al cloud manager, procedere con:\n* Accesso al cloud INSIEL (PAR. 5.2.1).\n* Accesso al cloud manager (PAR 5.2.2.1.1).\n\n#### 5.5.1.2. SELEZIONE SISTEMA OPERATIVO\nLa selezione del sistema operativo per la nuova VM è descritta al PAR. 5.2.2.1.3 .\n\n#### 5.5.1.3. SELEZIONE T-SHIRT\nLa selezione delle risorse computazionali (CPU e RAM) per la nuova VM è descritta al PAR. 5.2.2.1.3.1 .\n\n### 5.5.1.4. VERIFICA CAPIENZA\nÈ possibile che non siano disponibili le risorse computazionali richieste per la nuova VM, tale informazione è reperibile come descritto al PAR. 5.2.2.1.3.1.\n\n### 5.5.1.5. DISCHI AGGIUNTIVI\nÈ possibile che oltre al disco di sistema, per la VM vengano richiesti dischi aggiuntivi, è possibile aggiungerne in fase di creazione della VM come descritto al PAR. 5.2.2.1.3.1, o dal menu contestuale relativo alla VM in una fase successiva, previo spegnimento della VM, descritto al PAR. 5.2.2.1.4.3\n\n### 5.5.1.6. ESPANSIONE DISCO DI SISTEMA\nIn fase di creazione della VM il disco di sistema viene creato con una dimensione prestabilita e non modificabile, è comunque possibile espanderlo (ma non diminuirlo) successivamente, previo spegnimento della VM utilizzando le funzionalità del menu contestuale descritto al PAR. 5.2.2.1.4.3. Si tenga presente che è poi necessario espandere manualmente il file system della VM in modo tale che occupi tutto lo spazio disponibile su disco.\n\n### 5.5.1.7. CAMBIO DENOMINAZIONE VM\nDopo la creazione della VM è necessario procedere alla modifica della denominazione della stessa secondo i criteri stabiliti da ASUGI, come descritto nel PAR 5.2.2.1.4.1.\n\n### 5.5.1.8. PRIMO ACCESSO ALLA VM\nInfine, è possibile verificare la corretta creazione della VM accedendovi da console, utilizzando il menu contestuale, come descritto nel PAR. 5.2.2.1.4.3.\n\n## 5.5.2. REGOLE FIREWALL\nDopo la creazione della VM è necessario procedere alla configurazione delle regole firewall secondo le necessità degli utenti della VM stessa.\n\n### 5.5.2.1. ACCESSO A NSX\nPer l'accesso al cloud firewall, procedere con:\n- Accesso al cloud INSIEL (PAR. 5.2.1).\n- Accesso al cloud firewall (PAR 5.2.2.2.1).\n\n### 5.5.2.2. CONFIGURAZIONE REGOLE\n\n### 5.5.2.3. PROBLEMI DI RETE",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > GRUPPI' in the technical manual focuses on the criteria for VM group membership based on specific tags such as 'TESI_SGISO', 'VPN-DESTINATION', 'Domain Members', 'INTERNAL', 'BS_asugi', and 'TEN_sanita'. The section includes a figure (Figure 88 - VMWare NSX - Criterio gruppo) that illustrates the group criterion based on the VMware NSX system. This figure supports the content by visually representing how VMs are grouped according to their tags. The section also briefly mentions subsequent sections on VM creation and firewall rules configuration, emphasizing the importance of tag-based grouping in managing VMs and their access to network resources.",
+    "figures": [
+      {
+        "figure_id": "Figura_88_vmware_nsx_-_criterio_gruppo",
+        "filename": "VM_manual_figure_88_vmware_nsx_-_criterio_gruppo.png",
+        "caption": "Vmware nsx - criterio gruppo",
+        "page": 58
+      }
+    ],
+    "metadata": {
+      "original_section_number": "5.4.1.1.9.2.",
+      "original_page_numbers": [
+        56,
+        57,
+        58
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.9.3.",
+    "section_title": "PROFILI",
+    "page_range": "58",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "## 5.5.3. CONFIGURAZIONE VM",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > PROFILI' in the technical manual provides detailed guidance on configuring virtual machines (VMs) within the context of a cloud firewall. It includes steps for setting up and troubleshooting VMs, specifically focusing on security profiles and firewall settings. The section likely contains figures that illustrate the configuration processes and help clarify complex steps or settings.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.4.1.1.9.3.",
+      "original_page_numbers": [
+        58
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.4.1.1.9.4.",
+    "section_title": "MACCHINE VIRTUALI",
+    "page_range": "58",
+    "parent_path": "MODALITÀ ESECUTIVE > CLOUD FIREWALL",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "### 5.5.3.1. MODIFICA NOME HOST\nIl nome host della VM deve essere coerente e identico al nome attribuito alla VM nel PAR 5.3.1.7. Le modalità variano a seconda del sistema operativo installato.\n\n#### 5.5.3.1.1. MICROSOFT WINDOWS SERVER\n\n#### 5.5.3.1.2. LINUX",
+    "content_summary": "This section of the technical manual, titled 'MODALITÀ ESECUTIVE > CLOUD FIREWALL > MACCHINE VIRTUALI', focuses on the configuration of virtual machines within a cloud firewall context. It specifically addresses the modification of host names for virtual machines, emphasizing the need for consistency with names assigned in earlier documentation. The section provides guidelines for changing host names based on the operating system installed, specifically covering Microsoft Windows Server and Linux. No troubleshooting steps or figures are mentioned in the provided content.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.4.1.1.9.4.",
+      "original_page_numbers": [
+        58
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  },
+  {
+    "section_id": "5.5",
+    "section_title": "PROCESSO DI CREAZIONE VM",
+    "page_range": "58",
+    "parent_path": "MODALITÀ ESECUTIVE",
+    "document": "ISTRUZIONE OPERATIVA CREAZIONE VM CLOUD INSIEL REV 00",
+    "content": "### 5.5.3.2. AGGIUNTA A DOMINIO",
+    "content_summary": "The section titled 'MODALITÀ ESECUTIVE > PROCESSO DI CREAZIONE VM' in the technical manual outlines the steps for creating a virtual machine (VM). It includes configuration steps, troubleshooting tips, and mentions the systems involved in the process. Figures in the section likely provide visual aids to support the configuration and setup processes.",
+    "figures": [],
+    "metadata": {
+      "original_section_number": "5.5",
+      "original_page_numbers": [
+        58
+      ],
+      "language": "Italian",
+      "section_type": "general",
+      "content_type": "instructional"
+    }
+  }
+]

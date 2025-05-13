@@ -1,0 +1,812 @@
+{
+  "1_vmware_vsphere": {
+    "filename": "VM_manual_figure_1_vmware_vsphere.png",
+    "figure_id": "Figura 1_vmware_vsphere",
+    "caption": "vmware vsphere",
+    "page": 6,
+    "image_page": 6,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "2_vmware_nsx__architettura": {
+    "filename": "VM_manual_figure_2_vmware_nsx__architettura.png",
+    "figure_id": "Figura 2_vmware_nsx__architettura",
+    "caption": "vmware nsx – architettura",
+    "page": 7,
+    "image_page": 7,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "3_vmware_aria": {
+    "filename": "VM_manual_figure_3_vmware_aria.png",
+    "figure_id": "Figura 3_vmware_aria",
+    "caption": "vmware aria",
+    "page": 8,
+    "image_page": 8,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "4_infrastruttura_fisica_cloud_insiel": {
+    "filename": "VM_manual_figure_4_infrastruttura_fisica_cloud_insiel.png",
+    "figure_id": "Figura 4_infrastruttura_fisica_cloud_insiel",
+    "caption": "infrastruttura fisica cloud insiel",
+    "page": 9,
+    "image_page": 9,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "5_tier_1_gateways_su_nsx": {
+    "filename": "VM_manual_figure_5_tier_1_gateways_su_nsx.png",
+    "figure_id": "Figura 5_tier_1_gateways_su_nsx",
+    "caption": "tier 1 gateways su nsx",
+    "page": 10,
+    "image_page": 10,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "6_infrastruttura_logica_cloud_insiel": {
+    "filename": "VM_manual_figure_6_infrastruttura_logica_cloud_insiel.png",
+    "figure_id": "Figura 6_infrastruttura_logica_cloud_insiel",
+    "caption": "infrastruttura logica cloud insiel",
+    "page": 10,
+    "image_page": 10,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "7_accesso_al_cloud_insiel__inserimento_user_name": {
+    "filename": "VM_manual_figure_7_accesso_al_cloud_insiel__inserimento_user_name.png",
+    "figure_id": "Figura 7_accesso_al_cloud_insiel__inserimento_user_name",
+    "caption": "accesso al cloud insiel – inserimento user name",
+    "page": 11,
+    "image_page": 11,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "8_accesso_al_cloud_insiel_-_inserimento_password": {
+    "filename": "VM_manual_figure_8_accesso_al_cloud_insiel_-_inserimento_password.png",
+    "figure_id": "Figura 8_accesso_al_cloud_insiel_-_inserimento_password",
+    "caption": "accesso al cloud insiel - inserimento password",
+    "page": 12,
+    "image_page": 12,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "9_cloud_insiel_-_schermata_principale": {
+    "filename": "VM_manual_figure_9_cloud_insiel_-_schermata_principale.png",
+    "figure_id": "Figura 9_cloud_insiel_-_schermata_principale",
+    "caption": "cloud insiel - schermata principale",
+    "page": 12,
+    "image_page": 12,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "10_richiesta_credenziali_insiel": {
+    "filename": "VM_manual_figure_10_richiesta_credenziali_insiel.png",
+    "figure_id": "Figura 10_richiesta_credenziali_insiel",
+    "caption": "richiesta credenziali insiel",
+    "page": 13,
+    "image_page": 13,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "11_cambio_password_insiel": {
+    "filename": "VM_manual_figure_11_cambio_password_insiel.png",
+    "figure_id": "Figura 11_cambio_password_insiel",
+    "caption": "cambio password insiel",
+    "page": 14,
+    "image_page": 14,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "12_cloud_insiel_-_pagina_di_login_errata": {
+    "filename": "VM_manual_figure_12_cloud_insiel_-_pagina_di_login_errata.png",
+    "figure_id": "Figura 12_cloud_insiel_-_pagina_di_login_errata",
+    "caption": "cloud insiel - pagina di login errata",
+    "page": 15,
+    "image_page": 15,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "13_tasto_cloud_manager": {
+    "filename": "VM_manual_figure_13_tasto_cloud_manager.png",
+    "figure_id": "Figura 13_tasto_cloud_manager",
+    "caption": "tasto 'cloud manager'",
+    "page": 16,
+    "image_page": 16,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "14_accesso_a_cloud_firewall": {
+    "filename": "VM_manual_figure_14_accesso_a_cloud_firewall.png",
+    "figure_id": "Figura 14_accesso_a_cloud_firewall",
+    "caption": "accesso a cloud firewall",
+    "page": 16,
+    "image_page": 16,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "15_accesso_a_service_broker": {
+    "filename": "VM_manual_figure_15_accesso_a_service_broker.png",
+    "figure_id": "Figura 15_accesso_a_service_broker",
+    "caption": "accesso a service broker",
+    "page": 16,
+    "image_page": 16,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "16_service_broker": {
+    "filename": "VM_manual_figure_16_service_broker.png",
+    "figure_id": "Figura 16_service_broker",
+    "caption": "service broker",
+    "page": 17,
+    "image_page": 17,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "17_catalog": {
+    "filename": "VM_manual_figure_17_catalog.png",
+    "figure_id": "Figura 17_catalog",
+    "caption": "catalog",
+    "page": 18,
+    "image_page": 18,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "18_new_request": {
+    "filename": "VM_manual_figure_18_new_request.png",
+    "figure_id": "Figura 18_new_request",
+    "caption": "new request",
+    "page": 19,
+    "image_page": 19,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "19_t-shirt_size": {
+    "filename": "VM_manual_figure_19_t-shirt_size.png",
+    "figure_id": "Figura 19_t-shirt_size",
+    "caption": "t-shirt size",
+    "page": 20,
+    "image_page": 20,
+    "rendered": false,
+    "source": "embedded_image_fallback"
+  },
+  "20_dischi_aggiuntivi": {
+    "filename": "VM_manual_figure_20_dischi_aggiuntivi.png",
+    "figure_id": "Figura 20_dischi_aggiuntivi",
+    "caption": "dischi aggiuntivi",
+    "page": 21,
+    "image_page": 21,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "21_new_request_compilata": {
+    "filename": "VM_manual_figure_21_new_request_compilata.png",
+    "figure_id": "Figura 21_new_request_compilata",
+    "caption": "new request compilata",
+    "page": 21,
+    "image_page": 21,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "22_risorse_computazionali": {
+    "filename": "VM_manual_figure_22_risorse_computazionali.png",
+    "figure_id": "Figura 22_risorse_computazionali",
+    "caption": "risorse computazionali",
+    "page": 21,
+    "image_page": 21,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "23_deployments_menu": {
+    "filename": "VM_manual_figure_23_deployments_menu.png",
+    "figure_id": "Figura 23_deployments_menu",
+    "caption": "deployments menu",
+    "page": 22,
+    "image_page": 22,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "24_deployments": {
+    "filename": "VM_manual_figure_24_deployments.png",
+    "figure_id": "Figura 24_deployments",
+    "caption": "deployments",
+    "page": 22,
+    "image_page": 22,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "25_deployment__status": {
+    "filename": "VM_manual_figure_25_deployment__status.png",
+    "figure_id": "Figura 25_deployment__status",
+    "caption": "deployment – status",
+    "page": 23,
+    "image_page": 23,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "26_deployment__dettagli": {
+    "filename": "VM_manual_figure_26_deployment__dettagli.png",
+    "figure_id": "Figura 26_deployment__dettagli",
+    "caption": "deployment – dettagli",
+    "page": 23,
+    "image_page": 23,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "27_deployment__menu_contestuale": {
+    "filename": "VM_manual_figure_27_deployment__menu_contestuale.png",
+    "figure_id": "Figura 27_deployment__menu_contestuale",
+    "caption": "deployment – menu contestuale",
+    "page": 23,
+    "image_page": 23,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "28_deployment__edit": {
+    "filename": "VM_manual_figure_28_deployment__edit.png",
+    "figure_id": "Figura 28_deployment__edit",
+    "caption": "deployment – edit",
+    "page": 24,
+    "image_page": 24,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "29_deployment__dettaglio": {
+    "filename": "VM_manual_figure_29_deployment__dettaglio.png",
+    "figure_id": "Figura 29_deployment__dettaglio",
+    "caption": "deployment – dettaglio",
+    "page": 25,
+    "image_page": 25,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "30_deployment__dettaglio_-_topology": {
+    "filename": "VM_manual_figure_30_deployment__dettaglio_-_topology.png",
+    "figure_id": "Figura 30_deployment__dettaglio_-_topology",
+    "caption": "deployment – dettaglio - topology",
+    "page": 26,
+    "image_page": 25,
+    "rendered": true,
+    "source": "bleed_over_crop"
+  },
+  "31_deployment__dettaglio__history_durante_la_creazione_della_vm": {
+    "filename": "VM_manual_figure_31_deployment__dettaglio__history_durante_la_creazione_della_vm.png",
+    "figure_id": "Figura 31_deployment__dettaglio__history_durante_la_creazione_della_vm",
+    "caption": "deployment – dettaglio – history (durante la creazione della vm)",
+    "page": 26,
+    "image_page": 26,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "32_deployment__dettaglio__history_dopo_la_creazione_della_vm": {
+    "filename": "VM_manual_figure_32_deployment__dettaglio__history_dopo_la_creazione_della_vm.png",
+    "figure_id": "Figura 32_deployment__dettaglio__history_dopo_la_creazione_della_vm",
+    "caption": "deployment – dettaglio – history (dopo la creazione della vm)",
+    "page": 26,
+    "image_page": 26,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "33_deployment__dettaglio__user_events": {
+    "filename": "VM_manual_figure_33_deployment__dettaglio__user_events.png",
+    "figure_id": "Figura 33_deployment__dettaglio__user_events",
+    "caption": "deployment – dettaglio – user events",
+    "page": 26,
+    "image_page": 26,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "34_deployment__monitor_durante_la_creazione_della_vm": {
+    "filename": "VM_manual_figure_34_deployment__monitor_durante_la_creazione_della_vm.png",
+    "figure_id": "Figura 34_deployment__monitor_durante_la_creazione_della_vm",
+    "caption": "deployment – monitor (durante la creazione della vm)",
+    "page": 26,
+    "image_page": 26,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "35_deployment__monitor_dopo_la_creazione_della_vm": {
+    "filename": "VM_manual_figure_35_deployment__monitor_dopo_la_creazione_della_vm.png",
+    "figure_id": "Figura 35_deployment__monitor_dopo_la_creazione_della_vm",
+    "caption": "deployment – monitor (dopo la creazione della vm)",
+    "page": 27,
+    "image_page": 27,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "36_deployment_alerts": {
+    "filename": "VM_manual_figure_36_deployment_alerts.png",
+    "figure_id": "Figura 36_deployment_alerts",
+    "caption": "deployment –alerts",
+    "page": 27,
+    "image_page": 27,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "37_deployment__optimize_durante_la_creazione_della_vm": {
+    "filename": "VM_manual_figure_37_deployment__optimize_durante_la_creazione_della_vm.png",
+    "figure_id": "Figura 37_deployment__optimize_durante_la_creazione_della_vm",
+    "caption": "deployment – optimize (durante la creazione della vm)",
+    "page": 27,
+    "image_page": 27,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "38_deployment__optimize_dopo_la_creazione_della_vm": {
+    "filename": "VM_manual_figure_38_deployment__optimize_dopo_la_creazione_della_vm.png",
+    "figure_id": "Figura 38_deployment__optimize_dopo_la_creazione_della_vm",
+    "caption": "deployment – optimize (dopo la creazione della vm)",
+    "page": 27,
+    "image_page": 27,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "39_resources_-_deployment": {
+    "filename": "VM_manual_figure_39_resources_-_deployment.png",
+    "figure_id": "Figura 39_resources_-_deployment",
+    "caption": "resources - deployment",
+    "page": 29,
+    "image_page": 29,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "40_resources__deployment_-_dettagli": {
+    "filename": "VM_manual_figure_40_resources__deployment_-_dettagli.png",
+    "figure_id": "Figura 40_resources__deployment_-_dettagli",
+    "caption": "resources – deployment - dettagli",
+    "page": 29,
+    "image_page": 29,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "41_resources__tutte_le_risorse": {
+    "filename": "VM_manual_figure_41_resources__tutte_le_risorse.png",
+    "figure_id": "Figura 41_resources__tutte_le_risorse",
+    "caption": "resources – tutte le risorse",
+    "page": 29,
+    "image_page": 29,
+    "rendered": false,
+    "source": "embedded_image_fallback"
+  },
+  "42_resources__filtro_risorse": {
+    "filename": "VM_manual_figure_42_resources__filtro_risorse.png",
+    "figure_id": "Figura 42_resources__filtro_risorse",
+    "caption": "resources – filtro risorse",
+    "page": 30,
+    "image_page": 30,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "43_resources__menu_contestuale": {
+    "filename": "VM_manual_figure_43_resources__menu_contestuale.png",
+    "figure_id": "Figura 43_resources__menu_contestuale",
+    "caption": "resources – menu contestuale",
+    "page": 30,
+    "image_page": 30,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "44_virtual_machines__creazione_nuova_vm": {
+    "filename": "VM_manual_figure_44_virtual_machines__creazione_nuova_vm.png",
+    "figure_id": "Figura 44_virtual_machines__creazione_nuova_vm",
+    "caption": "virtual machines – creazione nuova vm",
+    "page": 31,
+    "image_page": 31,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "45_virtual_machines__creazione_nuova_vm__dettagli": {
+    "filename": "VM_manual_figure_45_virtual_machines__creazione_nuova_vm__dettagli.png",
+    "figure_id": "Figura 45_virtual_machines__creazione_nuova_vm__dettagli",
+    "caption": "virtual machines – creazione nuova vm – dettagli",
+    "page": 31,
+    "image_page": 31,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "46_virtual_machines__elenco_vm": {
+    "filename": "VM_manual_figure_46_virtual_machines__elenco_vm.png",
+    "figure_id": "Figura 46_virtual_machines__elenco_vm",
+    "caption": "virtual machines – elenco vm",
+    "page": 31,
+    "image_page": 31,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "47_virtual_machines__dettaglio_vm": {
+    "filename": "VM_manual_figure_47_virtual_machines__dettaglio_vm.png",
+    "figure_id": "Figura 47_virtual_machines__dettaglio_vm",
+    "caption": "virtual machines – dettaglio vm",
+    "page": 32,
+    "image_page": 32,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "48_virtual_machines__menu_contestuale_1": {
+    "filename": "VM_manual_figure_48_virtual_machines__menu_contestuale_1.png",
+    "figure_id": "Figura 48_virtual_machines__menu_contestuale_1",
+    "caption": "virtual machines – menu contestuale #1",
+    "page": 33,
+    "image_page": 33,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "49_virtual_machines__menu_contestuale_2": {
+    "filename": "VM_manual_figure_49_virtual_machines__menu_contestuale_2.png",
+    "figure_id": "Figura 49_virtual_machines__menu_contestuale_2",
+    "caption": "virtual machines – menu contestuale #2",
+    "page": 33,
+    "image_page": 33,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "50_virtual_machines__resize_boot_disk": {
+    "filename": "VM_manual_figure_50_virtual_machines__resize_boot_disk.png",
+    "figure_id": "Figura 50_virtual_machines__resize_boot_disk",
+    "caption": "virtual machines – resize boot disk",
+    "page": 34,
+    "image_page": 34,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "51_volumes": {
+    "filename": "VM_manual_figure_51_volumes.png",
+    "figure_id": "Figura 51_volumes",
+    "caption": "volumes",
+    "page": 35,
+    "image_page": 35,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "52_volumes_-_dettaglio_volume": {
+    "filename": "VM_manual_figure_52_volumes_-_dettaglio_volume.png",
+    "figure_id": "Figura 52_volumes_-_dettaglio_volume",
+    "caption": "volumes - dettaglio volume",
+    "page": 36,
+    "image_page": 36,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "53_volumes_-_menu_contestuale": {
+    "filename": "VM_manual_figure_53_volumes_-_menu_contestuale.png",
+    "figure_id": "Figura 53_volumes_-_menu_contestuale",
+    "caption": "volumes - menu contestuale",
+    "page": 36,
+    "image_page": 36,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "54_networking__security": {
+    "filename": "VM_manual_figure_54_networking__security.png",
+    "figure_id": "Figura 54_networking__security",
+    "caption": "networking & security",
+    "page": 37,
+    "image_page": 37,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "55_networking__security__dettagli": {
+    "filename": "VM_manual_figure_55_networking__security__dettagli.png",
+    "figure_id": "Figura 55_networking__security__dettagli",
+    "caption": "networking & security – dettagli",
+    "page": 38,
+    "image_page": 38,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "56_networking__security_-_menu_contestuale": {
+    "filename": "VM_manual_figure_56_networking__security_-_menu_contestuale.png",
+    "figure_id": "Figura 56_networking__security_-_menu_contestuale",
+    "caption": "networking & security - menu contestuale",
+    "page": 38,
+    "image_page": 38,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "57_tasto_cloud_firewall": {
+    "filename": "VM_manual_figure_57_tasto_cloud_firewall.png",
+    "figure_id": "Figura 57_tasto_cloud_firewall",
+    "caption": "tasto 'cloud firewall'",
+    "page": 39,
+    "image_page": 39,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "58_accesso_a_cloud_firewall": {
+    "filename": "VM_manual_figure_58_accesso_a_cloud_firewall.png",
+    "figure_id": "Figura 58_accesso_a_cloud_firewall",
+    "caption": "accesso a cloud firewall",
+    "page": 39,
+    "image_page": 39,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "59_vmware_nsx__home_-_panoramica": {
+    "filename": "VM_manual_figure_59_vmware_nsx__home_-_panoramica.png",
+    "figure_id": "Figura 59_vmware_nsx__home_-_panoramica",
+    "caption": "vmware nsx – home - panoramica",
+    "page": 40,
+    "image_page": 40,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "60_vmware_nsx__home__avvisi": {
+    "filename": "VM_manual_figure_60_vmware_nsx__home__avvisi.png",
+    "figure_id": "Figura 60_vmware_nsx__home__avvisi",
+    "caption": "vmware nsx – home – avvisi",
+    "page": 41,
+    "image_page": 41,
+    "rendered": false,
+    "source": "embedded_image_fallback"
+  },
+  "61_vmware_nsx__home__definizione_avvisi": {
+    "filename": "VM_manual_figure_61_vmware_nsx__home__definizione_avvisi.png",
+    "figure_id": "Figura 61_vmware_nsx__home__definizione_avvisi",
+    "caption": "vmware nsx – home – definizione avvisi",
+    "page": 41,
+    "image_page": 41,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "62_vmware_nsx__rete": {
+    "filename": "VM_manual_figure_62_vmware_nsx__rete.png",
+    "figure_id": "Figura 62_vmware_nsx__rete",
+    "caption": "vmware nsx – rete",
+    "page": 42,
+    "image_page": 42,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "63_vmware_nsx__rete__panoramica_della_rete": {
+    "filename": "VM_manual_figure_63_vmware_nsx__rete__panoramica_della_rete.png",
+    "figure_id": "Figura 63_vmware_nsx__rete__panoramica_della_rete",
+    "caption": "vmware nsx – rete – panoramica della rete",
+    "page": 42,
+    "image_page": 42,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "64_vmware_nsx__rete__gateway_di_livello_1": {
+    "filename": "VM_manual_figure_64_vmware_nsx__rete__gateway_di_livello_1.png",
+    "figure_id": "Figura 64_vmware_nsx__rete__gateway_di_livello_1",
+    "caption": "vmware nsx – rete – gateway di livello 1",
+    "page": 43,
+    "image_page": 43,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "65_vmware_nsx__rete__segmenti__nsx": {
+    "filename": "VM_manual_figure_65_vmware_nsx__rete__segmenti__nsx.png",
+    "figure_id": "Figura 65_vmware_nsx__rete__segmenti__nsx",
+    "caption": "vmware nsx – rete – segmenti – nsx",
+    "page": 44,
+    "image_page": 44,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "66_vmware_nsx__rete__segmenti__profili": {
+    "filename": "VM_manual_figure_66_vmware_nsx__rete__segmenti__profili.png",
+    "figure_id": "Figura 66_vmware_nsx__rete__segmenti__profili",
+    "caption": "vmware nsx – rete – segmenti – profili",
+    "page": 45,
+    "image_page": 45,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "67_vmware_nsx__rete__segmenti__profili__tipo_profili": {
+    "filename": "VM_manual_figure_67_vmware_nsx__rete__segmenti__profili__tipo_profili.png",
+    "figure_id": "Figura 67_vmware_nsx__rete__segmenti__profili__tipo_profili",
+    "caption": "vmware nsx – rete – segmenti – profili – tipo profili",
+    "page": 46,
+    "image_page": 46,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "68_vmware_nsx__rete__nat": {
+    "filename": "VM_manual_figure_68_vmware_nsx__rete__nat.png",
+    "figure_id": "Figura 68_vmware_nsx__rete__nat",
+    "caption": "vmware nsx – rete – nat",
+    "page": 47,
+    "image_page": 47,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "69_vmware_nsx__rete__nat__configurazione_nat": {
+    "filename": "VM_manual_figure_69_vmware_nsx__rete__nat__configurazione_nat.png",
+    "figure_id": "Figura 69_vmware_nsx__rete__nat__configurazione_nat",
+    "caption": "vmware nsx – rete – nat – configurazione nat",
+    "page": 48,
+    "image_page": 48,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "69_vmware_nsx__dns__servizi_dns": {
+    "filename": "VM_manual_figure_69_vmware_nsx__dns__servizi_dns.png",
+    "figure_id": "Figura 69_vmware_nsx__dns__servizi_dns",
+    "caption": "vmware nsx – dns – servizi dns",
+    "page": 48,
+    "image_page": 48,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "69_vmware_nsx__dns__servizi_dns__configurazione_dns": {
+    "filename": "VM_manual_figure_69_vmware_nsx__dns__servizi_dns__configurazione_dns.png",
+    "figure_id": "Figura 69_vmware_nsx__dns__servizi_dns__configurazione_dns",
+    "caption": "vmware nsx – dns – servizi dns – configurazione dns",
+    "page": 49,
+    "image_page": 49,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "70_vmware_nsx_-_sicurezza": {
+    "filename": "VM_manual_figure_70_vmware_nsx_-_sicurezza.png",
+    "figure_id": "Figura 70_vmware_nsx_-_sicurezza",
+    "caption": "vmware nsx - sicurezza",
+    "page": 50,
+    "image_page": 50,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "71_vmware_nsx_-_sicurezza_-firewall_gateway": {
+    "filename": "VM_manual_figure_71_vmware_nsx_-_sicurezza_-firewall_gateway.png",
+    "figure_id": "Figura 71_vmware_nsx_-_sicurezza_-firewall_gateway",
+    "caption": "vmware nsx - sicurezza -firewall gateway",
+    "page": 50,
+    "image_page": 50,
+    "rendered": false,
+    "source": "embedded_image_fallback"
+  },
+  "72_vmware_nsx_-_firewall_distribuito": {
+    "filename": "VM_manual_figure_72_vmware_nsx_-_firewall_distribuito.png",
+    "figure_id": "Figura 72_vmware_nsx_-_firewall_distribuito",
+    "caption": "vmware nsx - firewall distribuito",
+    "page": 50,
+    "image_page": 50,
+    "rendered": false,
+    "source": "embedded_image_fallback"
+  },
+  "73_vmware_nsx_-_dettaglio_regola_firewall": {
+    "filename": "VM_manual_figure_73_vmware_nsx_-_dettaglio_regola_firewall.png",
+    "figure_id": "Figura 73_vmware_nsx_-_dettaglio_regola_firewall",
+    "caption": "vmware nsx - dettaglio regola firewall",
+    "page": 51,
+    "image_page": 51,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "74_vmware_nsx_-_operazioni_sui_criteri": {
+    "filename": "VM_manual_figure_74_vmware_nsx_-_operazioni_sui_criteri.png",
+    "figure_id": "Figura 74_vmware_nsx_-_operazioni_sui_criteri",
+    "caption": "vmware nsx - operazioni sui criteri",
+    "page": 51,
+    "image_page": 51,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "75_vmware_nsx_-_operazioni_sulle_regole": {
+    "filename": "VM_manual_figure_75_vmware_nsx_-_operazioni_sulle_regole.png",
+    "figure_id": "Figura 75_vmware_nsx_-_operazioni_sulle_regole",
+    "caption": "vmware nsx - operazioni sulle regole",
+    "page": 52,
+    "image_page": 52,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "76_vmware_nsx__nuovo_criterio": {
+    "filename": "VM_manual_figure_76_vmware_nsx__nuovo_criterio.png",
+    "figure_id": "Figura 76_vmware_nsx__nuovo_criterio",
+    "caption": "vmware nsx – nuovo criterio",
+    "page": 52,
+    "image_page": 52,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "77_vmware_nsx__nuova_regola_firewall": {
+    "filename": "VM_manual_figure_77_vmware_nsx__nuova_regola_firewall.png",
+    "figure_id": "Figura 77_vmware_nsx__nuova_regola_firewall",
+    "caption": "vmware nsx – nuova regola firewall",
+    "page": 52,
+    "image_page": 52,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "78_vmware_nsx__inventario": {
+    "filename": "VM_manual_figure_78_vmware_nsx__inventario.png",
+    "figure_id": "Figura 78_vmware_nsx__inventario",
+    "caption": "vmware nsx – inventario",
+    "page": 54,
+    "image_page": 54,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "79_vmware_nsx-_servizi": {
+    "filename": "VM_manual_figure_79_vmware_nsx-_servizi.png",
+    "figure_id": "Figura 79_vmware_nsx-_servizi",
+    "caption": "vmware nsx- servizi",
+    "page": 54,
+    "image_page": 54,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "80_vmware_nsx_-_servizi_-_dettaglio_servizio": {
+    "filename": "VM_manual_figure_80_vmware_nsx_-_servizi_-_dettaglio_servizio.png",
+    "figure_id": "Figura 80_vmware_nsx_-_servizi_-_dettaglio_servizio",
+    "caption": "vmware nsx - servizi - dettaglio servizio",
+    "page": 55,
+    "image_page": 55,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "81_vmware_nsx_-_servizi__operazioni_sui_servizi": {
+    "filename": "VM_manual_figure_81_vmware_nsx_-_servizi__operazioni_sui_servizi.png",
+    "figure_id": "Figura 81_vmware_nsx_-_servizi__operazioni_sui_servizi",
+    "caption": "vmware nsx - servizi – operazioni sui servizi",
+    "page": 55,
+    "image_page": 55,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "82_vmware_nsx_-_servizi_-_creazione_di_un_nuovo_servizio": {
+    "filename": "VM_manual_figure_82_vmware_nsx_-_servizi_-_creazione_di_un_nuovo_servizio.png",
+    "figure_id": "Figura 82_vmware_nsx_-_servizi_-_creazione_di_un_nuovo_servizio",
+    "caption": "vmware nsx - servizi - creazione di un nuovo servizio.",
+    "page": 55,
+    "image_page": 55,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "83_vmware_nsx_-_servizi_-_creazione_di_un_nuovo_singolo_servizi": {
+    "filename": "VM_manual_figure_83_vmware_nsx_-_servizi_-_creazione_di_un_nuovo_singolo_servizi.png",
+    "figure_id": "Figura 83_vmware_nsx_-_servizi_-_creazione_di_un_nuovo_singolo_servizi",
+    "caption": "vmware nsx - servizi - creazione di un nuovo singolo servizio.",
+    "page": 56,
+    "image_page": 56,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "84_vmware_nsx__gruppi": {
+    "filename": "VM_manual_figure_84_vmware_nsx__gruppi.png",
+    "figure_id": "Figura 84_vmware_nsx__gruppi",
+    "caption": "vmware nsx – gruppi",
+    "page": 56,
+    "image_page": 56,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "85_vmware_nsx__vm_associate_al_gruppo": {
+    "filename": "VM_manual_figure_85_vmware_nsx__vm_associate_al_gruppo.png",
+    "figure_id": "Figura 85_vmware_nsx__vm_associate_al_gruppo",
+    "caption": "vmware nsx – vm associate al gruppo",
+    "page": 57,
+    "image_page": 57,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "86_vmware_nsx__modifica_gruppo": {
+    "filename": "VM_manual_figure_86_vmware_nsx__modifica_gruppo.png",
+    "figure_id": "Figura 86_vmware_nsx__modifica_gruppo",
+    "caption": "vmware nsx – modifica gruppo",
+    "page": 57,
+    "image_page": 57,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "87_vmware_nsx_-_dettaglio_modifica_gruppo": {
+    "filename": "VM_manual_figure_87_vmware_nsx_-_dettaglio_modifica_gruppo.png",
+    "figure_id": "Figura 87_vmware_nsx_-_dettaglio_modifica_gruppo",
+    "caption": "vmware nsx - dettaglio modifica gruppo",
+    "page": 57,
+    "image_page": 57,
+    "rendered": true,
+    "source": "vector_box_crop"
+  },
+  "88_vmware_nsx_-_criterio_gruppo": {
+    "filename": "VM_manual_figure_88_vmware_nsx_-_criterio_gruppo.png",
+    "figure_id": "Figura 88_vmware_nsx_-_criterio_gruppo",
+    "caption": "vmware nsx - criterio gruppo",
+    "page": 58,
+    "image_page": 58,
+    "rendered": true,
+    "source": "vector_box_crop"
+  }
+}
