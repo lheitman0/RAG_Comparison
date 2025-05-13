@@ -7,8 +7,6 @@ This script generates detailed visualizations showing:
 3. Cross-language performance analysis
 4. Cost-efficiency metrics
 
-Usage:
-python visualization_generator.py
 """
 
 import os
@@ -355,6 +353,84 @@ def visualize_performance_metrics(results: Dict[str, Any], output_dir: str) -> N
         plt.tight_layout()
         plt.savefig(os.path.join(output_dir, "cost_per_query.png"), dpi=300)
         plt.close()
+
+    # New plots: Quality vs Cost scatter and Latency vs Quality bubble with cost size
+
+    # Compute cost per query list for later plots using approach_costs (already computed above) if available
+    cost_per_query_list = []
+    for approach in approach_names:
+        if approach in approach_costs and approaches[approach]["overall"]["total_questions"] > 0:
+            cost_per_query_list.append(approach_costs[approach] / approaches[approach]["overall"]["total_questions"])
+        else:
+            # Fallback to 0 if cost not available
+            cost_per_query_list.append(0)
+
+    # Scatter: Quality vs Cost
+    plt.figure(figsize=(12, 8))
+    for i, approach in enumerate(approach_names):
+        plt.scatter(cost_per_query_list[i], metrics["Overall Score"][i], s=200, label=approach)
+        plt.text(cost_per_query_list[i], metrics["Overall Score"][i]+0.02, approach, fontsize=12, ha='center')
+
+    plt.title("Quality vs Cost per Query", fontsize=16, pad=20)
+    plt.xlabel("Estimated Cost per Query ($)", fontsize=14)
+    plt.ylabel("Average Overall Score (0–10)", fontsize=14)
+    plt.xscale('log')
+    plt.ylim(0, 10)
+    plt.grid(True, which="both", ls='--', alpha=0.6)
+    plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, "quality_vs_cost.png"), dpi=300)
+    plt.close()
+
+    # Bubble chart: Latency vs Quality with bubble area proportional to cost
+    plt.figure(figsize=(12, 8))
+    max_cost = max(cost_per_query_list) if cost_per_query_list else 1
+    for i, approach in enumerate(approach_names):
+        bubble_size = 1500 * (cost_per_query_list[i] / max_cost + 0.1)  # scale for visibility
+        plt.scatter(metrics["Response Time (s)"][i], metrics["Overall Score"][i], s=bubble_size, alpha=0.7, label=approach)
+        plt.text(metrics["Response Time (s)"][i], metrics["Overall Score"][i]+0.02, approach, fontsize=12, ha='center')
+
+    plt.title("Latency vs Quality (bubble size = cost)", fontsize=16, pad=20)
+    plt.xlabel("Average Response Time (s)", fontsize=14)
+    plt.ylabel("Average Overall Score (0–10)", fontsize=14)
+    plt.ylim(0, 10)
+    plt.grid(True, ls='--', alpha=0.6)
+    plt.tight_layout()
+    plt.savefig(os.path.join(output_dir, "latency_vs_quality.png"), dpi=300)
+    plt.close()
+
+    # Token usage by purpose – percent
+    if model_token_data:
+        purpose_percent_rows = []
+        for approach in approach_names:
+            # gather per approach billable/non-billable tokens by purpose
+            purpose_totals = {}
+            total_tokens = 0
+            if approach in model_token_data:
+                for m, d in model_token_data[approach].items():
+                    purpose = d.get("purpose", "unknown")
+                    tok = d.get("tokens", 0)
+                    purpose_totals[purpose] = purpose_totals.get(purpose, 0) + tok
+                    total_tokens += tok
+            if total_tokens == 0:
+                continue
+            for purpose, tok in purpose_totals.items():
+                purpose_percent_rows.append({
+                    "Approach": approach,
+                    "Purpose": purpose,
+                    "Percent": (tok/total_tokens)*100
+                })
+        if purpose_percent_rows:
+            purpose_percent_df = pd.DataFrame(purpose_percent_rows)
+            plt.figure(figsize=(14, 9))
+            ax = sns.barplot(x="Approach", y="Percent", hue="Purpose", data=purpose_percent_df, palette="deep")
+            plt.title("Token Usage Share by Purpose", fontsize=16, pad=20)
+            plt.ylabel("Percent (%)", fontsize=14)
+            plt.xlabel("RAG Approach", fontsize=14)
+            plt.xticks(rotation=30, ha="right")
+            plt.legend(title="Purpose", bbox_to_anchor=(1.05, 1), loc='upper left')
+            plt.tight_layout()
+            plt.savefig(os.path.join(output_dir, "token_usage_percent_purpose.png"), dpi=300)
+            plt.close()
 
 def create_cross_comparison_analysis(results: Dict[str, Any], output_dir: str) -> None:
     """
