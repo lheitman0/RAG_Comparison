@@ -2,3 +2,5 @@ data/
 evaluation_data/
 evaluation_results_backup/
 .env
+__pycache__/
+**/__pycache__/
