@@ -257,14 +257,14 @@ Quality, latency, token, and cost graphics are auto-exported each CI run
 
 ### 8.3 Interpretation
 
-* **Open-Source** – Cheapest and simple to host; accuracy drops ~5% and visual coverage limited to captions
-* **OpenAI CLIP** – Best balance: top-tier accuracy, fastest latency, cost in pennies; recommended default
-* **OpenAI Vision** – Excels on visual queries but 3x cost & latency; deploy as on-demand mode
+* **Open-Source** – Cheapest and simple to host, accuracy drops ~5% and visual coverage limited to captions
+* **OpenAI CLIP** – Best balance: top-tier accuracy, fastest latency, optimal cost
+* **OpenAI Vision** – Excels on visual queries but 3x cost & latency
 * **Hybrid** – Highest raw accuracy by fusing cross-encoder + vision rerank but operationally heavy and most expensive
 
 ### 8.4 Final Recommendation
 
-For most technical-manual Q&As the **OpenAI CLIP RAG** stack offers the best quality-to-cost ratio while keeping infra simple. Enable **Vision** path behind a `needs_vision()` heuristic for diagram-centric questions. Maintain **Open-Source** variant for air-gapped deployments.
+For most technical-manual Q&As the **OpenAI CLIP** stack offers the best quality-to-cost ratio while keeping infra simple. Could even switch final chat completion to OS LLM to cut costs even more. 
 
 ---
 
